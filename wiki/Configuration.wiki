@@ -1,0 +1,5 @@
+#Information to configure the FAHView Program.
+
+= Configuration =
+
+The FAHView program requires a configuration file called config.properties to be edited with the location of the Folding@Home client main working directory. This is only required as the "Add Client" and "Delete Client" buttons on the main screen are yet to be implemented.
