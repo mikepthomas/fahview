@@ -60,42 +60,41 @@ public class Team {
             String url = props.getProperty("url");
             String username = props.getProperty("username");
             String password = props.getProperty("password");
-            try (Connection con = DriverManager.getConnection(
-                            url, username, password)) {
-                System.out.println("URL: " + url);
-                System.out.println("Connection: " + con);
+            Connection con = DriverManager.getConnection(url, username, password);
+            System.out.println("URL: " + url);
+            System.out.println("Connection: " + con);
 
-                //Get a Statement object
-                stmt = con.createStatement();
+            //Get a Statement object
+            stmt = con.createStatement();
+
+            //Execute SQL
+            stmt.executeUpdate("USE FAHView;");
+            stmt.executeUpdate("TRUNCATE TABLE daily_team_summary;");
+
+
+            InputStream in = App.class.getResourceAsStream("/daily_team_summary.txt");
+            InputStreamReader read = new InputStreamReader(in);
+            BufferedReader buf = new BufferedReader(read);
+
+            System.out.println(buf.readLine());
+            System.out.println(buf.readLine() + "\n");
+
+            while (buf.ready()) {
+                String line = buf.readLine();
+                line = line.replace("\"", "\\\"");
+                String[] array = line.split("\t");
+
+                String team = array[0];
+                String teamname = array[1];
+                String score = array[2];
+                String wu = array[3];
 
                 //Execute SQL
-                stmt.executeUpdate("USE FAHView;");
-                stmt.executeUpdate("TRUNCATE TABLE daily_team_summary;");
+                stmt.executeUpdate(
+                        "INSERT INTO daily_team_summary "
+                        + "(team, teamname, score, wu) "
+                        + "VALUES (\"" + team + "\", \"" + teamname + "\", " + score + ", " + wu + ");");
 
-
-                InputStream in = App.class.getResourceAsStream("/daily_team_summary.txt");
-                InputStreamReader read = new InputStreamReader(in);
-                BufferedReader buf = new BufferedReader(read);
-
-                System.out.println(buf.readLine());
-                System.out.println(buf.readLine() + "\n");
-
-                while (buf.ready()) {
-                    String line = buf.readLine();
-                    line = line.replace("\"", "\\\"");
-                    String[] array = line.split("\t");
-
-                    String team = array[0];
-                    String teamname = array[1];
-                    String score = array[2];
-                    String wu = array[3];
-
-                    //Execute SQL
-                    stmt.executeUpdate(
-                            "INSERT INTO daily_team_summary "
-                            + "(team, teamname, score, wu) "
-                            + "VALUES (\"" + team + "\", \"" + teamname + "\", " + score + ", " + wu + ");");
-                }
             }
         }
         catch (ClassNotFoundException | SQLException | IOException e) {
