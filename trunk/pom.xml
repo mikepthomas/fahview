@@ -4,11 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.googlecode.fahview</groupId>
-    <artifactId>FAHView-parent</artifactId>
+    <artifactId>FAHView</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>FAHView-parent</name>
+    <name>FAHView</name>
+    <url>http://www.fahview.googlecode.com/</url>
 
     <repositories>
         <!--
@@ -51,6 +52,14 @@
                     <artifactId>maven-jar-plugin</artifactId>
                     <version>2.4</version>
                 </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <version>3.3</version>
+                    <configuration>
+                        <siteDirectory>${project.parent.basedir}/src/site</siteDirectory>
+                    </configuration>
+                </plugin>
             </plugins>
         </pluginManagement>
         <plugins>
@@ -70,6 +79,46 @@
                     <encoding>${project.build.sourceEncoding}</encoding>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>cobertura-maven-plugin</artifactId>
+                <version>2.5.2</version>
+                <configuration>
+                    <formats>
+                        <format>xml</format>
+                    </formats>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>cobertura</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>emma-maven-plugin</artifactId>
+                <version>1.0-alpha-3</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>emma</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.3</version>
+                <inherited>false</inherited>
+                <configuration>
+                    <siteDirectory>${project.basedir}/src/site</siteDirectory>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
@@ -78,7 +127,6 @@
         <module>application</module>
         <module>FAHView-v6project</module>
         <module>FAHView-viewer</module>
-        <module>application</module>
     </modules>
 
     <reporting>
@@ -91,13 +139,33 @@
                     <configLocation>config/sun_checks.xml</configLocation>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>2.7</version>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>cobertura-maven-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <formats>
+                        <format>html</format>
+                    </formats>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>emma-maven-plugin</artifactId>
+                <version>1.0-alpha-3</version>
+            </plugin>
         </plugins>
     </reporting>
 
     <properties>
         <brandingToken>fahview</brandingToken>
         <netbeans.hint.license>gpl30</netbeans.hint.license>
-        <netbeans.version>RELEASE73</netbeans.version>
+        <netbeans.version>RELEASE731</netbeans.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 </project>
