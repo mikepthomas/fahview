@@ -31,7 +31,7 @@ import org.openide.util.lookup.ServiceProvider;
  *
  * @author Michael Thomas <michael4.thomas@live.uwe.ac.uk>
  */
-@ServiceProvider(service=ProjectFactory.class)
+@ServiceProvider(service = ProjectFactory.class)
 public class WorkProjectFactory implements ProjectFactory2 {
 
     @Override

@@ -47,14 +47,15 @@ public class ClientSubprojectProvider implements SubprojectProvider {
             for (FileObject childFolder : dir.getChildren()) {
                 try {
                     Project subp = ProjectManager.getDefault().
-                        findProject(childFolder);
+                            findProject(childFolder);
                     if (subp != null) {
                         newProjects.add(subp);
                     }
-                } catch (IOException ex) {
+                }
+                catch (IOException ex) {
                     Exceptions.printStackTrace(ex);
-                } catch (IllegalArgumentException ex) {
-
+                }
+                catch (IllegalArgumentException ex) {
                 }
             }
         }
@@ -62,8 +63,10 @@ public class ClientSubprojectProvider implements SubprojectProvider {
     }
 
     @Override
-    public void addChangeListener(ChangeListener listener) {}
+    public void addChangeListener(ChangeListener listener) {
+    }
 
     @Override
-    public void removeChangeListener(ChangeListener listener) {}
+    public void removeChangeListener(ChangeListener listener) {
+    }
 }

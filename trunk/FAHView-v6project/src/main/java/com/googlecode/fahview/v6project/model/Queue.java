@@ -28,340 +28,341 @@ public interface Queue {
     // <editor-fold defaultstate="collapsed" desc="position-constants">
     /**
      * Position in bytes of the Queue (client) version from the start of
-     * {@code queue.dat}
-     * 
+     * {@code queue.dat}.
+     *
      * @since 2.17
-     * @see #getVersion() 
-     * @see #VERSION_LENGTH 
+     * @see #getVersion()
+     * @see #VERSION_LENGTH
      */
-    public static final int VERSION_POS = 0;
+    static final int VERSION_POS = 0;
     /**
      * Position in bytes of the Current index number from the start of
-     * {@code queue.dat}
-     * 
-     * @see #getCurrent() 
-     * @see #CURRENT_LENGTH 
+     * {@code queue.dat}.
+     *
+     * @see #getCurrent()
+     * @see #CURRENT_LENGTH
      */
-    public static final int CURRENT_POS = 4;
+    static final int CURRENT_POS = 4;
     /**
      * Position in bytes of Queue Index 0 from the start of
-     * {@code queue.dat}
-     * 
-     * @see #getQueueIndex(int) 
-     * @see #QUEUE_INDEX_LENGTH 
+     * {@code queue.dat}.
+     *
+     * @see #getQueueIndex(int)
+     * @see #QUEUE_INDEX_LENGTH
      */
-    public static final int QUEUE_INDEX_0_POS = 8;
+    static final int QUEUE_INDEX_0_POS = 8;
     /**
      * Position in bytes of Queue Index 1 from the start of
-     * {@code queue.dat}
-     * 
-     * @see #getQueueIndex(int) 
-     * @see #QUEUE_INDEX_LENGTH 
+     * {@code queue.dat}.
+     *
+     * @see #getQueueIndex(int)
+     * @see #QUEUE_INDEX_LENGTH
      */
-    public static final int QUEUE_INDEX_1_POS = 720;
+    static final int QUEUE_INDEX_1_POS = 720;
     /**
      * Position in bytes of Queue Index 2 from the start of
-     * {@code queue.dat}
-     * 
-     * @see #getQueueIndex(int) 
-     * @see #QUEUE_INDEX_LENGTH 
+     * {@code queue.dat}.
+     *
+     * @see #getQueueIndex(int)
+     * @see #QUEUE_INDEX_LENGTH
      */
-    public static final int QUEUE_INDEX_2_POS = 1432;
+    static final int QUEUE_INDEX_2_POS = 1432;
     /**
      * Position in bytes of Queue Index 3 from the start of
-     * {@code queue.dat}
-     * 
-     * @see #getQueueIndex(int) 
-     * @see #QUEUE_INDEX_LENGTH 
+     * {@code queue.dat}.
+     *
+     * @see #getQueueIndex(int)
+     * @see #QUEUE_INDEX_LENGTH
      */
-    public static final int QUEUE_INDEX_3_POS = 2144;
+    static final int QUEUE_INDEX_3_POS = 2144;
     /**
      * Position in bytes of Queue Index 4 from the start of
-     * {@code queue.dat}
-     * 
-     * @see #getQueueIndex(int) 
-     * @see #QUEUE_INDEX_LENGTH 
+     * {@code queue.dat}.
+     *
+     * @see #getQueueIndex(int)
+     * @see #QUEUE_INDEX_LENGTH
      */
-    public static final int QUEUE_INDEX_4_POS = 2856;
+    static final int QUEUE_INDEX_4_POS = 2856;
     /**
      * Position in bytes of Queue Index 5 from the start of
-     * {@code queue.dat}
-     * 
-     * @see #getQueueIndex(int) 
-     * @see #QUEUE_INDEX_LENGTH 
+     * {@code queue.dat}.
+     *
+     * @see #getQueueIndex(int)
+     * @see #QUEUE_INDEX_LENGTH
      */
-    public static final int QUEUE_INDEX_5_POS = 3568;
+    static final int QUEUE_INDEX_5_POS = 3568;
     /**
      * Position in bytes of Queue Index 6 from the start of
-     * {@code queue.dat}
-     * 
-     * @see #getQueueIndex(int) 
-     * @see #QUEUE_INDEX_LENGTH 
+     * {@code queue.dat}.
+     *
+     * @see #getQueueIndex(int)
+     * @see #QUEUE_INDEX_LENGTH
      */
-    public static final int QUEUE_INDEX_6_POS = 4280;
+    static final int QUEUE_INDEX_6_POS = 4280;
     /**
      * Position in bytes of Queue Index 7 from the start of
-     * {@code queue.dat}
-     * 
-     * @see #getQueueIndex(int) 
-     * @see #QUEUE_INDEX_LENGTH 
+     * {@code queue.dat}.
+     *
+     * @see #getQueueIndex(int)
+     * @see #QUEUE_INDEX_LENGTH
      */
-    public static final int QUEUE_INDEX_7_POS = 4992;
+    static final int QUEUE_INDEX_7_POS = 4992;
     /**
      * Position in bytes of Queue Index 8 from the start of
-     * {@code queue.dat}
-     * 
-     * @see #getQueueIndex(int) 
-     * @see #QUEUE_INDEX_LENGTH 
+     * {@code queue.dat}.
+     *
+     * @see #getQueueIndex(int)
+     * @see #QUEUE_INDEX_LENGTH
      */
-    public static final int QUEUE_INDEX_8_POS = 5704;
+    static final int QUEUE_INDEX_8_POS = 5704;
     /**
      * Position in bytes of Queue Index 9 from the start of
-     * {@code queue.dat}
-     * 
-     * @see #getQueueIndex(int) 
-     * @see #QUEUE_INDEX_LENGTH 
+     * {@code queue.dat}.
+     *
+     * @see #getQueueIndex(int)
+     * @see #QUEUE_INDEX_LENGTH
      */
-    public static final int QUEUE_INDEX_9_POS = 6416;
+    static final int QUEUE_INDEX_9_POS = 6416;
     /**
      * Position in bytes of the Performance Fraction from the start of
-     * {@code queue.dat}
-     * 
+     * {@code queue.dat}.
+     *
      * @since 3.24
-     * @see #getPfract() 
-     * @see #PFRACT_LENGTH 
+     * @see #getPfract()
+     * @see #PFRACT_LENGTH
      */
-    public static final int PFRACT_POS = 7128;
+    static final int PFRACT_POS = 7128;
     /**
      * Position in bytes of the Performance fraction unit weight from the start
-     * of {@code queue.dat}
-     * 
+     * of {@code queue.dat}.
+     *
      * @since 3.24
-     * @see #getPunits() 
-     * @see #PUNITS_LENGTH 
+     * @see #getPunits()
+     * @see #PUNITS_LENGTH
      */
-    public static final int PUNITS_POS = 7132;
+    static final int PUNITS_POS = 7132;
     /**
      * Position in bytes of the Download rate sliding average from the start of
-     * {@code queue.dat}
-     * 
+     * {@code queue.dat}.
+     *
      * @since 4.00
-     * @see #getDrate() 
-     * @see #DRATE_LENGTH 
+     * @see #getDrate()
+     * @see #DRATE_LENGTH
      */
-    public static final int DRATE_POS = 7136;
+    static final int DRATE_POS = 7136;
     /**
      * Position in bytes of the Download rate unit weight from the start of
-     * {@code queue.dat}
-     * 
+     * {@code queue.dat}.
+     *
      * @since 4.00
-     * @see #getDunits() 
-     * @see #DUNITS_LENGTH 
+     * @see #getDunits()
+     * @see #DUNITS_LENGTH
      */
-    public static final int DUNITS_POS = 7140;
+    static final int DUNITS_POS = 7140;
     /**
      * Position in bytes of the Upload rate sliding average from the start of
-     * {@code queue.dat}
-     * 
+     * {@code queue.dat}.
+     *
      * @since 4.00
-     * @see #getUrate() 
-     * @see #URATE_LENGTH 
+     * @see #getUrate()
+     * @see #URATE_LENGTH
      */
-    public static final int URATE_POS = 7144;
+    static final int URATE_POS = 7144;
     /**
      * Position in bytes of the Upload rate unit weight from the start of
-     * {@code queue.dat}
-     * 
+     * {@code queue.dat}.
+     *
      * @since 4.00
-     * @see #getUunits() 
-     * @see #UUNITS_LENGTH 
+     * @see #getUunits()
+     * @see #UUNITS_LENGTH
      */
-    public static final int UUNITS_POS = 7148;
+    static final int UUNITS_POS = 7148;
     /**
      * Position in bytes of the Results successfully sent after upload failures
-     * from the start of {@code queue.dat}
-     * 
+     * from the start of {@code queue.dat}.
+     *
      * @since 5.00
-     * @see #getSent() 
-     * @see #SENT_LENGTH 
+     * @see #getSent()
+     * @see #SENT_LENGTH
      */
-    public static final int SENT_POS = 7152;
+    static final int SENT_POS = 7152;
     /**
      * Position in bytes of padding from the start of {@code queue.dat}
-     * (All Zeros)
-     * 
+     * (All Zeros).
+     *
      * @since 5.00
-     * @see #Z7156_LENGTH 
+     * @see #Z7156_LENGTH
      */
-    public static final int Z7156_POS = 7156;
+    static final int Z7156_POS = 7156;
     // </editor-fold>
     
     // <editor-fold defaultstate="collapsed" desc="length-constants">
     /**
-     * Length in bytes of the Queue (client) version in {@code queue.dat}
-     * 
+     * Length in bytes of the Queue (client) version in {@code queue.dat}.
+     *
      * @since 2.17
-     * @see #getVersion() 
-     * @see #VERSION_POS 
+     * @see #getVersion()
+     * @see #VERSION_POS
      */
-    public static final int VERSION_LENGTH = 4;
+    static final int VERSION_LENGTH = 4;
     /**
-     * Length in bytes of the Current index number in {@code queue.dat}
-     * 
-     * @see #getCurrent() 
-     * @see #CURRENT_POS 
+     * Length in bytes of the Current index number in {@code queue.dat}.
+     *
+     * @see #getCurrent()
+     * @see #CURRENT_POS
      */
-    public static final int CURRENT_LENGTH = 4;
+    static final int CURRENT_LENGTH = 4;
     /**
-     * Length in bytes of a Queue Index in {@code queue.dat}
-     * 
-     * @see #getQueueIndex(int) 
-     * @see #QUEUE_INDEX_0_POS 
-     * @see #QUEUE_INDEX_1_POS 
-     * @see #QUEUE_INDEX_2_POS 
-     * @see #QUEUE_INDEX_3_POS 
-     * @see #QUEUE_INDEX_4_POS 
-     * @see #QUEUE_INDEX_5_POS 
-     * @see #QUEUE_INDEX_6_POS 
-     * @see #QUEUE_INDEX_7_POS 
-     * @see #QUEUE_INDEX_8_POS 
-     * @see #QUEUE_INDEX_9_POS 
-     * 
+     * Length in bytes of a Queue Index in {@code queue.dat}.
+     *
+     * @see #getQueueIndex(int)
+     * @see #QUEUE_INDEX_0_POS
+     * @see #QUEUE_INDEX_1_POS
+     * @see #QUEUE_INDEX_2_POS
+     * @see #QUEUE_INDEX_3_POS
+     * @see #QUEUE_INDEX_4_POS
+     * @see #QUEUE_INDEX_5_POS
+     * @see #QUEUE_INDEX_6_POS
+     * @see #QUEUE_INDEX_7_POS
+     * @see #QUEUE_INDEX_8_POS
+     * @see #QUEUE_INDEX_9_POS
+     *
      */
-    public static final int QUEUE_INDEX_LENGTH = 712;
+    static final int QUEUE_INDEX_LENGTH = 712;
     /**
-     * Length in bytes of the Performance fraction in {@code queue.dat}
-     * 
+     * Length in bytes of the Performance fraction in {@code queue.dat}.
+     *
      * @since 3.24
-     * @see #getPfract() 
-     * @see #PFRACT_POS 
+     * @see #getPfract()
+     * @see #PFRACT_POS
      */
-    public static final int PFRACT_LENGTH = 4;
+    static final int PFRACT_LENGTH = 4;
     /**
      * Length in bytes of the Performance fraction unit weight in
-     * {@code queue.dat}
-     * 
+     * {@code queue.dat}.
+     *
      * @since 3.24
-     * @see #getPunits() 
-     * @see #PUNITS_POS 
+     * @see #getPunits()
+     * @see #PUNITS_POS
      */
-    public static final int PUNITS_LENGTH = 4;
+    static final int PUNITS_LENGTH = 4;
     /**
-     * Length in bytes of the Download rate sliding average in {@code queue.dat}
-     * 
+     * Length in bytes of the Download rate sliding average in
+     * {@code queue.dat}.
+     *
      * @since 4.00
-     * @see #getDrate() 
-     * @see #DRATE_POS 
+     * @see #getDrate()
+     * @see #DRATE_POS
      */
-    public static final int DRATE_LENGTH = 4;
+    static final int DRATE_LENGTH = 4;
     /**
-     * Length in bytes of the Download rate unit weight in {@code queue.dat}
-     * 
+     * Length in bytes of the Download rate unit weight in {@code queue.dat}.
+     *
      * @since 4.00
-     * @see #getDunits() 
-     * @see #DUNITS_POS 
+     * @see #getDunits()
+     * @see #DUNITS_POS
      */
-    public static final int DUNITS_LENGTH = 4;
+    static final int DUNITS_LENGTH = 4;
     /**
-     * Length in bytes of the Upload rate sliding average in {@code queue.dat}
-     * 
+     * Length in bytes of the Upload rate sliding average in {@code queue.dat}.
+     *
      * @since 4.00
-     * @see #getUrate() 
-     * @see #URATE_POS 
+     * @see #getUrate()
+     * @see #URATE_POS
      */
-    public static final int URATE_LENGTH = 4;
+    static final int URATE_LENGTH = 4;
     /**
-     * Length in bytes of the Upload rate unit weight in {@code queue.dat}
-     * 
+     * Length in bytes of the Upload rate unit weight in {@code queue.dat}.
+     *
      * @since 4.00
-     * @see #getUunits() 
-     * @see #UUNITS_POS 
+     * @see #getUunits()
+     * @see #UUNITS_POS
      */
-    public static final int UUNITS_LENGTH = 4;
+    static final int UUNITS_LENGTH = 4;
     /**
      * Length in bytes of the Results successfully sent after upload failures in
-     * {@code queue.dat}
-     * 
+     * {@code queue.dat}.
+     *
      * @since 5.00
-     * @see #getSent() 
-     * @see #SENT_POS 
+     * @see #getSent()
+     * @see #SENT_POS
      */
-    public static final int SENT_LENGTH = 4;
+    static final int SENT_LENGTH = 4;
     /**
-     * Length in bytes of padding in {@code queue.dat} (All Zeros)
-     * 
+     * Length in bytes of padding in {@code queue.dat} (All Zeros).
+     *
      * @since 5.00
-     * @see #Z7156_POS 
+     * @see #Z7156_POS
      */
-    public static final int Z7156_LENGTH = 12;
+    static final int Z7156_LENGTH = 12;
     // </editor-fold>
     
     // <editor-fold desc="accessors">
     /**
-     * Get the value of Queue (client) version
+     * Get the value of Queue (client) version.
      *
      * @return the value of version
      */
     int getVersion();
     /**
-     * Get the value of Current index number
+     * Get the value of Current index number.
      *
      * @return the value of current
      */
     int getCurrent();
     /**
-     * Get the value of queueIndex at specified index
+     * Get the value of queueIndex at specified index.
      *
      * @param index the index required
      * @return the value of queueIndex at specified index
      */
     QueueIndexImpl getQueueIndex(int index);
     /**
-     * Get the value of Performance fraction
+     * Get the value of Performance fraction.
      *
      * @return the value of pfract
      */
     int getPfract();
     /**
-     * Get the value of Performance fraction unit weight
+     * Get the value of Performance fraction unit weight.
      *
      * @return the value of punits
      */
     int getPunits();
     /**
-     * Get the value of Download rate sliding average
+     * Get the value of Download rate sliding average.
      *
      * @return the value of drate
      */
     int getDrate();
     /**
-     * Get the value of Download rate unit weight
+     * Get the value of Download rate unit weight.
      *
      * @return the value of dunits
      */
     int getDunits();
     /**
-     * Get the value of Upload rate sliding average
+     * Get the value of Upload rate sliding average.
      *
      * @return the value of urate
      */
     int getUrate();
     /**
-     * Get the value of Upload rate unit weight
+     * Get the value of Upload rate unit weight.
      *
      * @return the value of uunits
      */
     int getUunits();
     /**
-     * Get the value of Results Sent
+     * Get the value of Results Sent.
      *
      * @return the value of sent
      */
     int getSent();
     // </editor-fold>
-    
+
     /**
-     * Update all values
+     * Update all values.
      */
     void update();
 }

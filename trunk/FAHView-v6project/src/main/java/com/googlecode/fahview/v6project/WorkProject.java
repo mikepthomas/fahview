@@ -101,10 +101,12 @@ public class WorkProject implements Project {
         }
 
         @Override
-        public void addPropertyChangeListener(PropertyChangeListener listener) {}
+        public void addPropertyChangeListener(PropertyChangeListener listener) {
+        }
 
         @Override
-        public void removePropertyChangeListener(PropertyChangeListener listener) {}
+        public void removePropertyChangeListener(PropertyChangeListener listener) {
+        }
     }
 
     private final class WorkProjectLogicalView implements LogicalViewProvider {
