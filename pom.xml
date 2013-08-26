@@ -9,7 +9,39 @@
     <packaging>pom</packaging>
 
     <name>FAHView</name>
-    <url>http://www.mikethomas.info/FAHView/</url>
+    <description>
+        Project to create a viewer application in Java to display
+        information from a Folding@Home client.
+    </description>
+    <url>http://${project.domain.reports}/FAHView/</url>
+    <inceptionYear>2011</inceptionYear>
+    <organization/>
+    <licenses>
+        <license>
+            <name>GNU General Public License, Version 3</name>
+            <url>http://www.gnu.org/licenses/gpl.txt</url>
+            <distribution>manual</distribution>
+            <comments>
+                The GNU General Public License is a free, copyleft license for
+                software and other kinds of works.
+            </comments>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>montycrabapple1@gmail.com</id>
+            <name>Mike Thomas</name>
+            <email>montycrabapple@hotmail.com</email>
+            <url>http://www.mikethomas.info/</url>
+            <timezone>0</timezone>
+        </developer>
+    </developers>
+    <contributors/>
+
+    <mailingLists/>
+
+    <prerequisites/>
 
     <modules>
         <module>branding</module>
@@ -18,13 +50,34 @@
         <module>FAHView-viewer</module>
     </modules>
 
+    <scm>
+        <connection>scm:svn:http://${project.domain.source}/svn/trunk/</connection>
+        <developerConnection>scm:svn:https://${project.domain.source}/svn/trunk/</developerConnection>
+        <tag>HEAD</tag>
+        <url>http://${project.domain.source}/svn/trunk/</url>
+    </scm>
+    <issueManagement>
+        <system>Google Code</system>
+        <url>http://code.google.com/p/fahview/issues/</url>
+    </issueManagement>
+    <ciManagement>
+        <system>Jenkins</system>
+        <url>http://${project.domain.reports}/jenkins/job/FAHView/</url>
+    </ciManagement>
+    <distributionManagement/>
+
     <properties>
         <brandingToken>fahview</brandingToken>
         <netbeans.hint.license>gpl30</netbeans.hint.license>
         <netbeans.version>RELEASE731</netbeans.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.targetJdk>1.6</project.build.targetJdk>
+        <project.domain.reports>www.mikethomas.info</project.domain.reports>
+        <project.domain.source>fahview.googlecode.com</project.domain.source>
     </properties>
+
+    <dependencyManagement/>
+    <dependencies/>
 
     <repositories>
         <!--
@@ -36,8 +89,12 @@
             <id>netbeans</id>
             <name>NetBeans</name>
             <url>http://bits.netbeans.org/maven2/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
         </repository>
     </repositories>
+    <pluginRepositories/>
 
     <build>
         <pluginManagement>
@@ -48,6 +105,7 @@
                     <version>2.9.1</version>
                     <inherited>true</inherited>
                     <configuration>
+                        <quiet>true</quiet>
                         <show>public</show>
                     </configuration>
                     <executions>
@@ -124,7 +182,7 @@
                 <artifactId>maven-jxr-plugin</artifactId>
                 <version>2.3</version>
                 <configuration>
-                    <aggregate>true</aggregate>
+                    <aggregate>false</aggregate>
                     <linkJavadoc>true</linkJavadoc>
                 </configuration>
             </plugin>
@@ -151,6 +209,11 @@
             </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
+                <artifactId>clirr-maven-plugin</artifactId>
+                <version>2.5</version>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
                 <artifactId>cobertura-maven-plugin</artifactId>
                 <version>2.6</version>
                 <configuration>
@@ -165,6 +228,67 @@
                 <artifactId>emma-maven-plugin</artifactId>
                 <version>1.0-alpha-3</version>
             </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>findbugs-maven-plugin</artifactId>
+                <version>2.5.2</version>
+                <configuration>
+                    <findbugsXmlOutput>true</findbugsXmlOutput>
+                    <findbugsXmlWithMessages>true</findbugsXmlWithMessages>
+                    <xmlOutput>true</xmlOutput>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>jdepend-maven-plugin</artifactId>
+                <version>2.0-beta-2</version>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>taglist-maven-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <tagListOptions>
+                        <tagClasses>
+                            <tagClass>
+                                <displayName>Todo Work</displayName>
+                                <tags>
+                                    <tag>
+                                        <matchString>todo</matchString>
+                                        <matchType>ignoreCase</matchType>
+                                    </tag>
+                                    <tag>
+                                        <matchString>FIXME</matchString>
+                                        <matchType>exact</matchType>
+                                    </tag>
+                                </tags>
+                            </tagClass>
+                        </tagClasses>
+                    </tagListOptions>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+                <version>2.1</version>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>dependency-updates-report</report>
+                            <report>plugin-updates-report</report>
+                            <report>property-updates-report</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+            <!-- Run dashboard last 
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>dashboard-maven-plugin</artifactId>
+                <version>1.0.0-beta-1</version>
+            </plugin>-->
         </plugins>
     </reporting>
+
+    <profiles/>
 </project>
