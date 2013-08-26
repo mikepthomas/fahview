@@ -18,7 +18,7 @@
     <organization/>
     <licenses>
         <license>
-            <name>GNU General Public License, Version 3</name>
+            <name>GNU General Public License (GPL) version 3.0</name>
             <url>http://www.gnu.org/licenses/gpl.txt</url>
             <distribution>manual</distribution>
             <comments>
@@ -164,6 +164,44 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.2.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                            <goal>test-jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+                <version>1.5</version>
+                <configuration>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                    <licenseFile>${project.basedir}/src/COPYING</licenseFile>
+                    <licenseName>gpl_v3</licenseName>
+                    <organizationName>
+                        Mike Thomas &lt;michael4.thomas@live.uwe.ac.uk&gt;
+                    </organizationName>
+                    <thirdPartyFilename>LICENSE</thirdPartyFilename>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>add-third-party</goal>
+                            <goal>update-project-license</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 
@@ -242,6 +280,18 @@
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>jdepend-maven-plugin</artifactId>
                 <version>2.0-beta-2</version>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+                <version>1.5</version>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>third-party-report</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
             </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
