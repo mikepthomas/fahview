@@ -76,6 +76,7 @@
         <project.build.targetJdk>1.6</project.build.targetJdk>
         <project.domain.reports>www.mikethomas.info</project.domain.reports>
         <project.domain.source>fahview.googlecode.com</project.domain.source>
+        <sonar.language>java</sonar.language>
     </properties>
 
     <dependencyManagement/>
@@ -103,6 +104,11 @@
             <plugins>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-assembly-plugin</artifactId>
+                    <version>2.4</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
                     <version>2.9.1</version>
                     <configuration>
@@ -124,6 +130,11 @@
                         <brandingToken>${brandingToken}</brandingToken>
                         <cluster>${brandingToken}</cluster>
                     </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>sonar-maven-plugin</artifactId>
+                    <version>2.0</version>
                 </plugin>
             </plugins>
         </pluginManagement>
@@ -223,11 +234,6 @@
             </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
-                <artifactId>emma-maven-plugin</artifactId>
-                <version>1.0-alpha-3</version>
-            </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
                 <artifactId>findbugs-maven-plugin</artifactId>
                 <version>2.5.2</version>
                 <configuration>
@@ -272,12 +278,6 @@
                     </reportSet>
                 </reportSets>
             </plugin>
-            <!-- Run dashbord last -->
-<!--            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>dashboard-maven-plugin</artifactId>
-                <version>1.0.0-beta-1</version>
-            </plugin>-->
         </plugins>
     </reporting>
 
