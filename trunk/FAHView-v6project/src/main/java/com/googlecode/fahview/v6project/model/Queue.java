@@ -34,7 +34,7 @@ public interface Queue {
      * @see #getVersion()
      * @see #VERSION_LENGTH
      */
-    static final int VERSION_POS = 0;
+    int VERSION_POS = 0;
     /**
      * Position in bytes of the Current index number from the start of
      * {@code queue.dat}.
@@ -42,7 +42,7 @@ public interface Queue {
      * @see #getCurrent()
      * @see #CURRENT_LENGTH
      */
-    static final int CURRENT_POS = 4;
+    int CURRENT_POS = 4;
     /**
      * Position in bytes of Queue Index 0 from the start of
      * {@code queue.dat}.
@@ -50,7 +50,7 @@ public interface Queue {
      * @see #getQueueIndex(int)
      * @see #QUEUE_INDEX_LENGTH
      */
-    static final int QUEUE_INDEX_0_POS = 8;
+    int QUEUE_INDEX_0_POS = 8;
     /**
      * Position in bytes of Queue Index 1 from the start of
      * {@code queue.dat}.
@@ -58,7 +58,7 @@ public interface Queue {
      * @see #getQueueIndex(int)
      * @see #QUEUE_INDEX_LENGTH
      */
-    static final int QUEUE_INDEX_1_POS = 720;
+    int QUEUE_INDEX_1_POS = 720;
     /**
      * Position in bytes of Queue Index 2 from the start of
      * {@code queue.dat}.
@@ -66,7 +66,7 @@ public interface Queue {
      * @see #getQueueIndex(int)
      * @see #QUEUE_INDEX_LENGTH
      */
-    static final int QUEUE_INDEX_2_POS = 1432;
+    int QUEUE_INDEX_2_POS = 1432;
     /**
      * Position in bytes of Queue Index 3 from the start of
      * {@code queue.dat}.
@@ -74,7 +74,7 @@ public interface Queue {
      * @see #getQueueIndex(int)
      * @see #QUEUE_INDEX_LENGTH
      */
-    static final int QUEUE_INDEX_3_POS = 2144;
+    int QUEUE_INDEX_3_POS = 2144;
     /**
      * Position in bytes of Queue Index 4 from the start of
      * {@code queue.dat}.
@@ -82,7 +82,7 @@ public interface Queue {
      * @see #getQueueIndex(int)
      * @see #QUEUE_INDEX_LENGTH
      */
-    static final int QUEUE_INDEX_4_POS = 2856;
+    int QUEUE_INDEX_4_POS = 2856;
     /**
      * Position in bytes of Queue Index 5 from the start of
      * {@code queue.dat}.
@@ -90,7 +90,7 @@ public interface Queue {
      * @see #getQueueIndex(int)
      * @see #QUEUE_INDEX_LENGTH
      */
-    static final int QUEUE_INDEX_5_POS = 3568;
+    int QUEUE_INDEX_5_POS = 3568;
     /**
      * Position in bytes of Queue Index 6 from the start of
      * {@code queue.dat}.
@@ -98,7 +98,7 @@ public interface Queue {
      * @see #getQueueIndex(int)
      * @see #QUEUE_INDEX_LENGTH
      */
-    static final int QUEUE_INDEX_6_POS = 4280;
+    int QUEUE_INDEX_6_POS = 4280;
     /**
      * Position in bytes of Queue Index 7 from the start of
      * {@code queue.dat}.
@@ -106,7 +106,7 @@ public interface Queue {
      * @see #getQueueIndex(int)
      * @see #QUEUE_INDEX_LENGTH
      */
-    static final int QUEUE_INDEX_7_POS = 4992;
+    int QUEUE_INDEX_7_POS = 4992;
     /**
      * Position in bytes of Queue Index 8 from the start of
      * {@code queue.dat}.
@@ -114,7 +114,7 @@ public interface Queue {
      * @see #getQueueIndex(int)
      * @see #QUEUE_INDEX_LENGTH
      */
-    static final int QUEUE_INDEX_8_POS = 5704;
+    int QUEUE_INDEX_8_POS = 5704;
     /**
      * Position in bytes of Queue Index 9 from the start of
      * {@code queue.dat}.
@@ -122,7 +122,7 @@ public interface Queue {
      * @see #getQueueIndex(int)
      * @see #QUEUE_INDEX_LENGTH
      */
-    static final int QUEUE_INDEX_9_POS = 6416;
+    int QUEUE_INDEX_9_POS = 6416;
     /**
      * Position in bytes of the Performance Fraction from the start of
      * {@code queue.dat}.
@@ -131,7 +131,7 @@ public interface Queue {
      * @see #getPfract()
      * @see #PFRACT_LENGTH
      */
-    static final int PFRACT_POS = 7128;
+    int PFRACT_POS = 7128;
     /**
      * Position in bytes of the Performance fraction unit weight from the start
      * of {@code queue.dat}.
@@ -140,7 +140,7 @@ public interface Queue {
      * @see #getPunits()
      * @see #PUNITS_LENGTH
      */
-    static final int PUNITS_POS = 7132;
+    int PUNITS_POS = 7132;
     /**
      * Position in bytes of the Download rate sliding average from the start of
      * {@code queue.dat}.
@@ -149,7 +149,7 @@ public interface Queue {
      * @see #getDrate()
      * @see #DRATE_LENGTH
      */
-    static final int DRATE_POS = 7136;
+    int DRATE_POS = 7136;
     /**
      * Position in bytes of the Download rate unit weight from the start of
      * {@code queue.dat}.
@@ -158,7 +158,7 @@ public interface Queue {
      * @see #getDunits()
      * @see #DUNITS_LENGTH
      */
-    static final int DUNITS_POS = 7140;
+    int DUNITS_POS = 7140;
     /**
      * Position in bytes of the Upload rate sliding average from the start of
      * {@code queue.dat}.
@@ -167,7 +167,7 @@ public interface Queue {
      * @see #getUrate()
      * @see #URATE_LENGTH
      */
-    static final int URATE_POS = 7144;
+    int URATE_POS = 7144;
     /**
      * Position in bytes of the Upload rate unit weight from the start of
      * {@code queue.dat}.
@@ -176,7 +176,7 @@ public interface Queue {
      * @see #getUunits()
      * @see #UUNITS_LENGTH
      */
-    static final int UUNITS_POS = 7148;
+    int UUNITS_POS = 7148;
     /**
      * Position in bytes of the Results successfully sent after upload failures
      * from the start of {@code queue.dat}.
@@ -185,7 +185,7 @@ public interface Queue {
      * @see #getSent()
      * @see #SENT_LENGTH
      */
-    static final int SENT_POS = 7152;
+    int SENT_POS = 7152;
     /**
      * Position in bytes of padding from the start of {@code queue.dat}
      * (All Zeros).
@@ -193,9 +193,8 @@ public interface Queue {
      * @since 5.00
      * @see #Z7156_LENGTH
      */
-    static final int Z7156_POS = 7156;
+    int Z7156_POS = 7156;
     // </editor-fold>
-    
     // <editor-fold defaultstate="collapsed" desc="length-constants">
     /**
      * Length in bytes of the Queue (client) version in {@code queue.dat}.
@@ -204,14 +203,14 @@ public interface Queue {
      * @see #getVersion()
      * @see #VERSION_POS
      */
-    static final int VERSION_LENGTH = 4;
+    int VERSION_LENGTH = 4;
     /**
      * Length in bytes of the Current index number in {@code queue.dat}.
      *
      * @see #getCurrent()
      * @see #CURRENT_POS
      */
-    static final int CURRENT_LENGTH = 4;
+    int CURRENT_LENGTH = 4;
     /**
      * Length in bytes of a Queue Index in {@code queue.dat}.
      *
@@ -228,7 +227,7 @@ public interface Queue {
      * @see #QUEUE_INDEX_9_POS
      *
      */
-    static final int QUEUE_INDEX_LENGTH = 712;
+    int QUEUE_INDEX_LENGTH = 712;
     /**
      * Length in bytes of the Performance fraction in {@code queue.dat}.
      *
@@ -236,7 +235,7 @@ public interface Queue {
      * @see #getPfract()
      * @see #PFRACT_POS
      */
-    static final int PFRACT_LENGTH = 4;
+    int PFRACT_LENGTH = 4;
     /**
      * Length in bytes of the Performance fraction unit weight in
      * {@code queue.dat}.
@@ -245,7 +244,7 @@ public interface Queue {
      * @see #getPunits()
      * @see #PUNITS_POS
      */
-    static final int PUNITS_LENGTH = 4;
+    int PUNITS_LENGTH = 4;
     /**
      * Length in bytes of the Download rate sliding average in
      * {@code queue.dat}.
@@ -254,7 +253,7 @@ public interface Queue {
      * @see #getDrate()
      * @see #DRATE_POS
      */
-    static final int DRATE_LENGTH = 4;
+    int DRATE_LENGTH = 4;
     /**
      * Length in bytes of the Download rate unit weight in {@code queue.dat}.
      *
@@ -262,7 +261,7 @@ public interface Queue {
      * @see #getDunits()
      * @see #DUNITS_POS
      */
-    static final int DUNITS_LENGTH = 4;
+    int DUNITS_LENGTH = 4;
     /**
      * Length in bytes of the Upload rate sliding average in {@code queue.dat}.
      *
@@ -270,7 +269,7 @@ public interface Queue {
      * @see #getUrate()
      * @see #URATE_POS
      */
-    static final int URATE_LENGTH = 4;
+    int URATE_LENGTH = 4;
     /**
      * Length in bytes of the Upload rate unit weight in {@code queue.dat}.
      *
@@ -278,7 +277,7 @@ public interface Queue {
      * @see #getUunits()
      * @see #UUNITS_POS
      */
-    static final int UUNITS_LENGTH = 4;
+    int UUNITS_LENGTH = 4;
     /**
      * Length in bytes of the Results successfully sent after upload failures in
      * {@code queue.dat}.
@@ -287,16 +286,15 @@ public interface Queue {
      * @see #getSent()
      * @see #SENT_POS
      */
-    static final int SENT_LENGTH = 4;
+    int SENT_LENGTH = 4;
     /**
      * Length in bytes of padding in {@code queue.dat} (All Zeros).
      *
      * @since 5.00
      * @see #Z7156_POS
      */
-    static final int Z7156_LENGTH = 12;
+    int Z7156_LENGTH = 12;
     // </editor-fold>
-    
     // <editor-fold desc="accessors">
     /**
      * Get the value of Queue (client) version.

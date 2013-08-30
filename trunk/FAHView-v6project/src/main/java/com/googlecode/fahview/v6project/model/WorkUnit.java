@@ -35,7 +35,7 @@ public interface WorkUnit {
      * @see #getProj()
      * @see #PROJ_LENGTH
      */
-    static final int PROJ_POS = 0;
+    int PROJ_POS = 0;
     /**
      * Position in bytes of the Run Number from the start of
      * {@code queue.dat}.
@@ -43,7 +43,7 @@ public interface WorkUnit {
      * @see #getRun()
      * @see #RUN_LENGTH
      */
-    static final int RUN_POS = 2;
+    int RUN_POS = 2;
     /**
      * Position in bytes of the Clone Number from the start of
      * {@code queue.dat}.
@@ -51,7 +51,7 @@ public interface WorkUnit {
      * @see #getClone()
      * @see #CLONE_LENGTH
      */
-    static final int CLONE_POS = 4;
+    int CLONE_POS = 4;
     /**
      * Position in bytes of the Generation Number from the start of
      * {@code queue.dat}.
@@ -59,7 +59,7 @@ public interface WorkUnit {
      * @see #getGen()
      * @see #GEN_LENGTH
      */
-    static final int GEN_POS = 6;
+    int GEN_POS = 6;
     /**
      * Position in bytes of the Issued date from the start of
      * {@code queue.dat}.
@@ -67,9 +67,8 @@ public interface WorkUnit {
      * @see #getIssue()
      * @see #ISSUE_LENGTH
      */
-    static final int ISSUE_POS = 8;
+    int ISSUE_POS = 8;
     // </editor-fold>
-
     // <editor-fold defaultstate="collapsed" desc="length-constants">
     /**
      * Length in bytes of the Project Number in {@code queue.dat}.
@@ -77,37 +76,36 @@ public interface WorkUnit {
      * @see #getProj()
      * @see #PROJ_POS
      */
-    static final int PROJ_LENGTH = 2;
+    int PROJ_LENGTH = 2;
     /**
      * Length in bytes of the Run Number in {@code queue.dat}.
      *
      * @see #getRun()
      * @see #RUN_POS
      */
-    static final int RUN_LENGTH = 2;
+    int RUN_LENGTH = 2;
     /**
      * Length in bytes of the Clone Number in {@code queue.dat}.
      *
      * @see #getClone()
      * @see #CLONE_POS
      */
-    static final int CLONE_LENGTH = 2;
+    int CLONE_LENGTH = 2;
     /**
      * Length in bytes of the Generation Number in {@code queue.dat}.
      *
      * @see #getGen()
      * @see #GEN_POS
      */
-    static final int GEN_LENGTH = 2;
+    int GEN_LENGTH = 2;
     /**
      * Length in bytes of the Issued date in {@code queue.dat}.
      *
      * @see #getIssue()
      * @see #ISSUE_POS
      */
-    static final int ISSUE_LENGTH = 8;
+    int ISSUE_LENGTH = 8;
     // </editor-fold>
-
     // <editor-fold desc="accessors">
     /**
      * Get the value of the Project Number.
