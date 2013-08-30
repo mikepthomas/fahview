@@ -35,12 +35,15 @@ import org.openide.util.Exceptions;
 import org.openide.util.ImageUtilities;
 
 /**
+ * <p>ClientSubProjectNodeFactory class.</p>
  *
  * @author Michael Thomas <michael4.thomas@live.uwe.ac.uk>
+ * @version $Id: $Id
  */
 @NodeFactory.Registration(projectType = "com-googlecode-fahview-client", position = 10)
 public class ClientSubProjectNodeFactory implements NodeFactory {
 
+    /** {@inheritDoc} */
     @Override
     public NodeList<?> createNodes(Project p) {
         ClientSubprojectProvider csp = p.getLookup().

@@ -32,6 +32,12 @@ import org.openide.util.Lookup;
 import org.openide.util.NbBundle.Messages;
 import org.openide.windows.TopComponent;
 
+/**
+ * <p>QueueFileDataObject class.</p>
+ *
+ * @author mike
+ * @version $Id: $Id
+ */
 @Messages({
     "LBL_QueueFile_LOADER=Files of QueueFile"
 })
@@ -99,16 +105,31 @@ import org.openide.windows.TopComponent;
 })
 public class QueueFileDataObject extends MultiDataObject {
 
+    /**
+     * <p>Constructor for QueueFileDataObject.</p>
+     *
+     * @param pf a {@link org.openide.filesystems.FileObject} object.
+     * @param loader a {@link org.openide.loaders.MultiFileLoader} object.
+     * @throws org.openide.loaders.DataObjectExistsException if any.
+     * @throws java.io.IOException if any.
+     */
     public QueueFileDataObject(FileObject pf, MultiFileLoader loader) throws DataObjectExistsException, IOException {
         super(pf, loader);
         registerEditor("application/x-fahqueue", true);
     }
 
+    /** {@inheritDoc} */
     @Override
     protected int associateLookup() {
         return 1;
     }
 
+    /**
+     * <p>createEditor.</p>
+     *
+     * @param lkp a {@link org.openide.util.Lookup} object.
+     * @return a {@link org.netbeans.core.spi.multiview.text.MultiViewEditorElement} object.
+     */
     @MultiViewElement.Registration(
             displayName = "#LBL_QueueFile_EDITOR",
             iconBase = "com/googlecode/fahview/v6project/files/queue/QueueFile.png",

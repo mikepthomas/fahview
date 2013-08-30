@@ -7,10 +7,11 @@ import javax.swing.table.TableCellRenderer;
 
 /**
  * Class to Add JProgressBar into a JTable Cell.
- * 
+ *
  * @see <a href="http://fahdshariff.blogspot.com/2009/12/adding-jprogressbar-to-jtable-cell.html">
  * fahd.blog - Adding a JProgressBar to a JTable Cell</a>
  * @author Fahd Shariff
+ * @version $Id: $Id
  */
 public class ProgressCellRenderer extends JProgressBar
         implements TableCellRenderer {
@@ -25,6 +26,7 @@ public class ProgressCellRenderer extends JProgressBar
         setStringPainted(true);
     }
 
+    /** {@inheritDoc} */
     @Override
     public Component getTableCellRendererComponent(
             JTable table,

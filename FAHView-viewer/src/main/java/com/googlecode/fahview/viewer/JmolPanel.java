@@ -29,6 +29,7 @@ import org.jmol.api.JmolViewer;
  * @see <a href="http://wiki.jmol.org/index.php/Applications_Embedding_Jmol">
  * Jmol Wiki - Applications Embedding</a>
  * @author <a href="mailto:michael4.thomas@live.uwe.ac.uk">Michael Thomas</a>
+ * @version $Id: $Id
  */
 public class JmolPanel extends JPanel {
 
@@ -52,6 +53,8 @@ public class JmolPanel extends JPanel {
 
     /**
      * Get the Jmol viewer
+     *
+     * @return a {@link org.jmol.api.JmolViewer} object.
      */
     public JmolViewer getViewer()
     {
@@ -59,9 +62,9 @@ public class JmolPanel extends JPanel {
     }
 
     /**
-     * Override paint to allow Jmol to refresh
+     * {@inheritDoc}
      *
-     * @param g Graphics
+     * Override paint to allow Jmol to refresh
      */
     @Override
     public void paint(Graphics g) {

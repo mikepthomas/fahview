@@ -28,19 +28,28 @@ import org.openide.filesystems.FileObject;
 import org.openide.util.Exceptions;
 
 /**
+ * <p>ClientSubprojectProvider class.</p>
  *
  * @author Michael Thomas <michael4.thomas@live.uwe.ac.uk>
+ * @version $Id: $Id
  */
 public class ClientSubprojectProvider implements SubprojectProvider {
 
+    /** Project <code>project</code>. */
     private final Project project;
 
-    public ClientSubprojectProvider(Project project) {
-        this.project = project;
+    /**
+     * <p>Constructor for ClientSubprojectProvider.</p>
+     *
+     * @param parentProject a {@link org.netbeans.api.project.Project} object.
+     */
+    public ClientSubprojectProvider(final Project parentProject) {
+        this.project = parentProject;
     }
 
+    /** {@inheritDoc} */
     @Override
-    public Set<? extends Project> getSubprojects() {
+    public final Set<?extends Project> getSubprojects() {
         Set<Project> newProjects = new HashSet<Project>();
         FileObject dir = project.getProjectDirectory();
         if (dir != null) {
@@ -51,22 +60,21 @@ public class ClientSubprojectProvider implements SubprojectProvider {
                     if (subp != null) {
                         newProjects.add(subp);
                     }
-                }
-                catch (IOException ex) {
+                } catch (IOException ex) {
                     Exceptions.printStackTrace(ex);
-                }
-                catch (IllegalArgumentException ex) {
+                } catch (IllegalArgumentException ex) {
+                    Exceptions.printStackTrace(ex);
                 }
             }
         }
         return Collections.unmodifiableSet(newProjects);
     }
 
+    /** {@inheritDoc} */
     @Override
-    public void addChangeListener(ChangeListener listener) {
-    }
+    public void addChangeListener(final ChangeListener listener) { }
 
+    /** {@inheritDoc} */
     @Override
-    public void removeChangeListener(ChangeListener listener) {
-    }
+    public void removeChangeListener(final ChangeListener listener) { }
 }

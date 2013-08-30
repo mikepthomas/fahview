@@ -29,7 +29,7 @@ import java.util.logging.Logger;
 
 /**
  * Class to represent data stored about a Folding@Home queue index.
- * 
+ *
  * @author <a href="mailto:michael4.thomas@live.uwe.ac.uk">Michael Thomas</a>
  * @version 6.00
  */
@@ -86,6 +86,13 @@ public class QueueIndexImpl implements QueueIndex {
     private int indexNumber, position;
     private QueueReader reader;
 
+    /**
+     * <p>Constructor for QueueIndexImpl.</p>
+     *
+     * @param indexNumber a int.
+     * @param reader a {@link com.googlecode.fahview.v6project.utilities.QueueReader} object.
+     * @throws java.lang.InstantiationException if any.
+     */
     public QueueIndexImpl(int indexNumber, QueueReader reader) throws InstantiationException {
         this.indexNumber = indexNumber;
         switch (indexNumber) {
@@ -126,86 +133,103 @@ public class QueueIndexImpl implements QueueIndex {
         update();
     }
 
+    /** {@inheritDoc} */
     @Override
     public int getStat() {
         return stat;
     }
 
+    /** {@inheritDoc} */
     @Override
     public Date getTdata() {
         return tdata;
     }
 
+    /** {@inheritDoc} */
     @Override
     public Inet4Address getSvr1() {
         throw new UnsupportedOperationException("svr1 replaced by svr2.");
     }
 
+    /** {@inheritDoc} */
     @Override
     public int getUstat() {
         return ustat;
     }
 
+    /** {@inheritDoc} */
     @Override
     public URL getUrl() {
         return url;
     }
 
+    /** {@inheritDoc} */
     @Override
     public Core getCore() {
         return core;
     }
 
+    /** {@inheritDoc} */
     @Override
     public int getDsiz() {
         return dsiz;
     }
 
+    /** {@inheritDoc} */
     @Override
     public WorkUnitImpl getWuid() {
         return wuid;
     }
 
+    /** {@inheritDoc} */
     @Override
     public int getMid() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /** {@inheritDoc} */
     @Override
     public Inet4Address getSvr2() {
         return svr2;
     }
 
+    /** {@inheritDoc} */
     @Override
     public int getPort() {
         return port;
     }
 
+    /** {@inheritDoc} */
     @Override
     public String getType() {
         return type;
     }
 
+    /** {@inheritDoc} */
     @Override
     public String getUname() {
         return uname;
     }
 
+    /** {@inheritDoc} */
     @Override
     public int getTeamn() {
         return teamn;
     }
 
+    /** {@inheritDoc} */
     @Override
     public long getUid() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /** {@inheritDoc} */
     @Override
     public int getBench() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /** {@inheritDoc} */
     @Override
     public String getCpuType() {
         String cpu = null;
@@ -268,6 +292,7 @@ public class QueueIndexImpl implements QueueIndex {
         return cpu;
     }
 
+    /** {@inheritDoc} */
     @Override
     public String getOsType() {
         String os = null;
@@ -330,91 +355,109 @@ public class QueueIndexImpl implements QueueIndex {
         return os;
     }
 
+    /** {@inheritDoc} */
     @Override
     public String getCpuSpec() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /** {@inheritDoc} */
     @Override
     public String getOsSpec() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /** {@inheritDoc} */
     @Override
     public Date getExpire() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /** {@inheritDoc} */
     @Override
     public int getCltype() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /** {@inheritDoc} */
     @Override
     public boolean getAiflag() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /** {@inheritDoc} */
     @Override
     public Date getAitime() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /** {@inheritDoc} */
     @Override
     public long getAidata() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /** {@inheritDoc} */
     @Override
     public Inet4Address getCsip() {
         return csip;
     }
 
+    /** {@inheritDoc} */
     @Override
     public Date getDstart() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /** {@inheritDoc} */
     @Override
     public int getCores() {
         return cores;
     }
 
+    /** {@inheritDoc} */
     @Override
     public String getTag() {
         return tag;
     }
 
+    /** {@inheritDoc} */
     @Override
     public String getPasskey() {
         return passkey;
     }
 
+    /** {@inheritDoc} */
     @Override
     public int getFlops() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /** {@inheritDoc} */
     @Override
     public int getMemory() {
         return memory;
     }
 
+    /** {@inheritDoc} */
     @Override
     public int getGpuMemory() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /** {@inheritDoc} */
     @Override
     public Date getDue() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /** {@inheritDoc} */
     @Override
     public int getPlimit() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /** {@inheritDoc} */
     @Override
     public int getUploads() {
         throw new UnsupportedOperationException("Not supported yet.");
@@ -472,6 +515,9 @@ public class QueueIndexImpl implements QueueIndex {
         dsiz = (int) reader.readLEUInt(DSIZ_POS + position, DSIZ_LENGTH);
     }
 
+    /**
+     * <p>Setter for the field <code>wuid</code>.</p>
+     */
     protected void setWuid() {
         try {
             wuid = new WorkUnitImpl(indexNumber, reader);
@@ -481,10 +527,16 @@ public class QueueIndexImpl implements QueueIndex {
         }
     }
 
+    /**
+     * <p>Setter for the field <code>mid</code>.</p>
+     */
     protected void setMid() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /**
+     * <p>Setter for the field <code>svr2</code>.</p>
+     */
     protected void setSvr2() {
         try {
             svr2 = (Inet4Address) Inet4Address.getByAddress(reader.readIP(SVR2_POS + position));
@@ -494,66 +546,114 @@ public class QueueIndexImpl implements QueueIndex {
         }
     }
 
+    /**
+     * <p>Setter for the field <code>port</code>.</p>
+     */
     protected void setPort() {
         port = (int) reader.readLEUInt(PORT_POS + position, PORT_LENGTH);
     }
 
+    /**
+     * <p>Setter for the field <code>type</code>.</p>
+     */
     protected void setType() {
         type = reader.readString(TYPE_POS + position, TYPE_LENGTH);
     }
 
+    /**
+     * <p>Setter for the field <code>uname</code>.</p>
+     */
     protected void setUname() {
         uname = reader.readString(UNAME_POS + position, UNAME_LENGTH);
     }
 
+    /**
+     * <p>Setter for the field <code>teamn</code>.</p>
+     */
     protected void setTeamn() {
         teamn = Integer.valueOf(reader.readString(TEAMN_POS + position, TEAMN_LENGTH));
     }
 
+    /**
+     * <p>setUID.</p>
+     */
     protected void setUID() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /**
+     * <p>Setter for the field <code>bench</code>.</p>
+     */
     protected void setBench() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /**
+     * <p>setCpuType.</p>
+     */
     protected void setCpuType() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /**
+     * <p>setOsType.</p>
+     */
     protected void setOsType() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /**
+     * <p>setCpuSpec.</p>
+     */
     protected void setCpuSpec() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /**
+     * <p>setOsSpec.</p>
+     */
     protected void setOsSpec() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /**
+     * <p>Setter for the field <code>expire</code>.</p>
+     */
     protected void setExpire() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /**
+     * <p>Setter for the field <code>cltype</code>.</p>
+     */
     protected void setCltype() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /**
+     * <p>Setter for the field <code>aiflag</code>.</p>
+     */
     protected void setAiflag() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /**
+     * <p>Setter for the field <code>aitime</code>.</p>
+     */
     protected void setAitime() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /**
+     * <p>Setter for the field <code>aidata</code>.</p>
+     */
     protected void setAidata() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /**
+     * <p>Setter for the field <code>csip</code>.</p>
+     */
     protected void setCsip() {
         try {
             csip = (Inet4Address) Inet4Address.getByAddress(reader.readIP(CSIP_POS + position));
@@ -563,50 +663,80 @@ public class QueueIndexImpl implements QueueIndex {
         }
     }
 
+    /**
+     * <p>Setter for the field <code>dstart</code>.</p>
+     */
     protected void setDstart() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /**
+     * <p>Setter for the field <code>cores</code>.</p>
+     */
     protected void setCores() {
         cores = (int) reader.readLEUInt(CORES_POS + position, CORES_LENGTH);
     }
 
+    /**
+     * <p>Setter for the field <code>tag</code>.</p>
+     */
     protected void setTag() {
         tag = reader.readString(TAG_POS + position, TAG_LENGTH);
     }
 
+    /**
+     * <p>Setter for the field <code>passkey</code>.</p>
+     */
     protected void setPasskey() {
         passkey = reader.readString(PASSKEY_POS + position, PASSKEY_LENGTH);
     }
 
+    /**
+     * <p>Setter for the field <code>flops</code>.</p>
+     */
     protected void setFlops() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /**
+     * <p>Setter for the field <code>memory</code>.</p>
+     */
     protected void setMemory() {
         memory = (int) reader.readBEUInt(MEMORY_POS + position, MEMORY_LENGTH);
     }
 
+    /**
+     * <p>setGpuMemory.</p>
+     */
     protected void setGpuMemory() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /**
+     * <p>Setter for the field <code>due</code>.</p>
+     */
     protected void setDue() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /**
+     * <p>Setter for the field <code>plimit</code>.</p>
+     */
     protected void setPlimit() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /**
+     * <p>Setter for the field <code>uploads</code>.</p>
+     */
     protected void setUploads() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
     /**
+     * {@inheritDoc}
+     *
      * Generate a String representation of the QueueImpl
-     * 
-     * @return String
      */
     @Override
     public String toString() {
@@ -629,6 +759,7 @@ public class QueueIndexImpl implements QueueIndex {
         return result;
     }
 
+    /** {@inheritDoc} */
     @Override
     public final void update() {
         setStat();

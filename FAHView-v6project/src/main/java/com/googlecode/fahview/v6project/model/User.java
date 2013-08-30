@@ -21,8 +21,10 @@ package com.googlecode.fahview.v6project.model;
 import java.util.Date;
 
 /**
+ * <p>User class.</p>
  *
  * @author <a href="mailto:michael4.thomas@live.uwe.ac.uk">Michael Thomas</a>
+ * @version $Id: $Id
  */
 public class User implements java.io.Serializable {
 
@@ -30,7 +32,9 @@ public class User implements java.io.Serializable {
     private String name;
     private int newcredit, sum, team;
 
-    /** No-arg constructor (takes no arguments). */
+    /**
+     * No-arg constructor (takes no arguments).
+     */
     public User() {
     }
 
@@ -124,6 +128,7 @@ public class User implements java.io.Serializable {
         this.team = team;
     }
 
+    /** {@inheritDoc} */
     @Override
     public String toString() {
         return "User{" + "date=" + date + ", name=" + name + ", newcredit=" + 

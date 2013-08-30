@@ -27,20 +27,29 @@ import org.openide.awt.StatusDisplayer;
 import org.openide.util.lookup.Lookups;
 
 /**
+ * <p>ClientCustomizerProvider class.</p>
  *
  * @author Michael Thomas <michael4.thomas@live.uwe.ac.uk>
+ * @version $Id: $Id
  */
 public class ClientCustomizerProvider implements CustomizerProvider {
 
+    /** Constant <code>CUSTOMIZER_FOLDER_PATH="Projects/com-googlecode-fahview/Customi"{trunked}</code> */
     public static final String CUSTOMIZER_FOLDER_PATH =
             "Projects/com-googlecode-fahview/Customizer";
 
     private final ClientProject project;
 
+    /**
+     * <p>Constructor for ClientCustomizerProvider.</p>
+     *
+     * @param project a {@link com.googlecode.fahview.v6project.ClientProject} object.
+     */
     public ClientCustomizerProvider(ClientProject project) {
         this.project = project;
     }
 
+    /** {@inheritDoc} */
     @Override
     public void showCustomizer() {
         Dialog dialog = ProjectCustomizer.createCustomizerDialog(

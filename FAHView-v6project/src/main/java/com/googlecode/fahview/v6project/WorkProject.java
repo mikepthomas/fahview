@@ -43,30 +43,47 @@ import org.openide.util.lookup.Lookups;
 import org.openide.util.lookup.ProxyLookup;
 
 /**
+ * <p>WorkProject class.</p>
  *
  * @author Michael Thomas <michael4.thomas@live.uwe.ac.uk>
+ * @version $Id: $Id
  */
 public class WorkProject implements Project {
 
+    /** Constant <code>PROJECT_ICON</code>. */
     @StaticResource()
-    public static final String PROJECT_ICON = "com/googlecode/fahview/v6project/work.png";
+    public static final String PROJECT_ICON =
+            "com/googlecode/fahview/v6project/work.png";
+    /** Constant <code>PROJECT_FILE</code>. */
     public static final String PROJECT_FILE = "current.xyz";
-    private final FileObject projectDirectory;
+
+    /** FileObject <code>directory</code>. */
+    private final FileObject directory;
+    /** ProjectState <code>state</code>. */
     private final ProjectState state;
+    /** Lookup <code>lookup</code>. */
     private Lookup lookup;
 
-    WorkProject(FileObject projectDirectory, ProjectState state) {
-        this.projectDirectory = projectDirectory;
-        this.state = state;
+    /**
+     *
+     * @param projectDirectory FileObject
+     * @param projectState ProjectState
+     */
+    WorkProject(final FileObject projectDirectory,
+                final ProjectState projectState) {
+        this.directory = projectDirectory;
+        this.state = projectState;
     }
 
+    /** {@inheritDoc} */
     @Override
-    public FileObject getProjectDirectory() {
-        return projectDirectory;
+    public final FileObject getProjectDirectory() {
+        return directory;
     }
 
+    /** {@inheritDoc} */
     @Override
-    public Lookup getLookup() {
+    public final Lookup getLookup() {
         if (lookup == null) {
             lookup = Lookups.fixed(new Object[]{
                 this,
@@ -77,6 +94,9 @@ public class WorkProject implements Project {
         return lookup;
     }
 
+    /**
+     * <p>WorkProjectInformation class.</p>
+     */
     private final class WorkProjectInformation implements ProjectInformation {
 
         @Override
@@ -101,20 +121,28 @@ public class WorkProject implements Project {
         }
 
         @Override
-        public void addPropertyChangeListener(PropertyChangeListener listener) {
-        }
+        public void addPropertyChangeListener(
+                final PropertyChangeListener listener) { }
 
         @Override
-        public void removePropertyChangeListener(PropertyChangeListener listener) {
-        }
+        public void removePropertyChangeListener(
+                final PropertyChangeListener listener) { }
     }
 
-    private final class WorkProjectLogicalView implements LogicalViewProvider {
+    /**
+     * <p>WorkProjectLogicalView class.</p>
+     */
+    private static class WorkProjectLogicalView implements LogicalViewProvider {
 
+        /** WorkProject <code>project</code>. */
         private final WorkProject project;
 
-        public WorkProjectLogicalView(WorkProject project) {
-            this.project = project;
+        /**
+         *
+         * @param workProject WorkProject
+         */
+        public WorkProjectLogicalView(final WorkProject workProject) {
+            this.project = workProject;
         }
 
         @Override
@@ -124,10 +152,11 @@ public class WorkProject implements Project {
                 FileObject projectDirectory = project.getProjectDirectory();
                 DataFolder projectFolder = DataFolder.findFolder(projectDirectory);
                 Node nodeOfProjectFolder = projectFolder.getNodeDelegate();
+
                 //Decorate the project directory's node:
                 return new ProjectNode(nodeOfProjectFolder, project);
-            }
-            catch (DataObjectNotFoundException donfe) {
+
+            } catch (DataObjectNotFoundException donfe) {
                 Exceptions.printStackTrace(donfe);
                 //Fallback-the directory couldn't be created -
                 //read-only filesystem or something evil happened
@@ -136,31 +165,42 @@ public class WorkProject implements Project {
         }
 
         @Override
-        public Node findPath(Node root, Object target) {
+        public Node findPath(final Node root, final Object target) {
             //leave unimplemented for now
             return null;
         }
 
-        private final class ProjectNode extends FilterNode {
+        /**
+         * <p>ProjectNode class.</p>
+         */
+        private static class ProjectNode extends FilterNode {
 
+            /** WorkProject <code>project</code>. */
             private final WorkProject project;
 
-            public ProjectNode(Node node, WorkProject project)
+            /**
+             *
+             * @param node Node
+             * @param workProject WorkProject
+             * @throws DataObjectNotFoundException Exception
+             */
+            public ProjectNode(final Node node, final WorkProject workProject)
                     throws DataObjectNotFoundException {
                 super(node,
                         NodeFactorySupport.createCompositeChildren(
-                        project,
+                        workProject,
                         "Projects/com-googlecode-fahview-work/Nodes"),
                         new ProxyLookup(
                         new Lookup[]{
-                    Lookups.singleton(project),
+                    Lookups.singleton(workProject),
                     node.getLookup()
                 }));
-                this.project = project;
+
+                this.project = workProject;
             }
 
             @Override
-            public Action[] getActions(boolean arg0) {
+            public Action[] getActions(final boolean arg0) {
                 return new Action[]{
                     CommonProjectActions.deleteProjectAction(),
                     CommonProjectActions.closeProjectAction()
@@ -168,12 +208,12 @@ public class WorkProject implements Project {
             }
 
             @Override
-            public Image getIcon(int type) {
+            public Image getIcon(final int type) {
                 return ImageUtilities.loadImage(PROJECT_ICON);
             }
 
             @Override
-            public Image getOpenedIcon(int type) {
+            public Image getOpenedIcon(final int type) {
                 return getIcon(type);
             }
 

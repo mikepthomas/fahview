@@ -31,12 +31,15 @@ import org.openide.nodes.Node;
 import org.openide.util.Exceptions;
 
 /**
+ * <p>ClientNodeFactory class.</p>
  *
  * @author Michael Thomas <michael4.thomas@live.uwe.ac.uk>
+ * @version $Id: $Id
  */
 @NodeFactory.Registration(projectType = "com-googlecode-fahview-client", position = 20)
 public class ClientNodeFactory implements NodeFactory {
 
+    /** {@inheritDoc} */
     @Override
     public NodeList<?> createNodes(Project p) {
         ClientProject project = p.getLookup().lookup(ClientProject.class);

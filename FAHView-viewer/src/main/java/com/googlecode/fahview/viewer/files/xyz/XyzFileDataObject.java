@@ -32,6 +32,12 @@ import org.openide.util.Lookup;
 import org.openide.util.NbBundle.Messages;
 import org.openide.windows.TopComponent;
 
+/**
+ * <p>XyzFileDataObject class.</p>
+ *
+ * @author mike
+ * @version $Id: $Id
+ */
 @Messages({
     "LBL_XyzFile_LOADER=Files of XyzFile"
 })
@@ -99,16 +105,31 @@ import org.openide.windows.TopComponent;
 })
 public class XyzFileDataObject extends MultiDataObject {
 
+    /**
+     * <p>Constructor for XyzFileDataObject.</p>
+     *
+     * @param pf a {@link org.openide.filesystems.FileObject} object.
+     * @param loader a {@link org.openide.loaders.MultiFileLoader} object.
+     * @throws org.openide.loaders.DataObjectExistsException if any.
+     * @throws java.io.IOException if any.
+     */
     public XyzFileDataObject(FileObject pf, MultiFileLoader loader) throws DataObjectExistsException, IOException {
         super(pf, loader);
         registerEditor("model/x-xyz", true);
     }
 
+    /** {@inheritDoc} */
     @Override
     protected int associateLookup() {
         return 1;
     }
 
+    /**
+     * <p>createEditor.</p>
+     *
+     * @param lkp a {@link org.openide.util.Lookup} object.
+     * @return a {@link org.netbeans.core.spi.multiview.text.MultiViewEditorElement} object.
+     */
     @MultiViewElement.Registration(
             displayName = "#LBL_XyzFile_EDITOR",
             iconBase = "com/googlecode/fahview/viewer/files/xyz/XyzFile.png",

@@ -28,6 +28,12 @@ import org.openide.util.Lookup;
 import org.openide.util.NbBundle.Messages;
 import org.openide.windows.TopComponent;
 
+/**
+ * <p>XyzFileVisualElement class.</p>
+ *
+ * @author mike
+ * @version $Id: $Id
+ */
 @MultiViewElement.Registration(
         displayName = "#LBL_XyzFile_VISUAL",
         iconBase = "com/googlecode/fahview/viewer/files/xyz/XyzFile.png",
@@ -42,12 +48,18 @@ public final class XyzFileVisualElement extends JmolPanel implements MultiViewEl
     private JToolBar toolbar = new JToolBar();
     private transient MultiViewElementCallback callback;
 
+    /**
+     * <p>Constructor for XyzFileVisualElement.</p>
+     *
+     * @param lkp a {@link org.openide.util.Lookup} object.
+     */
     public XyzFileVisualElement(Lookup lkp) {
         obj = lkp.lookup(XyzFileDataObject.class);
         assert obj != null;
         initComponents();
     }
 
+    /** {@inheritDoc} */
     @Override
     public String getName() {
         return "XyzFileVisualElement";
@@ -75,26 +87,31 @@ public final class XyzFileVisualElement extends JmolPanel implements MultiViewEl
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     // End of variables declaration//GEN-END:variables
+    /** {@inheritDoc} */
     @Override
     public JComponent getVisualRepresentation() {
         return this;
     }
 
+    /** {@inheritDoc} */
     @Override
     public JComponent getToolbarRepresentation() {
         return toolbar;
     }
 
+    /** {@inheritDoc} */
     @Override
     public Action[] getActions() {
         return new Action[0];
     }
 
+    /** {@inheritDoc} */
     @Override
     public Lookup getLookup() {
         return obj.getLookup();
     }
 
+    /** {@inheritDoc} */
     @Override
     public void componentOpened() {
         // Set model and get info
@@ -103,36 +120,44 @@ public final class XyzFileVisualElement extends JmolPanel implements MultiViewEl
 //        System.out.println(getViewer().getProperty("readable", "auxiliaryInfo", null));
     }
 
+    /** {@inheritDoc} */
     @Override
     public void componentClosed() {
     }
 
+    /** {@inheritDoc} */
     @Override
     public void componentShowing() {
     }
 
+    /** {@inheritDoc} */
     @Override
     public void componentHidden() {
     }
 
+    /** {@inheritDoc} */
     @Override
     public void componentActivated() {
     }
 
+    /** {@inheritDoc} */
     @Override
     public void componentDeactivated() {
     }
 
+    /** {@inheritDoc} */
     @Override
     public UndoRedo getUndoRedo() {
         return UndoRedo.NONE;
     }
 
+    /** {@inheritDoc} */
     @Override
     public void setMultiViewCallback(MultiViewElementCallback callback) {
         this.callback = callback;
     }
 
+    /** {@inheritDoc} */
     @Override
     public CloseOperationState canCloseElement() {
         return CloseOperationState.STATE_OK;

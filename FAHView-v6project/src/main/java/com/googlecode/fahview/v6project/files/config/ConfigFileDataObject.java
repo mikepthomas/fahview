@@ -20,6 +20,12 @@ import org.openide.util.Lookup;
 import org.openide.util.NbBundle.Messages;
 import org.openide.windows.TopComponent;
 
+/**
+ * <p>ConfigFileDataObject class.</p>
+ *
+ * @author mike
+ * @version $Id: $Id
+ */
 @Messages({
     "LBL_ConfigFile_LOADER=Files of ConfigFile"
 })
@@ -87,16 +93,31 @@ import org.openide.windows.TopComponent;
 })
 public class ConfigFileDataObject extends MultiDataObject {
 
+    /**
+     * <p>Constructor for ConfigFileDataObject.</p>
+     *
+     * @param pf a {@link org.openide.filesystems.FileObject} object.
+     * @param loader a {@link org.openide.loaders.MultiFileLoader} object.
+     * @throws org.openide.loaders.DataObjectExistsException if any.
+     * @throws java.io.IOException if any.
+     */
     public ConfigFileDataObject(FileObject pf, MultiFileLoader loader) throws DataObjectExistsException, IOException {
         super(pf, loader);
         registerEditor("text/x-fahconfig", true);
     }
 
+    /** {@inheritDoc} */
     @Override
     protected int associateLookup() {
         return 1;
     }
 
+    /**
+     * <p>createEditor.</p>
+     *
+     * @param lkp a {@link org.openide.util.Lookup} object.
+     * @return a {@link org.netbeans.core.spi.multiview.text.MultiViewEditorElement} object.
+     */
     @MultiViewElement.Registration(
             displayName = "#LBL_ConfigFile_EDITOR",
             iconBase = "com/googlecode/fahview/v6project/files/config/ConfigFile.png",
