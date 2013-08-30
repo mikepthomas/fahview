@@ -24,7 +24,7 @@ import java.util.logging.Logger;
 
 /**
  * Class to represent data stored about a Folding@Home queue.
- * 
+ *
  * @author <a href="mailto:michael4.thomas@live.uwe.ac.uk">Michael Thomas</a>
  * @version 6.00
  */
@@ -46,7 +46,7 @@ public class QueueImpl implements Queue {
 
     /**
      * Constructor to initialize variables
-     * 
+     *
      * @param reader QueueReader for {@code queue.dat}
      */
     public QueueImpl(QueueReader reader) {
@@ -54,51 +54,61 @@ public class QueueImpl implements Queue {
         update();
     }
 
+    /** {@inheritDoc} */
     @Override
     public int getVersion() {
         return version;
     }
 
+    /** {@inheritDoc} */
     @Override
     public int getCurrent() {
         return current;
     }
 
+    /** {@inheritDoc} */
     @Override
     public QueueIndexImpl getQueueIndex(int index) {
         return this.index[index];
     }
 
+    /** {@inheritDoc} */
     @Override
     public int getPfract() {
         return pfract;
     }
 
+    /** {@inheritDoc} */
     @Override
     public int getPunits() {
         return punits;
     }
 
+    /** {@inheritDoc} */
     @Override
     public int getDrate() {
         return drate;
     }
 
+    /** {@inheritDoc} */
     @Override
     public int getDunits() {
         return dunits;
     }
 
+    /** {@inheritDoc} */
     @Override
     public int getUrate() {
         return urate;
     }
 
+    /** {@inheritDoc} */
     @Override
     public int getUunits() {
         return uunits;
     }
 
+    /** {@inheritDoc} */
     @Override
     public int getSent() {
         return sent;
@@ -206,9 +216,9 @@ public class QueueImpl implements Queue {
     }
     
     /**
+     * {@inheritDoc}
+     *
      * Generate a String representation of the QueueImpl
-     * 
-     * @return String
      */
     @Override
     public String toString() {
@@ -235,6 +245,7 @@ public class QueueImpl implements Queue {
         return result;
     }
     
+    /** {@inheritDoc} */
     @Override
     public final void update() {
         setVersion();

@@ -25,6 +25,7 @@ package com.googlecode.fahview.v6project.utilities;
  * different endian type as the present one.
  *
  * @author <a href="mailto:info@geosoft.no">GeoSoft</a>
+ * @version $Id: $Id
  */
 public class ByteSwapper {
 

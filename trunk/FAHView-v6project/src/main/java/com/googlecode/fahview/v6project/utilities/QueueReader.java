@@ -24,12 +24,18 @@ import java.io.RandomAccessFile;
 
 /**
  * Class to extract data from Folding@Home client queue files.
- * 
+ *
  * @author <a href="mailto:michael4.thomas@live.uwe.ac.uk">Michael Thomas</a>
+ * @version $Id: $Id
  */
 public class QueueReader {
     private RandomAccessFile file;
 
+    /**
+     * <p>Constructor for QueueReader.</p>
+     *
+     * @param fileName a {@link java.lang.String} object.
+     */
     public QueueReader(String fileName) {
         try {
             file = new RandomAccessFile(fileName, "r");
@@ -40,7 +46,7 @@ public class QueueReader {
 
     /**
      * get bytes from the queue file at the specified position
-     * 
+     *
      * @param position position in file to seek to
      * @param length length in bytes to read
      * @return byte[] raw bytes from file
@@ -58,7 +64,7 @@ public class QueueReader {
     
     /**
      * Read a Big Endian Unsigned Integer from the queue file
-     * 
+     *
      * @see <a href="http://darksleep.com/player/JavaAndUnsignedTypes.html">JavaAndUnsignedTypes</a>
      * @param position position in file to seek to
      * @param length length in bytes to read
@@ -81,7 +87,7 @@ public class QueueReader {
     
     /**
      * Read a Little Endian Unsigned Integer from the queue file
-     * 
+     *
      * @param position position in file to seek to
      * @param length length in bytes to read
      * @return long Little Endian Unsigned Interger
@@ -92,7 +98,7 @@ public class QueueReader {
     
     /**
      * Read a Big Endian Unsigned Short from the queue file
-     * 
+     *
      * @see <a href="http://darksleep.com/player/JavaAndUnsignedTypes.html">JavaAndUnsignedTypes</a>
      * @param position position in file to seek to
      * @param length length in bytes to read
@@ -109,7 +115,7 @@ public class QueueReader {
     
     /**
      * Read a Little Endian Unsigned Short from the queue file
-     * 
+     *
      * @param position position in file to seek to
      * @param length length in bytes to read
      * @return long Little Endian Unsigned Short
@@ -118,9 +124,9 @@ public class QueueReader {
         return ByteSwapper.swap((short) readBEUShort(position, length));
     }
     
-    /** 
+    /**
      * Read an IP Address from the queue file
-     * 
+     *
      * @param position position in file to seek to
      * @return byte[] IP address in network order
      */
@@ -134,9 +140,9 @@ public class QueueReader {
         return ip;
     }
     
-    /** 
+    /**
      * Read a String from the queue file
-     * 
+     *
      * @param position position in file to seek to
      * @param length length in bytes to read
      * @return String String of characters from file

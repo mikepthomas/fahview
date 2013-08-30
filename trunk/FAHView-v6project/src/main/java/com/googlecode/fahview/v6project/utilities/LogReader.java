@@ -26,14 +26,20 @@ import java.util.logging.Logger;
 
 /**
  * Class to extract data from Folding@Home client log files.
- * 
+ *
  * @author <a href="mailto:michael4.thomas@live.uwe.ac.uk">Michael Thomas</a>
+ * @version $Id: $Id
  */
 public class LogReader {
     private File FAHlogTxt;
     private final String COMPLETED_REGEX = "\\[(\\d{2,2}):(\\d{2,2}):(\\d{2,2})\\] Completed (\\d{1,}) out of (\\d{1,}) steps  ?\\((\\d{1,2})\\%?\\)";
     private int logPosition = 0;
     
+    /**
+     * <p>Constructor for LogReader.</p>
+     *
+     * @param location a {@link java.lang.String} object.
+     */
     public LogReader(String location) {
             FAHlogTxt = new File(location + "/FAHLog-Prev.txt");
 
@@ -79,6 +85,7 @@ public class LogReader {
         System.out.println(logPosition);
     }
     
+    /** {@inheritDoc} */
     @Override
     public String toString() {
         String contents = "";

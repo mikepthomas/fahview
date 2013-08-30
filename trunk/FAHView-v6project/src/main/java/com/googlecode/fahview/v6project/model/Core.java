@@ -23,8 +23,9 @@ import java.util.Date;
 
 /**
  * Class to represent data stored about a Folding@Home core.
- * 
+ *
  * @author <a href="mailto:michael4.thomas@live.uwe.ac.uk">Michael Thomas</a>
+ * @version $Id: $Id
  */
 public class Core {
     
@@ -38,10 +39,10 @@ public class Core {
 
     /**
      * Core constructor. sets the initial values
-     * 
-     * @param indexNumber
-     * @param reader
-     * @throws InstantiationException 
+     *
+     * @param indexNumber a int.
+     * @param reader a {@link com.googlecode.fahview.v6project.utilities.QueueReader} object.
+     * @throws java.lang.InstantiationException if any.
      */
     public Core(int indexNumber, QueueReader reader) throws InstantiationException {
         this.indexNumber = indexNumber;
@@ -83,18 +84,34 @@ public class Core {
         update();
     }
 
+    /**
+     * <p>Getter for the field <code>coreNo</code>.</p>
+     *
+     * @return a {@link java.lang.String} object.
+     */
     public String getCoreNo() {
         return Integer.toHexString(coreNo).toUpperCase();
     }
     
+    /**
+     * <p>Getter for the field <code>project</code>.</p>
+     *
+     * @return a {@link java.lang.String} object.
+     */
     public String getProject() {
         return project;
     }
     
+    /**
+     * <p>Setter for the field <code>coreNo</code>.</p>
+     */
     protected void setCoreNo() {
         coreNo = (int) reader.readLEUInt(position, QueueIndexImpl.CORE_LENGTH);
     }
     
+    /**
+     * <p>Setter for the field <code>project</code>.</p>
+     */
     protected void setProject() {
         switch(coreNo) {
             case 0x10:  // GPU
@@ -180,13 +197,21 @@ public class Core {
                 break;
         }
     }
-    
-    
-    
+
+    /**
+     * <p>Setter for the field <code>fileName</code>.</p>
+     *
+     * @param line a {@link java.lang.String} object.
+     */
     protected void setFileName(String line) {
         fileName = trimAttribute(line);
     }
 
+    /**
+     * <p>Getter for the field <code>fileName</code>.</p>
+     *
+     * @return a {@link java.lang.String} object.
+     */
     public String getFileName() {
         return fileName;
     }
@@ -195,15 +220,15 @@ public class Core {
         return line = line.substring(line.lastIndexOf(":") + 2);
     }
 
-    
-    
-    
-    
+    /**
+     * <p>update.</p>
+     */
     public final void update() {
         setCoreNo();
         setProject();
     }
     
+    /** {@inheritDoc} */
     @Override
     public String toString() {
         String result = "";

@@ -43,32 +43,49 @@ import org.openide.util.lookup.Lookups;
 import org.openide.util.lookup.ProxyLookup;
 
 /**
+ * <p>ClientProject class.</p>
  *
  * @author Michael Thomas <michael4.thomas@live.uwe.ac.uk>
+ * @version $Id: $Id
  */
 public class ClientProject implements Project {
 
+    /** Constant <code>PROJECT_ICON</code>. */
     @StaticResource()
-    public static final String PROJECT_ICON = "com/googlecode/fahview/v6project/client.png";
+    public static final String PROJECT_ICON =
+            "com/googlecode/fahview/v6project/client.png";
+    /** Constant <code>PROJECT_FILE</code>. */
     public static final String PROJECT_FILE = "client.cfg";
-    private final FileObject projectDirectory;
+
+    /** FileObject <code>directory</code>. */
+    private final FileObject directory;
+    /** ProjectState <code>state</code>. */
     private final ProjectState state;
+    /** Lookup <code>lookup</code>. */
     private Lookup lookup;
 
-    ClientProject(FileObject projectDirectory, ProjectState state) {
-        this.projectDirectory = projectDirectory;
-        this.state = state;
+    /**
+     *
+     * @param projectDirectory projectDirectory
+     * @param projectState ProjectState
+     */
+    ClientProject(final FileObject projectDirectory,
+                  final ProjectState projectState) {
+        this.directory = projectDirectory;
+        this.state = projectState;
     }
 
+    /** {@inheritDoc} */
     @Override
-    public FileObject getProjectDirectory() {
-        return projectDirectory;
+    public final FileObject getProjectDirectory() {
+        return directory;
     }
 
+    /** {@inheritDoc} */
     @Override
-    public Lookup getLookup() {
+    public final Lookup getLookup() {
         if (lookup == null) {
-            lookup = Lookups.fixed(new Object[]{
+            lookup = Lookups.fixed(new Object[] {
                 this,
                 new ClientProjectInformation(),
                 new ClientProjectLogicalView(this),
@@ -79,6 +96,9 @@ public class ClientProject implements Project {
         return lookup;
     }
 
+    /**
+     * <p>ClientProjectInformation class.</p>
+     */
     private final class ClientProjectInformation implements ProjectInformation {
 
         @Override
@@ -102,22 +122,32 @@ public class ClientProject implements Project {
         }
 
         @Override
-        public void addPropertyChangeListener(PropertyChangeListener listener) {
-        }
+        public void addPropertyChangeListener(
+                final PropertyChangeListener listener) { }
 
         @Override
-        public void removePropertyChangeListener(PropertyChangeListener listener) {
-        }
+        public void removePropertyChangeListener(
+                final PropertyChangeListener listener) { }
     }
 
-    private final class ClientProjectLogicalView implements LogicalViewProvider {
+    /**
+     * <p>ClientProjectLogicalView class.</p>
+     */
+    private static class ClientProjectLogicalView
+            implements LogicalViewProvider {
 
+        /** ClientProject <code>project</code>. */
         private final ClientProject project;
 
-        public ClientProjectLogicalView(ClientProject project) {
-            this.project = project;
+        /**
+         *
+         * @param clientProject ClientProject
+         */
+        public ClientProjectLogicalView(final ClientProject clientProject) {
+            this.project = clientProject;
         }
 
+        /** {@inheritDoc} */
         @Override
         public Node createLogicalView() {
             try {
@@ -125,10 +155,11 @@ public class ClientProject implements Project {
                 FileObject projectDirectory = project.getProjectDirectory();
                 DataFolder projectFolder = DataFolder.findFolder(projectDirectory);
                 Node nodeOfProjectFolder = projectFolder.getNodeDelegate();
+
                 //Decorate the project directory's node:
                 return new ProjectNode(nodeOfProjectFolder, project);
-            }
-            catch (DataObjectNotFoundException donfe) {
+
+            } catch (DataObjectNotFoundException donfe) {
                 Exceptions.printStackTrace(donfe);
                 //Fallback-the directory couldn't be created -
                 //read-only filesystem or something evil happened
@@ -137,31 +168,44 @@ public class ClientProject implements Project {
         }
 
         @Override
-        public Node findPath(Node root, Object target) {
+        public Node findPath(final Node root, final Object target) {
             //leave unimplemented for now
             return null;
         }
 
-        private final class ProjectNode extends FilterNode {
+        /**
+         * <p>ProjectNode class.</p>
+         */
+        private static class ProjectNode extends FilterNode {
 
+            /** ClientProject <code>project</code>. */
             private final ClientProject project;
 
-            public ProjectNode(Node node, ClientProject project)
+            /**
+             *
+             * @param node Node
+             * @param clientProject ClientProject
+             * @throws DataObjectNotFoundException Exception
+             */
+            public ProjectNode(final Node node,
+                               final ClientProject clientProject)
                     throws DataObjectNotFoundException {
+
                 super(node,
                         NodeFactorySupport.createCompositeChildren(
-                        project,
+                        clientProject,
                         "Projects/com-googlecode-fahview-client/Nodes"),
                         new ProxyLookup(
                         new Lookup[]{
-                    Lookups.singleton(project),
+                    Lookups.singleton(clientProject),
                     node.getLookup()
                 }));
-                this.project = project;
+
+                this.project = clientProject;
             }
 
             @Override
-            public Action[] getActions(boolean arg0) {
+            public Action[] getActions(final boolean arg0) {
                 return new Action[]{
                     CommonProjectActions.customizeProjectAction(),
                     CommonProjectActions.deleteProjectAction(),
@@ -170,12 +214,12 @@ public class ClientProject implements Project {
             }
 
             @Override
-            public Image getIcon(int type) {
+            public Image getIcon(final int type) {
                 return ImageUtilities.loadImage(PROJECT_ICON);
             }
 
             @Override
-            public Image getOpenedIcon(int type) {
+            public Image getOpenedIcon(final int type) {
                 return getIcon(type);
             }
 

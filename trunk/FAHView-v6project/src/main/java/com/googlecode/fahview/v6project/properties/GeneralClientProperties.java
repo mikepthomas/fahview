@@ -23,20 +23,28 @@ import org.openide.util.Lookup;
 import org.openide.util.NbBundle;
 
 /**
+ * <p>GeneralClientProperties class.</p>
  *
  * @author Michael Thomas <michael4.thomas@live.uwe.ac.uk>
+ * @version $Id: $Id
  */
 public class GeneralClientProperties
     implements ProjectCustomizer.CompositeCategoryProvider {
 
     private static final String GENERAL = "General";
 
+    /**
+     * <p>createGeneral.</p>
+     *
+     * @return a {@link com.googlecode.fahview.v6project.properties.GeneralClientProperties} object.
+     */
     @ProjectCustomizer.CompositeCategoryProvider.Registration(
             projectType = "com-googlecode-fahview", position = 10)
     public static GeneralClientProperties createGeneral() {
         return new GeneralClientProperties();
     }
 
+    /** {@inheritDoc} */
     @NbBundle.Messages("LBL_Config_General=General")
     @Override
     public ProjectCustomizer.Category createCategory(Lookup context) {
@@ -46,6 +54,7 @@ public class GeneralClientProperties
                 null);
     }
 
+    /** {@inheritDoc} */
     @Override
     public JComponent createComponent(ProjectCustomizer.Category category, Lookup context) {
         return new JPanel();

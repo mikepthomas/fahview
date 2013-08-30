@@ -20,7 +20,7 @@ package com.googlecode.fahview.v6project.model;
 
 /**
  * Interface to represent data stored about a Folding@Home queue.
- * 
+ *
  * @author <a href="mailto:michael4.thomas@live.uwe.ac.uk">Michael Thomas</a>
  * @version 6.00
  */

@@ -16,6 +16,7 @@
  */
 package com.googlecode.fahview.v6project;
 
+import java.awt.Image;
 import java.io.IOException;
 import javax.swing.ImageIcon;
 import org.netbeans.api.project.Project;
@@ -28,33 +29,46 @@ import org.openide.util.ImageUtilities;
 import org.openide.util.lookup.ServiceProvider;
 
 /**
+ * <p>WorkProjectFactory class.</p>
  *
  * @author Michael Thomas <michael4.thomas@live.uwe.ac.uk>
+ * @version $Id: $Id
  */
 @ServiceProvider(service = ProjectFactory.class)
 public class WorkProjectFactory implements ProjectFactory2 {
 
+    /** {@inheritDoc} */
     @Override
-    public ProjectManager.Result isProject2(FileObject projectDirectory) {
-        return isProject(projectDirectory)
-                ? new ProjectManager.Result(new ImageIcon(ImageUtilities.loadImage(WorkProject.PROJECT_ICON)))
-                : null;
+    public final ProjectManager.Result isProject2(
+            final FileObject projectDirectory) {
+
+        if (isProject(projectDirectory)) {
+            Image image = ImageUtilities.loadImage(WorkProject.PROJECT_ICON);
+            return new ProjectManager.Result(new ImageIcon(image));
+        }
+        return null;
     }
 
+    /** {@inheritDoc} */
     @Override
-    public boolean isProject(FileObject projectDirectory) {
+    public final boolean isProject(final FileObject projectDirectory) {
         return projectDirectory.getFileObject(WorkProject.PROJECT_FILE) != null;
     }
 
+    /** {@inheritDoc} */
     @Override
-    public Project loadProject(FileObject projectDirectory, ProjectState state) throws IOException {
-        return isProject(projectDirectory)
-                ? new WorkProject(projectDirectory, state)
-                : null;
+    public final Project loadProject(final FileObject projectDirectory,
+            final ProjectState state) throws IOException {
+
+        if (isProject(projectDirectory)) {
+            return new WorkProject(projectDirectory, state);
+        }
+        return null;
     }
 
+    /** {@inheritDoc} */
     @Override
-    public void saveProject(Project project) throws IOException, ClassCastException {
+    public void saveProject(final Project project) throws IOException {
         // leave unimplemented for the moment
     }
 }

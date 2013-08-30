@@ -4,6 +4,7 @@
             <actionName>CUSTOM-Site</actionName>
             <displayName>Site</displayName>
             <goals>
+                <goal>-Prelease-profile</goal>
                 <goal>site:site</goal>
             </goals>
         </action>

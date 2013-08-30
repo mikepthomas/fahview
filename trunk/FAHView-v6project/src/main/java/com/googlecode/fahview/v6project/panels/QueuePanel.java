@@ -24,6 +24,7 @@ import javax.swing.JTable;
  * The main User Interface of the FAHView program.
  *
  * @author <a href="mailto:michael4.thomas@live.uwe.ac.uk">Michael Thomas</a>
+ * @version $Id: $Id
  */
 public class QueuePanel extends javax.swing.JPanel {
 

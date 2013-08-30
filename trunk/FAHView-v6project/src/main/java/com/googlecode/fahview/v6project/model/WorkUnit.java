@@ -22,7 +22,7 @@ import java.util.Date;
 
 /**
  * Interface to represent data stored about a Folding@Home work unit.
- * 
+ *
  * @author <a href="mailto:michael4.thomas@live.uwe.ac.uk">Michael Thomas</a>
  * @version 6.00
  */

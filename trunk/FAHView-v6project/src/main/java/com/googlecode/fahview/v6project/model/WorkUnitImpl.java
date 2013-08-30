@@ -23,7 +23,7 @@ import java.util.Date;
 
 /**
  * Class to represent data stored about a Folding@Home work unit.
- * 
+ *
  * @author <a href="mailto:michael4.thomas@live.uwe.ac.uk">Michael Thomas</a>
  * @version 6.00
  */
@@ -42,10 +42,10 @@ public class WorkUnitImpl implements WorkUnit {
 
     /**
      * Work Unit constructor. Sets the initial values.
-     * 
-     * @param indexNumber
-     * @param reader
-     * @throws InstantiationException 
+     *
+     * @param indexNumber a int.
+     * @param reader a {@link com.googlecode.fahview.v6project.utilities.QueueReader} object.
+     * @throws java.lang.InstantiationException if any.
      */
     public WorkUnitImpl(int indexNumber, QueueReader reader) throws InstantiationException {
         percentage = "0%";
@@ -88,26 +88,31 @@ public class WorkUnitImpl implements WorkUnit {
         update();
     }
 
+    /** {@inheritDoc} */
     @Override
     public int getProj() {
         return proj;
     }
     
+    /** {@inheritDoc} */
     @Override
     public int getRun() {
         return run;
     }
     
+    /** {@inheritDoc} */
     @Override
     public int getClone() {
         return clone;
     }
     
+    /** {@inheritDoc} */
     @Override
     public int getGen() {
         return gen;
     }
     
+    /** {@inheritDoc} */
     @Override
     public Date getIssue() {
         return issue;
@@ -151,6 +156,8 @@ public class WorkUnitImpl implements WorkUnit {
 
     /**
      * Set the number of steps completed
+     *
+     * @param line a {@link java.lang.String} object.
      */
     protected void setCompleted(String line) {
         String[] values = line.split(" ");
@@ -159,26 +166,46 @@ public class WorkUnitImpl implements WorkUnit {
         percentage = values[8].substring(1, values[8].length() - 1);
     }
 
+    /**
+     * <p>Getter for the field <code>completed</code>.</p>
+     *
+     * @return a int.
+     */
     public int getCompleted() {
         return completed;
     }
 
+    /**
+     * <p>Getter for the field <code>percentage</code>.</p>
+     *
+     * @return a {@link java.lang.String} object.
+     */
     public String getPercentage() {
         return percentage;
     }
 
+    /**
+     * <p>Getter for the field <code>protein</code>.</p>
+     *
+     * @return a {@link java.lang.String} object.
+     */
     public String getProtein() {
         return protein;
     }
 
+    /**
+     * <p>Getter for the field <code>steps</code>.</p>
+     *
+     * @return a int.
+     */
     public int getSteps() {
         return steps;
     }
     
     /**
+     * {@inheritDoc}
+     *
      * Generate a String representation of the WorkUnitImpl
-     * 
-     * @return String
      */
     @Override
     public String toString() {
@@ -191,6 +218,7 @@ public class WorkUnitImpl implements WorkUnit {
         return result;
     }
     
+    /** {@inheritDoc} */
     @Override
     public final void update() {
         setProj();
