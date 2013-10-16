@@ -15,6 +15,13 @@
     <name>FAHView-branding</name>
     <description>NetBeans Platform Branding for FAHView</description>
 
+    <scm>
+        <connection>scm:svn:http://fahview.googlecode.com/svn/trunk/branding</connection>
+        <developerConnection>scm:svn:https://fahview.googlecode.com/svn/trunk/branding</developerConnection>
+        <tag>HEAD</tag>
+        <url>${project.domain.source}/source/browse</url>
+    </scm>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
