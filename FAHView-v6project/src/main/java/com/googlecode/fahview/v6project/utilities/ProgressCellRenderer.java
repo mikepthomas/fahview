@@ -1,3 +1,4 @@
+/* %%Ignore-License */
 package com.googlecode.fahview.v6project.utilities;
 
 import java.awt.Component;

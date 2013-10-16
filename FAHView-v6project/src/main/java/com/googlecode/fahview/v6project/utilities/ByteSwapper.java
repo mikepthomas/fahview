@@ -1,4 +1,4 @@
-/*
+/* %%Ignore-License
  * (C) 2004 - Geotechnical Software Services
  * 
  * This code is free software; you can redistribute it and/or

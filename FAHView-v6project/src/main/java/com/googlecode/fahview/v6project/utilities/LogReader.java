@@ -1,22 +1,26 @@
+package com.googlecode.fahview.v6project.utilities;
+
 /*
- * Copyright (C) 2011 Michael Thomas <michael4.thomas@live.uwe.ac.uk>
- *
- * This file is part of FAHView.
- *
- * FAHView is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * FAHView is distributed in the hope that it will be useful,
+ * #%L
+ * FAHView-v6project
+ * %%
+ * Copyright (C) 2011 - 2013 Mike Thomas <mikepthomas@outlook.com>
+ * %%
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as
+ * published by the Free Software Foundation, either version 3 of the 
+ * License, or (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with FAHView.  If not, see <http://www.gnu.org/licenses/>.
+ * 
+ * You should have received a copy of the GNU General Public 
+ * License along with this program.  If not, see
+ * <http://www.gnu.org/licenses/gpl-3.0.html>.
+ * #L%
  */
-package com.googlecode.fahview.v6project.utilities;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -27,7 +31,7 @@ import java.util.logging.Logger;
 /**
  * Class to extract data from Folding@Home client log files.
  *
- * @author <a href="mailto:michael4.thomas@live.uwe.ac.uk">Michael Thomas</a>
+ * @author <a href="mailto:mikepthomas@outlook.com">Michael Thomas</a>
  * @version $Id: $Id
  */
 public class LogReader {
