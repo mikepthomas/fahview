@@ -28,11 +28,19 @@ import org.netbeans.junit.NbModuleSuite;
 import org.netbeans.junit.NbTestCase;
 
 /**
+ * <p>ApplicationTest class.</p>
  *
  * @author <a href="mailto:mikepthomas@outlook.com">Michael Thomas</a>
+ * @version $Id: $Id
+ * @since 1.0
  */
 public class ApplicationTest extends NbTestCase {
 
+    /**
+     * <p>suite.</p>
+     *
+     * @return a {@link junit.framework.Test} object.
+     */
     public static Test suite() {
         return NbModuleSuite.createConfiguration(ApplicationTest.class).
                 gui(false).
@@ -41,10 +49,18 @@ public class ApplicationTest extends NbTestCase {
                 suite(); // RELEASE71+, else use NbModuleSuite.create(NbModuleSuite.createConfiguration(...))
     }
 
+    /**
+     * <p>Constructor for ApplicationTest.</p>
+     *
+     * @param n a {@link java.lang.String} object.
+     */
     public ApplicationTest(String n) {
         super(n);
     }
 
+    /**
+     * <p>testApplication.</p>
+     */
     public void testApplication() {
         // pass if there are merely no warnings/exceptions
         /* Example of using Jelly Tools with gui(true):
