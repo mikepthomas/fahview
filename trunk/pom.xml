@@ -88,7 +88,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.targetJdk>1.6</project.build.targetJdk>
         <project.domain.reports>http://www.mikethomas.info</project.domain.reports>
-        <project.domain.source>http://code.google.com/p/jfold</project.domain.source>
+        <project.domain.source>http://code.google.com/p/fahview</project.domain.source>
         <sonar.language>java</sonar.language>
 
         <version.maven-changelog-plugin>2.2</version.maven-changelog-plugin>
