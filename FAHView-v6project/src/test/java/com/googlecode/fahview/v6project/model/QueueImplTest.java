@@ -28,27 +28,42 @@ import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
 /**
+ * <p>QueueImplTest class.</p>
  *
  * @author <a href="mailto:mikepthomas@outlook.com">Michael Thomas</a>
+ * @version $Id: $Id
+ * @since 1.0
  */
 public class QueueImplTest extends TestCase {
     
     private QueueReader testFile = new QueueReader("src/test/java/com/googlecode/fahview/v6project/queue.dat");
     
+    /**
+     * <p>Constructor for QueueImplTest.</p>
+     *
+     * @param testName a {@link java.lang.String} object.
+     */
     public QueueImplTest(String testName) {
         super(testName);
     }
 
+    /**
+     * <p>suite.</p>
+     *
+     * @return a {@link junit.framework.Test} object.
+     */
     public static Test suite() {
         TestSuite suite = new TestSuite(QueueImplTest.class);
         return suite;
     }
     
+    /** {@inheritDoc} */
     @Override
     protected void setUp() throws Exception {
         super.setUp();
     }
     
+    /** {@inheritDoc} */
     @Override
     protected void tearDown() throws Exception {
         super.tearDown();
@@ -78,6 +93,8 @@ public class QueueImplTest extends TestCase {
 
     /**
      * Test of getQueueIndex method, of class QueueImpl.
+     *
+     * @throws java.lang.InstantiationException if any.
      */
     public void testGetQueueIndex() throws InstantiationException {
         System.out.println("getQueueIndex");

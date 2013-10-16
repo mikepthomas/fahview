@@ -29,22 +29,36 @@ import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
 /**
+ * <p>WorkUnitImplTest class.</p>
  *
  * @author <a href="mailto:mikepthomas@outlook.com">Michael Thomas</a>
+ * @version $Id: $Id
+ * @since 1.0
  */
 public class WorkUnitImplTest extends TestCase {
     
     private WorkUnitImpl instance;
     
+    /**
+     * <p>Constructor for WorkUnitImplTest.</p>
+     *
+     * @param testName a {@link java.lang.String} object.
+     */
     public WorkUnitImplTest(String testName) {
         super(testName);
     }
 
+    /**
+     * <p>suite.</p>
+     *
+     * @return a {@link junit.framework.Test} object.
+     */
     public static Test suite() {
         TestSuite suite = new TestSuite(WorkUnitImplTest.class);
         return suite;
     }
     
+    /** {@inheritDoc} */
     @Override
     protected void setUp() throws Exception {
         super.setUp();
@@ -53,6 +67,7 @@ public class WorkUnitImplTest extends TestCase {
         instance = new QueueImpl(testQueueReader).getQueueIndex(8).getWuid();
     }
     
+    /** {@inheritDoc} */
     @Override
     protected void tearDown() throws Exception {
         super.tearDown();

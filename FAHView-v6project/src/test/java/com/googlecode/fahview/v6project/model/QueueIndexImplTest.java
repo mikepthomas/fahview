@@ -30,23 +30,37 @@ import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
 /**
+ * <p>QueueIndexImplTest class.</p>
  *
  * @author <a href="mailto:mikepthomas@outlook.com">Michael Thomas</a>
+ * @version $Id: $Id
+ * @since 1.0
  */
 public class QueueIndexImplTest extends TestCase {
 
     private QueueReader reader;
     private QueueIndexImpl instance;
 
+    /**
+     * <p>Constructor for QueueIndexImplTest.</p>
+     *
+     * @param testName a {@link java.lang.String} object.
+     */
     public QueueIndexImplTest(String testName) {
         super(testName);
     }
 
+    /**
+     * <p>suite.</p>
+     *
+     * @return a {@link junit.framework.Test} object.
+     */
     public static Test suite() {
         TestSuite suite = new TestSuite(QueueIndexImplTest.class);
         return suite;
     }
 
+    /** {@inheritDoc} */
     @Override
     protected void setUp() throws Exception {
         super.setUp();
@@ -55,6 +69,7 @@ public class QueueIndexImplTest extends TestCase {
         instance = new QueueImpl(reader).getQueueIndex(8);
     }
 
+    /** {@inheritDoc} */
     @Override
     protected void tearDown() throws Exception {
         super.tearDown();
@@ -106,6 +121,8 @@ public class QueueIndexImplTest extends TestCase {
 
     /**
      * Test of getUrl method, of class QueueIndexImpl.
+     *
+     * @throws java.net.MalformedURLException if any.
      */
     public void testGetUrl() throws MalformedURLException {
         System.out.println("getUrl");
@@ -137,6 +154,8 @@ public class QueueIndexImplTest extends TestCase {
 
     /**
      * Test of getWuid method, of class QueueIndexImpl.
+     *
+     * @throws java.lang.InstantiationException if any.
      */
     public void testGetWuid() throws InstantiationException {
         System.out.println("getWuid");
@@ -157,6 +176,8 @@ public class QueueIndexImplTest extends TestCase {
 
     /**
      * Test of getSvr2 method, of class QueueIndexImpl.
+     *
+     * @throws java.net.UnknownHostException if any.
      */
     public void testGetSvr2() throws UnknownHostException {
         System.out.println("getSvr2");
@@ -317,6 +338,8 @@ public class QueueIndexImplTest extends TestCase {
 
     /**
      * Test of getCsip method, of class QueueIndexImpl.
+     *
+     * @throws java.net.UnknownHostException if any.
      */
     public void testGetCsip() throws UnknownHostException {
         System.out.println("getCsip");
