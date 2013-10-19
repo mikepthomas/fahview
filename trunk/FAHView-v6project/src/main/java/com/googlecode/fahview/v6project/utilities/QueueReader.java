@@ -4,7 +4,7 @@ package com.googlecode.fahview.v6project.utilities;
  * #%L
  * FAHView-v6project
  * %%
- * Copyright (C) 2011 - 2013 Mike Thomas <mikepthomas@outlook.com>
+ * Copyright (C) 2011 - 2013 Michael Thomas <mikepthomas@outlook.com>
  * %%
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as
@@ -27,7 +27,7 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 
 /**
- * Class to extract data from Folding@Home client queue files.
+ * Class to extract data from Folding@home client queue files.
  *
  * @author <a href="mailto:mikepthomas@outlook.com">Michael Thomas</a>
  * @version $Id: $Id

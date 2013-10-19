@@ -4,7 +4,7 @@ package com.googlecode.fahview.v6project.utilities;
  * #%L
  * FAHView-v6project
  * %%
- * Copyright (C) 2011 - 2013 Mike Thomas <mikepthomas@outlook.com>
+ * Copyright (C) 2011 - 2013 Michael Thomas <mikepthomas@outlook.com>
  * %%
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as
@@ -29,7 +29,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * Class to extract data from Folding@Home client log files.
+ * Class to extract data from Folding@home client log files.
  *
  * @author <a href="mailto:mikepthomas@outlook.com">Michael Thomas</a>
  * @version $Id: $Id
@@ -50,7 +50,7 @@ public class LogReader {
 
                 // Static Messages
 //                if (line.contains("Edition")) client.setEdition(line);
-//                if (line.contains("Folding@Home Client Version")) client.setVersion(line);
+//                if (line.contains("Folding@home Client Version")) client.setVersion(line);
 //                if (line.contains("Launch directory: ")) client.setLaunchDirectory(line);
 //                if (line.contains("Service: ") | line.contains("Executable: ")) client.setExecutable(line);
 //                if (line.contains("Arguments: ")) client.setArguments(line);
