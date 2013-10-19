@@ -4,7 +4,7 @@ package com.googlecode.fahview.v6project.model;
  * #%L
  * FAHView-v6project
  * %%
- * Copyright (C) 2011 - 2013 Mike Thomas <mikepthomas@outlook.com>
+ * Copyright (C) 2011 - 2013 Michael Thomas <mikepthomas@outlook.com>
  * %%
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as
@@ -27,7 +27,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * Class to represent data stored about a Folding@Home queue.
+ * Class to represent data stored about a Folding@home queue.
  *
  * @author <a href="mailto:mikepthomas@outlook.com">Michael Thomas</a>
  * @version 6.00
