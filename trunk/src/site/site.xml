@@ -3,7 +3,7 @@
   #%L
   FAHView
   %%
-  Copyright (C) 2011 - 2013 Mike Thomas <mikepthomas@outlook.com>
+  Copyright (C) 2011 - 2013 Michael Thomas <mikepthomas@outlook.com>
   %%
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as
@@ -34,6 +34,21 @@
         </links>
 
         <menu ref="parent" />
+
+        <menu title="Project Report">
+            <item name="Abstract" href="abstract.html"/>
+            <item name="List of Figures" href="figures.html"/>
+            <item name="Report" href="report.html"/>
+
+            <item name="Introduction" href="index.html"/>
+            <item name="Problems and Opportunities" href="problem.html"/>
+            <item name="Solution" href="solution.html"/>
+            <item name="Aim and Objectives" href="objectives.html"/>
+            <item name="Development Method" href="development.html"/>
+            <item name="Project Planning" href="planning.html"/>
+            <item name="Research" href="research.html"/>
+        </menu>
+
         <menu ref="reports" />
     </body>
 

@@ -1,0 +1,258 @@
+~~~
+~~ #%L
+~~ FAHView
+~~ %%
+~~ Copyright (C) 2011 - 2013 Michael Thomas <mikepthomas@outlook.com>
+~~ %%
+~~ This program is free software: you can redistribute it and/or modify
+~~ it under the terms of the GNU General Public License as
+~~ published by the Free Software Foundation, either version 3 of the 
+~~ License, or (at your option) any later version.
+~~ 
+~~ This program is distributed in the hope that it will be useful,
+~~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+~~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+~~ GNU General Public License for more details.
+~~ 
+~~ You should have received a copy of the GNU General Public 
+~~ License along with this program.  If not, see
+~~ <http://www.gnu.org/licenses/gpl-3.0.html>.
+~~ #L%
+~~~
+
+About
+
+  This chapter contains the documentation of the research of the software and
+  technologies that are used throughout the project. It encompasses a look at
+  the current client, an outline of how the client can be improved, a review of
+  the literature used to research the subject and a description of how the
+  project is significant to the problem domain.
+
+Critique of Current Client
+
+  At the time of writing version 6.2 was the current stable version of the
+  Folding@home client. Just looking at the
+  {{{http://folding.stanford.edu/English/Download}project's download page}}
+  shows multiple clients that are currently in use, this is mainly due to the
+  fact that they support a number of operating systems and different hardware
+  platforms.
+
+  The main types of client are:
+
+* The Console Client
+
+  "The <<Console>> client runs in the background and is launched from a terminal
+  window (command line i.e. DOS window), to which they output text messages
+  about the simulation's progress." (Folding@home, 2000-2010) these clients can
+  be a little difficult to initially get set up, but once running can be easily
+  be forgotten about and left to their own devices.
+
+* The GUI Client
+
+  "The graphical clients (former <<GUI>> or current <<System Tray>>) run in the
+  background and has a graphics window interface that allows you to see the
+  protein being simulated." (Folding@home, 2000-2010) these clients are not used
+  as much as they used to be due to the GUI included uses a lot of the systems
+  resources that could be better used for the work calculations, they are
+  usually bundled in an installer so that they can be easily installed.
+
+* Beta Client
+
+  "Clients \[released\] early for donors to beta test." (Folding@home,
+  2000-2010) these clients can be quite unstable due to the fact that they have
+  not been fully tested yet and therefore may contain bugs.
+
+* High performance client (GPU, SMP/multicore)
+
+  "These clients use more system resources, but are also much more productive."
+  (Folding@home, 2000-2010) these clients usually run against top-end hardware
+  and specialised hardware such as GPUs and the Sony PlayStation 3 games
+  console, I will not be working and testing against these clients yet as I do
+  not believe it will be possible within the time scale of the project. However,
+  they could be supported at a later date to be included in future work.
+
+Outline Of Improvements
+
+  The main improvements that the project will provide is the ability to view
+  past data about each client this will enable the program to derive information
+  from this such as the projected finish date.
+
+Literature Review
+
+  As the project's subject is original and as such has not been covered in great
+  depth before, a literature review in the traditional sense cannot be done
+  successfully. To overcome this problem, various works that are linked to the
+  different aspects of the subject have been collated together so that a
+  sufficient pool of knowledge can be built upon in order to enable the project
+  to be completed successfully.
+
+*  Methodology
+
+  The main book that will be referred to, in order to adopt an appropriate
+  design methodology for use within the project is Sommerville's "Software
+  Engineering" book. This contains almost everything that will be needed to know
+  about picking a suitable software design approach and also contains
+  information about the field of Software Engineering in general. It will serve
+  as a base to structure this report in a logical way and also contains a lot of
+  information about all major phases of the software development lifecycle and
+  the different software development models that can be used. (Sommerville,
+  2007)
+
+* Planning
+
+  To enable the project to be completed on time good project management is
+  essential, Maylor's Project Management book is an excellent resource of formal
+  project management techniques that can be adopted during the course of the
+  project. Software tools such as Microsoft Project and the open-source OpenProj
+  will be useful tools to assist in creating "Work Breakdown Structures and
+  Gantt charts" (Maylor, 2005) which are essential project management methods to
+  aid in keeping on track of time within the project lifecycle. These resources
+  were used in the "Planning" section of this report.
+
+* Requirements
+
+  This project will have a substantial section on requirements collection and
+  analysis. The requirements for the software will need to be collected in a
+  controlled and measurable way. Kotonya's "Requirements Engineering" book will
+  assist in choosing the right requirements elicitation technique for use within
+  the project. (Kotonya and Sommerville, 1998) The Requirements Engineering book
+  also had good examples of how to use the techniques described and case studies
+  that may come in useful for referencing within this work.
+
+* Software Design
+
+  The design phase of the project will be broken down into two sections, the
+  first section will involve the design of the components that have been
+  diagnosed as required in the requirements section of this report, and the
+  second section will be all about the Design of the User Interface. The Unified
+  Modelling Language (UML) will be used to notate the design of the project via
+  methods such as "Class diagrams", "Use cases", "Component diagrams" and
+  "Sequence diagrams" (Fowler, 2004). The Fowler book, UML Distilled will be
+  useful at this stage as it explains how to use the notation correctly in a way
+  that is easy to understand.
+
+** User Interface Design
+
+  The second part of the Design section will be all about the design of the User
+  interface, "Jef Raskin (March 9, 1943 — February 26, 2005) was an American
+  human-computer interface expert best known for starting the Macintosh project
+  for Apple in the late 1970s." (Swarthmore College Computer Society, 2010). As
+  Macintosh computers are (arguably) known for their good user interfaces, his
+  book, The Humane Interface (Raskin, 2000) will be a useful starting point for
+  user interface research.
+
+** Implementation
+
+  As the main program will be written in the Java programming language, this
+  will enable to keep the program portable between Linux, Macintosh and Windows.
+  Java Software Solutions (Lewis and Loftus, 2009) has many examples of good
+  programming practices in Java, it will also serve as a go to book to look up
+  classes in the standard Java libraries and give examples of how to use them.
+
+* Reverse Engineering
+
+  As this project contains a substantial amount of reverse engineering of the
+  binary "queue.dat" file, it would be a good idea to look at reverse
+  engineering techniques.
+
+  "The most commonly employed tool for reverse engineering of files and file
+  formats is a hex editor, which typically displays files in hexadecimal and
+  ASCII formats and assumes no knowledge of the underlying file structure." (G
+  Conti et al., 2008)
+
+  A Hex editor will be used to decipher the contents of the queue.dat file using
+  the information provided about where each piece of data is stored within the
+  file. This will be identified using the table shown in the appendix about
+  Queue.dat Structure.
+
+* Testing Strategies
+
+** Black box testing
+
+  Black box testing is achieved by ensuring expected outputs match actual
+  outputs when known inputs are used. I will be doing black box testing in the
+  form of unit testing using the JUnit framework.
+
+** White box testing
+
+  “White-box testing is testing that takes into account the internal mechanism
+  of a system or component” (IEEE, 1990).
+
+  White box testing is ensuring code is doing what is expected by physically
+  looking at the internal workings of the code, this will be achieved by
+  stepping through the lines of code using a debugger to ensure that it doing as
+  it should be.
+
+** Integration testing
+
+  The main purpose of the project is to produce a cross platform viewer for the
+  Windows, Linux and Mac operating systems. I would also like to ensure the
+  viewer works against GPU clients also therefore integration testing is
+  essential.
+
+* Significance Of My Work
+
+  The project is significant as the it will help make the Folding@home project
+  easier to use, and more accessible to the masses which in turn will enable an
+  increase in client use to increase research for the Stanford Pande Lab.
+
+Software Licensing
+
+* Introduction
+
+  As the aim to the project is to eventually help the community with the
+  introduction of this application. I will need to look at how the program will
+  be licensed. This section will look at the different types of software
+  licensing and the advantages and disadvantages of each type.
+
+* Proprietary Licensing
+
+  An example of a proprietary licensing model would be to hold on to the source
+  code of the software but allow the compiled binary file to be freely
+  distributed or distributed for a fee. The advantage to this would be that you
+  have full control of the source code. However, as the community would have no
+  access to the source, all bugs will have to be fixed by the developer.
+
+* Open source Licences
+
+  Open source licenses allow for the distribution of the source code of the
+  program. There are a few different types of open source licence that could be
+  used for the software and documentation of the project.
+
+  * {{{http://www.gnu.org/copyleft/gpl.html}GPL}} -
+    The GNU general-purpose licence, there are currently 3 main versions of GPL.
+
+  * {{{http://www.apache.org/licenses}Apache}} -
+    The apache open source license.
+
+  * {{{http://www.opensource.org/licenses/MIT}MIT}} -
+    The MIT License.
+
+  * {{{http://www.mozilla.org/MPL}Mozilla}} -
+    The Mozilla Public License.
+
+  * {{{http://creativecommons.org/licenses}Creative Commons}} -
+    Creative Commons licenses
+
+* Choice of Licence
+
+  Once the project has been completed I want to release it to the community so
+  that it can be used and expanded, in other words I would like to release it
+  under an open source license. This project will eventually be released under
+  the GNU General purpose licence as some of the components that the project is
+  based upon are licensed under the same license. Another reason for this is
+  that I want to release the source to the community to work on after submission
+  of the project; therefore I want to release it under a fairly liberal license.
+
+Summary
+
+  The Folding@Home client is a complex piece of software; if the project is to
+  be completed successfully it must be understood thoroughly. This can be
+  achieved by effective research of the problem domain and will be soon starting
+  work of collecting requirements and creating preliminary designs for the
+  system.
+
+  The next chapter will focus on the requirements collection, design,
+  implementation and testing of the first iteration of the project which will
+  look at the extraction of data from the current and past stable releases of
+  the Folding@Home client.

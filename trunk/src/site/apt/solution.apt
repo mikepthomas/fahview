@@ -1,0 +1,46 @@
+~~~
+~~ #%L
+~~ FAHView
+~~ %%
+~~ Copyright (C) 2011 - 2013 Michael Thomas <mikepthomas@outlook.com>
+~~ %%
+~~ This program is free software: you can redistribute it and/or modify
+~~ it under the terms of the GNU General Public License as
+~~ published by the Free Software Foundation, either version 3 of the 
+~~ License, or (at your option) any later version.
+~~ 
+~~ This program is distributed in the hope that it will be useful,
+~~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+~~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+~~ GNU General Public License for more details.
+~~ 
+~~ You should have received a copy of the GNU General Public 
+~~ License along with this program.  If not, see
+~~ <http://www.gnu.org/licenses/gpl-3.0.html>.
+~~ #L%
+~~~
+
+Solution Approach
+
+  This section will describe how the problem outlined in the previous section
+  will be addressed and how the final program will come to fruition.
+
+Solution Outline
+
+  The idea behind the FAHView project was to extend the capability of the
+  Folding@home client to make the data contained within the queue.dat file
+  available to users of the Folding@home project. The logical way to tackle the
+  problem is to break the functionality into iterations, adding new
+  functionality each time. The first iteration will focus upon adding support
+  for the current generation of Folding@home Clients. These are the clients that
+  rely on the persistence of data within flat binary files, these files store
+  their data as little-endian unsigned integers for numbers and ASCII null
+  terminated strings for text. The second iteration will add functionality for
+  displaying information about the protein that is currently being worked on
+  within the Folding@home client, it will do this by presenting the user with a
+  3D model of what the protein looks like and displaying other information such
+  as the chemical compound's name and number of molecules. Dependant on time and
+  whether the new version 7 client has been released, the third iteration of the
+  project shall look at expanding on the functionality of the first iteration to
+  add support for these new revamped clients by the extraction of information
+  through the new client's API.

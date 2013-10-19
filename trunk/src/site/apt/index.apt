@@ -1,0 +1,83 @@
+~~~
+~~ #%L
+~~ FAHView
+~~ %%
+~~ Copyright (C) 2011 - 2013 Michael Thomas <mikepthomas@outlook.com>
+~~ %%
+~~ This program is free software: you can redistribute it and/or modify
+~~ it under the terms of the GNU General Public License as
+~~ published by the Free Software Foundation, either version 3 of the 
+~~ License, or (at your option) any later version.
+~~ 
+~~ This program is distributed in the hope that it will be useful,
+~~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+~~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+~~ GNU General Public License for more details.
+~~ 
+~~ You should have received a copy of the GNU General Public 
+~~ License along with this program.  If not, see
+~~ <http://www.gnu.org/licenses/gpl-3.0.html>.
+~~ #L%
+~~~
+
+About
+
+  This page will describe and discuss the background context of the F@H View
+  project; it contains a description of the background context of the
+  Folding@home project and the problems and opportunities associated with it, a
+  description of the proposed solution, the Aim and Objectives of the project
+  and finishes with the chosen development method.
+
+What is Folding@home?
+
+  The Pande lab at Stanford University led by Professor Vijay Pande runs
+  Folding@home. It is a distributed computing project with the goal "to
+  understand protein folding, miss-folding and related diseases" (Folding@home,
+  2000-2010). People donate idle CPU cycles on their own machines by running a
+  Folding@home client to do calculations on "work units" sent to users from
+  Stanford University's work servers. Once the client has finished a work unit,
+  the results are sent back to one of Stanford's Collection servers.
+
+Why Contribute?
+
+  Although you do not get anything for your contributions to the project, except
+  for maybe points awarded for completing work units that can be used to compete
+  against other members of your team on the leader-boards that can be found on
+  {{{http://folding.stanford.edu/English/Stats}the main Folding@home website}}.
+  You can feel good in yourself as you are contributing to help towards the
+  understanding of why proteins do not fold correctly (mis-fold) to help find
+  cures for "many well known diseases, such as Alzheimer's, Mad Cow (BSE), CJD,
+  ALS, Huntington's, Parkinson's disease, and many Cancers and cancer-related
+  syndromes" (Folding@home, 2000-2010)
+
+How Does It Work?
+
+  To contribute to the Folding@home project, you must download a piece of
+  software known as a "client" from the Folding@home main homepage hosted by the
+  {{{http://folding.stanford.edu}Pande Lab at Stanford University}}. This site
+  has information about setting up the client(s), a background into the science
+  behind the project, results and research papers using data returned into the
+  project by its users and statistics such as donor leader-boards and project
+  descriptions.
+
+  Each client downloads files from one of Stanford University's work servers;
+  the user's machine uses it's idle CPU cycles to do some calculations on the
+  downloaded work unit and stores results locally on the users machine. The
+  client tracks the progress of the work unit using these files until the work
+  has been completed. The results are then sent to one of Stanford universities
+  collection servers where the results can be analysed.
+
+  The Folding@home client utilises a number of different programs called "cores"
+  to do the work on work units; hexadecimal numbers are the unique identifiers
+  of these cores. Each core has a specific purpose and certain cores can only
+  run on certain platforms.
+
+Summary
+
+  The project is going to be heavily based upon the Folding@home client released
+  by Stanford University, therefore a thorough understanding of how the client
+  works is required, However there is a lack of literature that has been written
+  to date that is directly related to what is proposed within this project.
+  Information about all the core technologies that this project will be based
+  upon will be researched instead to enable this project to be completed
+  successfully.

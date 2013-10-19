@@ -1,0 +1,59 @@
+~~~
+~~ #%L
+~~ FAHView
+~~ %%
+~~ Copyright (C) 2011 - 2013 Michael Thomas <mikepthomas@outlook.com>
+~~ %%
+~~ This program is free software: you can redistribute it and/or modify
+~~ it under the terms of the GNU General Public License as
+~~ published by the Free Software Foundation, either version 3 of the 
+~~ License, or (at your option) any later version.
+~~ 
+~~ This program is distributed in the hope that it will be useful,
+~~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+~~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+~~ GNU General Public License for more details.
+~~ 
+~~ You should have received a copy of the GNU General Public 
+~~ License along with this program.  If not, see
+~~ <http://www.gnu.org/licenses/gpl-3.0.html>.
+~~ #L%
+~~~
+
+About
+
+  This section will list the aims of the project and outline and summarise the
+  objectives and deliverables that are associated with these aims.
+
+Aim
+
+  The primary aim of this work is to write a program that will serve as a user
+  interface front end to the Folding@home client. The client is a command line
+  program that runs without any user input, it uses idle CPU cycles on the
+  machine on which it runs on to contribute to Work Units that are sent to the
+  client from one of Stanford University's servers. These work units contain
+  processing instructions to allow your machine to do the work required by the
+  project. The program is to collect the information produced by these work
+  units and from within the client and display it in a way that is easy to view
+  by the user. Software licensing methods will be briefly touched upon, as the
+  project's source code will eventually be released to the community as an open
+  source project.
+
+Objectives
+
+  The final outcome of this work is to fully understand how data is stored
+  within the client and to reverse engineer the extraction of this data. Also
+  research will be carried out to understand the relevant technologies that the
+  Folding@home project uses such as PyON (a subset of JSON). The program that
+  will be produced shall be written in Java and will that will derive
+  information from the data contained within and used by the Folding@home
+  client. The intention is to write the program in such a way that it will run
+  on Windows, Mac and Linux; all of which are the operating systems supported by
+  the Folding@home project all bar the client that runs on the PlayStation 3
+  games console. The PS3 client will not be covered at all within this work
+  solely due to restricted access to the console's file system.
+
+  The objective of this report explains a brief history of Folding@home and it's
+  limitations; it is being produced alongside the main program. The report will
+  explain the Software Engineering processes used to create the program and will
+  provide research into Distributed Computing and User Interface Design.

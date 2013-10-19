@@ -1,0 +1,85 @@
+~~~
+~~ #%L
+~~ FAHView
+~~ %%
+~~ Copyright (C) 2011 - 2013 Michael Thomas <mikepthomas@outlook.com>
+~~ %%
+~~ This program is free software: you can redistribute it and/or modify
+~~ it under the terms of the GNU General Public License as
+~~ published by the Free Software Foundation, either version 3 of the 
+~~ License, or (at your option) any later version.
+~~ 
+~~ This program is distributed in the hope that it will be useful,
+~~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+~~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+~~ GNU General Public License for more details.
+~~ 
+~~ You should have received a copy of the GNU General Public 
+~~ License along with this program.  If not, see
+~~ <http://www.gnu.org/licenses/gpl-3.0.html>.
+~~ #L%
+~~~
+
+About
+
+  This chapter is arguably the most important part of the project as without
+  effective time planning and project management the project could fall behind
+  schedule. The software chosen to aid in the planning of the project is the
+  open source project management software tool, OpenProj; it is similar to
+  commercial project management tools such as Microsoft Project. The tool aids
+  in the creation of work breakdown structures and Gantt charts; this helps to
+  plan every last detail for the whole the lifespan of the project.
+
+Project Schedule
+
+  We start planning with the project schedule, a brief high level overview of
+  what needs to be done by when; This information is then inserted into OpenProj
+  which can then be broken down into easier to manage chunks, this will then
+  become the basis for the Work breakdown structure.
+
+*--------------------*--------------------------------------------------*
+| <<Date>>           | <<Task>>                                         |
+*--------------------*--------------------------------------------------*
+| 05th October 2011  | Find a supervisor                                |
+*--------------------*--------------------------------------------------*
+| 20th October 2011  | Submit online proposal                           |
+*--------------------*--------------------------------------------------*
+| 16th December 2011 | Complete Initial Designs                         |
+*--------------------*--------------------------------------------------*
+| 20th January 2012  | Produce prototype and Project in Progress Slides |
+*--------------------*--------------------------------------------------*
+| 25th January 2012  | Projects-in-Progress day                         |
+*--------------------*--------------------------------------------------*
+| 17th February 2012 | Program Completion                               |
+*--------------------*--------------------------------------------------*
+| 24th February 2012 | Finish Testing                                   |
+*--------------------*--------------------------------------------------*
+| 4th April 2012     | Submission Deadline                              |
+*--------------------*--------------------------------------------------*
+| TBA                | Demonstration                                    |
+*--------------------*--------------------------------------------------*
+
+Work Breakdown Structure
+
+  The work breakdown structure diagram shows how this work has been broken down
+  into smaller distinct pieces these small pieces are then assigned their own
+  deadlines which are then added into the spread sheet which will generate the
+  Gantt Chart. “The breaking down of large activities into comprehensible or
+  manageable units is a fundamental part of project management” (Maylor, 2005)
+
+Gantt Chart
+
+  The Gantt chart shows each task as its own bar within the chart, this makes it
+  easy to see which tasks run in parallel as the bars overlap when tasks run at
+  the same time.
+
+Summary
+
+  The initial planning was conducted at the very beginning of the project to
+  ensure the time allocated is well used. The project time planning aspect of
+  the project also added in extra time to each task as "Slack" just in case any
+  of the tasks overrun the allotted time; this allows for a little leeway if the
+  specific task requires more time.
+
+  In the next chapter we will be looking at the research that will need to be
+  undertaken to complete the project successfully.
