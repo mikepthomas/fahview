@@ -1,0 +1,53 @@
+~~~
+~~ #%L
+~~ FAHView
+~~ %%
+~~ Copyright (C) 2011 - 2013 Michael Thomas <mikepthomas@outlook.com>
+~~ %%
+~~ This program is free software: you can redistribute it and/or modify
+~~ it under the terms of the GNU General Public License as
+~~ published by the Free Software Foundation, either version 3 of the 
+~~ License, or (at your option) any later version.
+~~ 
+~~ This program is distributed in the hope that it will be useful,
+~~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+~~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+~~ GNU General Public License for more details.
+~~ 
+~~ You should have received a copy of the GNU General Public 
+~~ License along with this program.  If not, see
+~~ <http://www.gnu.org/licenses/gpl-3.0.html>.
+~~ #L%
+~~~
+
+  The main aim to the project is to reverse engineer the data produced by the
+  Folding@home client and write a program that will serve as a user interface to
+  display information derived from it. Folding@home is a distributed programming
+  project run by Stanford University.
+
+  <<With Distributed or 'Cloud' Computing becoming more and more popular,
+  systems are becoming distributed in nature. With the extra complexity
+  involved, how is software going to become easy to use for the user?>>
+
+  The system that this project is to be based upon, Folding@home, studies the
+  "folding" and "mis-folding" of chemical compounds or "proteins" to help
+  research cures for degenerative diseases such as Alzheimer's disease and
+  certain types of cancer.
+
+  In order to address the problem of a lack of understanding by the user about
+  what data the client produces; a Java program will be produced to enable the
+  extraction of information from the Folding@home client and display it to the
+  end user in an easily understandable manner. To achieve this the Java program
+  will need to be able to do two main tasks. Firstly it will be required to
+  extract raw binary data from older clients and secondly it will connect to the
+  new Folding@home API for future Clients.
+
+  The expected result to this project is to make the Folding@home project more
+  accessible by providing relevant information to the user in order to educate
+  them on what they are making a contributing to. It will subsequently make the
+  Folding@home client easier to set up use on a day-to-day basis.
+
+  The current Folding@home client is a complex piece of software; in order to
+  achieve the goal of reverse engineering its data files, extensive research
+  will need to be conducted about its inner workings to complete this project
+  successfully.

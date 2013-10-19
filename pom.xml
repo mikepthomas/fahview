@@ -11,7 +11,7 @@
     <name>FAHView</name>
     <description>
         Project to create a viewer application in Java to display
-        information from a Folding@Home client.
+        information from a Folding@home client.
     </description>
     <url>${project.domain.reports}/FAHView/</url>
     <inceptionYear>2011</inceptionYear>
@@ -31,8 +31,8 @@
     <developers>
         <developer>
             <id>montycrabapple1@gmail.com</id>
-            <name>Mike Thomas</name>
-            <email>montycrabapple@hotmail.com</email>
+            <name>Michael Thomas</name>
+            <email>mikepthomas@outlook.com</email>
             <url>${project.domain.reports}</url>
             <timezone>0</timezone>
             <roles>
@@ -66,19 +66,19 @@
     <ciManagement>
         <system>Jenkins</system>
         <url>
-            ${project.domain.reports}/jenkins/job/FAHView/${project.groupId}$${project.artifactId}/
+            ${project.domain.reports}/jenkins/job/FAHView/${project.groupId}$${project.artifactId}
         </url>
     </ciManagement>
     <distributionManagement>
         <repository>
             <id>releases</id>
             <name>Releases (Nexus)</name>
-            <url>${project.domain.reports}/nexus/content/repositories/releases/</url>
+            <url>${project.domain.reports}/nexus/content/repositories/releases</url>
         </repository>
         <snapshotRepository>
             <id>snapshots</id>
             <name>Snapshots (Nexus)</name>
-            <url>${project.domain.reports}/nexus/content/repositories/snapshots/</url>
+            <url>${project.domain.reports}/nexus/content/repositories/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
 
@@ -120,7 +120,7 @@
         <repository>
             <id>netbeans</id>
             <name>NetBeans</name>
-            <url>http://bits.netbeans.org/maven2/</url>
+            <url>http://bits.netbeans.org/maven2</url>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
@@ -164,7 +164,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
-                    <version>2.9.1</version>
+                    <version>${version.maven-javadoc-plugin}</version>
                     <configuration>
                         <quiet>true</quiet>
                         <show>public</show>
@@ -479,6 +479,24 @@
                         </executions>
                     </plugin>
                     <plugin>
+                        <inherited>false</inherited>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-pdf-plugin</artifactId>
+                        <version>1.2</version>
+                        <configuration>
+                            <includeReports>false</includeReports>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <id>pdf</id>
+                                <phase>site</phase>
+                                <goals>
+                                    <goal>pdf</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-surefire-plugin</artifactId>
                         <configuration>
@@ -502,13 +520,15 @@
                     <plugin>
                         <groupId>org.codehaus.mojo</groupId>
                         <artifactId>license-maven-plugin</artifactId>
-                        <version>1.5</version>
+                        <version>${version.license-maven-plugin}</version>
                         <configuration>
+                            <canUpdateCopyright>true</canUpdateCopyright>
+                            <canUpdateDescription>true</canUpdateDescription>
                             <licenseFile>${project.basedir}/src/COPYING</licenseFile>
                             <licenseName>gpl_v3</licenseName>
                             <missingFile>src/main/license/third-party.properties</missingFile>
                             <organizationName>
-                                Mike Thomas &lt;mikepthomas@outlook.com&gt;
+                                ${project.developers[0].name} &lt;${project.developers[0].email}&gt;
                             </organizationName>
                             <thirdPartyFilename>LICENSE</thirdPartyFilename>
                             <useMissingFile>true</useMissingFile>

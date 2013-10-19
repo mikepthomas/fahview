@@ -16,6 +16,14 @@
         </activatedProfiles>
     </action>
     <action>
+        <actionName>CUSTOM-Create PDF</actionName>
+        <displayName>Create PDF</displayName>
+        <recursive>false</recursive>
+        <goals>
+            <goal>pdf:pdf</goal>
+        </goals>
+    </action>
+    <action>
         <actionName>CUSTOM-Update File Licenses</actionName>
         <displayName>Update File Licenses</displayName>
         <goals>

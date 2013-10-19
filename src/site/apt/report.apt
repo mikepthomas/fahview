@@ -1,0 +1,55 @@
+~~~
+~~ #%L
+~~ FAHView
+~~ %%
+~~ Copyright (C) 2011 - 2013 Michael Thomas <mikepthomas@outlook.com>
+~~ %%
+~~ This program is free software: you can redistribute it and/or modify
+~~ it under the terms of the GNU General Public License as
+~~ published by the Free Software Foundation, either version 3 of the 
+~~ License, or (at your option) any later version.
+~~ 
+~~ This program is distributed in the hope that it will be useful,
+~~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+~~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+~~ GNU General Public License for more details.
+~~ 
+~~ You should have received a copy of the GNU General Public 
+~~ License along with this program.  If not, see
+~~ <http://www.gnu.org/licenses/gpl-3.0.html>.
+~~ #L%
+~~~
+
+Report Structure
+
+  This work shall start off with an introduction to this project itself and give
+  a brief overview of Folding@home from which it is based upon. This will lead
+  on to the initial planning stage of the project which will explain about the
+  project management elements that will occur during the lifetime of the
+  project. A thorough Literature review will then be carried out to research the
+  problem domain that will then lead on to prospective solutions that could be
+  used to code a reasonable solution to overcome the shortcomings of the
+  Folding@home project. The next section shall then look at the requirements to
+  be collected for the proposed new system that can then be used as a basis of a
+  test plan. The design of user interfaces and code will come next leading to
+  the final implementation of the program. The program will eventually be tested
+  against the initial requirements to ensure that what’s produced fits what is
+  required. The final section of this report will evaluate and conclude the
+  finished product.
+
+About the Report
+
+  This report is the main documentation for the FAHView project which has been
+  written for the computing project module of BSc Software Engineering year 3 in
+  the 2011/12 academic year at the
+  {{{http://www.uwe.ac.uk}University of the West of England}}, Bristol by
+  student number 08014563.
+
+Note on Referencing
+
+  "The Harvard referencing system is the most frequently used style at UWE"
+  (University of the west of England, 2007) and is required by the project
+  specification, therefore all references within this report are in the UWE
+  Harvard referencing style.
+
+  Citations are in this format: ( <name>, <year>, <page no.> if applicable )

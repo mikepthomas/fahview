@@ -1,0 +1,80 @@
+~~~
+~~ #%L
+~~ FAHView
+~~ %%
+~~ Copyright (C) 2011 - 2013 Michael Thomas <mikepthomas@outlook.com>
+~~ %%
+~~ This program is free software: you can redistribute it and/or modify
+~~ it under the terms of the GNU General Public License as
+~~ published by the Free Software Foundation, either version 3 of the 
+~~ License, or (at your option) any later version.
+~~ 
+~~ This program is distributed in the hope that it will be useful,
+~~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+~~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+~~ GNU General Public License for more details.
+~~ 
+~~ You should have received a copy of the GNU General Public 
+~~ License along with this program.  If not, see
+~~ <http://www.gnu.org/licenses/gpl-3.0.html>.
+~~ #L%
+~~~
+
+About
+
+  This section will describe and critique the software development method that
+  was chosen for the project and which software and tools that were required to
+  successfully complete the project.
+
+Design Methodology
+
+  The design methodology that has been adopted for use within the project is a
+  mixture of throwaway prototyping and evolutionary prototyping; “A prototype is
+  an initial version of a software system that is use to demonstrate concepts”
+  (Sommerville, 2007) this will be used for the user interface elements and the
+  incremental approach to software development for the main program. With the
+  incremental approach “Customers do not have to wait until the entire system is
+  delivered before they can gain value from it” (Sommerville, 2007). As the
+  project involves some user interface design, the throwaway prototyping will be
+  the simplest way to generate screen designs quickly and easily; Evolutionary
+  prototyping will be used to get a feel for potential features that will need
+  to be implemented in the final program. The final code will be written using
+  the incremental approach due to the short time scale for the project,
+  Throwaway prototyping was considered but will not be used for the final
+  program as this task will involve a substantial number of lines of code and
+  losing it for each prototype will be found to be too time consuming. The
+  second choice of development model would be to use the waterfall method of
+  software development; this was quickly discarded mainly as it would be a
+  little too restrictive for the user interface design aspect of the project.
+
+Development Tools
+
+  All work for this project has been conducted on a Macintosh computer, however
+  software produced has been tested in windows and Linux environments using a
+  Dell XPS m1730 portable desktop to gather test data for Windows GPU and CPU
+  clients and Linux CPU clients.
+
+  The software required during the course of this work included various
+  Folding@home clients that will be used to run my project against, a UML Case
+  tool to aid in the design of classes and use cases and project management
+  software was used to plan the project down to the last detail.
+
+  An Integrated development environment was used to write the main code for the
+  project and a hex editor was required to aid in the deciphering of binary
+  files produced by the client. The first draft of the report was written in the
+  content generation tool Scrivener; this tool allows for the insertion of notes
+  and Meta data to different sections of the report, which aided in the
+  organisation of the project. The final draft of the report was edited and
+  formatted using the popular word processor from Microsoft for its powerful
+  formatting tools and Table of Contents generation tool. A referencing tool was
+  also used throughout the project to organise references and quotes.
+
+Summary
+
+  This chapter introduced the project as a whole and its close dependency on the
+  Folding@home project. It looked at the Software development methods that were
+  be used to produce the software in its three iterations, although the third
+  iteration will be reliant on time.
+
+  In the next chapter we will be looking at how the project has been planned and
+  organised.
