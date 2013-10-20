@@ -19,6 +19,12 @@
 ~~ <http://www.gnu.org/licenses/gpl-3.0.html>.
 ~~ #L%
 ~~~
+                                 --------------
+                                    Abstract
+                                 --------------
+                                 Michael Thomas
+                                 --------------
+                                   19/10/2013
 
   The main aim to the project is to reverse engineer the data produced by the
   Folding@home client and write a program that will serve as a user interface to

@@ -27,10 +27,27 @@
     <meta>
         <title>${project.name}</title>
         <author>${project.developers[0].name}</author>
+        <creator>${project.developers[0].name}</creator>
+
+        <keyWords>
+            <keyWord>Computing</keyWord>
+            <keyWord>Distributed</keyWord>
+            <keyWord>Distributed Computing</keyWord>
+            <keyWord>Folding</keyWord>
+            <keyWord>FoldingAtHome</keyWord>
+            <keyWord>Folding@home</keyWord>
+            <keyWord>FAH</keyWord>
+            <keyWord>Java</keyWord>
+            <keyWord>Viewer</keyWord>
+            <keyWord>Stanford University</keyWord>
+        </keyWords>
+        <subject>Computing</subject>
+        
         <language>en-GB</language>
+        <pageSize>A4</pageSize>
     </meta>
 
-    <toc name="Table of Contents" depth="1">
+    <toc name="Table of Contents">
         <item name="Abstract" ref="abstract.apt"/>
         <item name="List of Figures" ref="figures.apt"/>
         <item name="Report" ref="report.apt"/>
@@ -42,17 +59,26 @@
         <item name="Development Method" ref="development.apt"/>
         <item name="Project Planning" ref="planning.apt"/>
         <item name="Research" ref="research.apt"/>
+
+        <item name="First Increment" ref="first-introduction.apt">
+            <item name="Requirements" ref="first-requirements.apt"/>
+            <item name="Design" ref="first-design.apt"/>
+            <item name="Implementation" ref="first-implementation.apt"/>
+            <item name="Testing" ref="first-testing.apt"/>
+            <item name="Conclusion" ref="first-conclusion.apt"/>
+        </item>
     </toc>
 
     <cover>
         <coverTitle>${project.name}</coverTitle>
-        <coverSubTitle>${project.version}</coverSubTitle>
-        <coverType>Project Documentation</coverType>
+        <coverSubTitle>BSc (Hons) Software Engineering</coverSubTitle>
+        <coverVersion>${project.version}</coverVersion>
+        <coverType>UFCE3B-40-3 - Computing Project</coverType>
         <coverdate>${day}/${month}/${year}</coverdate>
 
         <projectName>${project.name}</projectName>
 
-        <companyName>${project.developers[0].name}</companyName>
+        <companyName>${project.developers[0].name} (08014563)</companyName>
         <companyLogo>http://www.stanford.edu/group/pandegroup/title4.jpg</companyLogo>
     </cover>
 </document>

@@ -1,0 +1,63 @@
+~~~
+~~ #%L
+~~ FAHView
+~~ %%
+~~ Copyright (C) 2011 - 2013 Michael Thomas <mikepthomas@outlook.com>
+~~ %%
+~~ This program is free software: you can redistribute it and/or modify
+~~ it under the terms of the GNU General Public License as
+~~ published by the Free Software Foundation, either version 3 of the 
+~~ License, or (at your option) any later version.
+~~ 
+~~ This program is distributed in the hope that it will be useful,
+~~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+~~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+~~ GNU General Public License for more details.
+~~ 
+~~ You should have received a copy of the GNU General Public 
+~~ License along with this program.  If not, see
+~~ <http://www.gnu.org/licenses/gpl-3.0.html>.
+~~ #L%
+~~~
+                                ---------------
+                                First Increment
+                                ---------------
+                                Michael Thomas
+                                ---------------
+                                  20/10/2013
+
+About
+
+  The first iteration of the project has been the most difficult as it involved
+  the extraction of information from the older Folding@home (F@H) clients
+  (Version 6 and below). There wasn't a way of communicating with these clients
+  directly. However, information can be extracted from them, this involves
+  reading the information required from a structured binary file that each
+  client generates to keep track of what it is doing, this file is called
+  “queue.dat”. The Folding@home Wiki explains "The queue.dat is used by the F@H
+  client and the Cores it uses to process a Work Unit (WU), to store information
+  on a particular WU and some information on the client itself. It is a binary
+  file of a fixed size." (Folding@home Wiki, 2007) the structure of the file is
+  also explained in depth within the Wiki.
+
+  This project is not the first to take this approach to attempt to extract
+  information from the client by decoding this file, Howells, D. Creator of the
+  program "QD (Queue Dump)" has managed to extract this information. His program
+  can be downloaded from the website 'Linux Minded' (Couwenberg, 2011). QD is a
+  program written in C that runs through the command line to extract data from
+  the queue.dat file in clients prior to version 6. The C program's source code
+  provides a basis of knowledge needed to understand this complex binary file.
+
+  As the binary file contains raw data produced by the F@H client, this data is
+  stored within the file in the CPU's native endianness and all integers within
+  the file are unsigned, java however, deals in big endian and only has the
+  ability to understand signed integers, therefore some bit shifting gymnastics
+  will need to be done to be able to use them within this project. This can be
+  achieved by using "signed types that are larger than the original unsigned
+  type. I.e. use a short to hold an unsigned byte, use a long to hold an
+  unsigned int." (Owens, 2009) to deal with unsigned integers and "remembering
+  what your byte order is, and knowing what the byte order of the data you are
+  reading in is. If they're not the same, you need to make sure you re-order
+  them correctly, or in the case of dealing with unsigned numbers like above,
+  you need to make sure you put the correct bytes into the correct parts of the
+  integer/short/long." (Owens, 2009) to deal with the endianness.

@@ -1,0 +1,59 @@
+~~~
+~~ #%L
+~~ FAHView
+~~ %%
+~~ Copyright (C) 2011 - 2013 Michael Thomas <mikepthomas@outlook.com>
+~~ %%
+~~ This program is free software: you can redistribute it and/or modify
+~~ it under the terms of the GNU General Public License as
+~~ published by the Free Software Foundation, either version 3 of the 
+~~ License, or (at your option) any later version.
+~~ 
+~~ This program is distributed in the hope that it will be useful,
+~~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+~~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+~~ GNU General Public License for more details.
+~~ 
+~~ You should have received a copy of the GNU General Public 
+~~ License along with this program.  If not, see
+~~ <http://www.gnu.org/licenses/gpl-3.0.html>.
+~~ #L%
+~~~
+                       --------------------------------
+                       First Increment (Implementation)
+                       --------------------------------
+                                Michael Thomas
+                       --------------------------------
+                                  20/10/2013
+
+Introduction
+
+  This section explains the implementation of the first iteration of the
+  project; it also explains some of the technologies used during the creation of
+  the initial stages of the program.
+
+Build System
+
+  Before any work can be carried out the main project base needs to be set up,
+  this project will be using Maven. As the project will be using external
+  dependencies such as the open source molecule viewer "Jmol" these dependencies
+  can change over time, maven will be able to help with this problem as it will
+  be able to update these external sources for you on the fly once they have
+  been added to the maven project properties. Maven also simplifies with the
+  testing of the project as a whole with the deep integration with the java
+  unit-testing platform "Junit". The main project configuration file can be seen
+  in the appendices under the heading "pom.xml". The other options for build
+  systems include Make files or Ant scripts. Maven is the better choice due to
+  it's excellent dependency management and it's close integration with source
+  control management and issue control software.
+
+Documentation
+
+  The main documentation for the project will be recorded within this document.
+  However, I will also be using JavaDoc to document the java source code to
+  provide information about the public interfaces to the system. JavaDoc is able
+  to generate HTML API documentation just from the comments of the source code;
+  this makes it ideal for an open source project such as this as it will allow
+  the source code to be easily understood by the community. The JavaDoc comments
+  will be compiled into a searchable HTML file that will be uploaded to the
+  projects website at {{{http://fahview.googlecode.com}Google Code}}.
