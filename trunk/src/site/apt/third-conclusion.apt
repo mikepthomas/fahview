@@ -1,0 +1,41 @@
+~~~
+~~ #%L
+~~ FAHView
+~~ %%
+~~ Copyright (C) 2011 - 2013 Michael Thomas <mikepthomas@outlook.com>
+~~ %%
+~~ This program is free software: you can redistribute it and/or modify
+~~ it under the terms of the GNU General Public License as
+~~ published by the Free Software Foundation, either version 3 of the 
+~~ License, or (at your option) any later version.
+~~ 
+~~ This program is distributed in the hope that it will be useful,
+~~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+~~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+~~ GNU General Public License for more details.
+~~ 
+~~ You should have received a copy of the GNU General Public 
+~~ License along with this program.  If not, see
+~~ <http://www.gnu.org/licenses/gpl-3.0.html>.
+~~ #L%
+~~~
+                         ----------------------------
+                         Third Increment (Conclusion)
+                         ----------------------------
+                                Michael Thomas
+                         ----------------------------
+                                  20/10/2013
+
+Summary
+
+  As version 7 of the Folding@home client has only just been released two weeks
+  before the deadline of the entire project, and it is still under development
+  for Mac OS X, this increment has have been left for future work.
+
+  As the new client has been released, the public API has now been finalised
+  therefore more research can be conducted to understand the protocol and what
+  other extra information other than what has been found out within this chapter
+  can be extracted rom these cutting edge clients.
+
+  In the next chapter we will be at the authors personal learning experiences
+  from the project and evaluating the tools used throughout.

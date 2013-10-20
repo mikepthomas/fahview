@@ -1,0 +1,49 @@
+~~~
+~~ #%L
+~~ FAHView
+~~ %%
+~~ Copyright (C) 2011 - 2013 Michael Thomas <mikepthomas@outlook.com>
+~~ %%
+~~ This program is free software: you can redistribute it and/or modify
+~~ it under the terms of the GNU General Public License as
+~~ published by the Free Software Foundation, either version 3 of the 
+~~ License, or (at your option) any later version.
+~~ 
+~~ This program is distributed in the hope that it will be useful,
+~~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+~~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+~~ GNU General Public License for more details.
+~~ 
+~~ You should have received a copy of the GNU General Public 
+~~ License along with this program.  If not, see
+~~ <http://www.gnu.org/licenses/gpl-3.0.html>.
+~~ #L%
+~~~
+                       ---------------------------------
+                       Second Increment (Implementation)
+                       ---------------------------------
+                                Michael Thomas
+                       ---------------------------------
+                                  20/10/2013
+
+Introduction
+
+  There are two options for this increment, option one is to develop the 3D
+  viewer from scratch and option 2 is to integrate an existing molecule viewer.
+
+3D Molecule Viewer
+
+  The 3D model is contained within a file within the work directory called
+  "current.xyz" it is a text file containing the number of each atom, the type
+  of atom, x, y and z coordinates of each atom and a list of atom numbers that
+  each atom is linked to.
+
+  To create a 3D viewer from scratch would be a mammoth task taking up more time
+  than would be required to complete the whole project, it can be achieved using
+  the Java3D framework that allows for the generation of 3D graphics using
+  OpenGL.
+
+  The other option is to avoid re-inventing the wheel and integrate and existing
+  3D molecule view such as MolyView, CanvasMol or Jmol the problem with this
+  approach is finding one that has an API compatible with Java, which will work
+  on multiple platforms, and has a license compatible with GPLv3.

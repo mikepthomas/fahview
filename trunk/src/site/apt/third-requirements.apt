@@ -1,0 +1,173 @@
+~~~
+~~ #%L
+~~ FAHView
+~~ %%
+~~ Copyright (C) 2011 - 2013 Michael Thomas <mikepthomas@outlook.com>
+~~ %%
+~~ This program is free software: you can redistribute it and/or modify
+~~ it under the terms of the GNU General Public License as
+~~ published by the Free Software Foundation, either version 3 of the 
+~~ License, or (at your option) any later version.
+~~ 
+~~ This program is distributed in the hope that it will be useful,
+~~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+~~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+~~ GNU General Public License for more details.
+~~ 
+~~ You should have received a copy of the GNU General Public 
+~~ License along with this program.  If not, see
+~~ <http://www.gnu.org/licenses/gpl-3.0.html>.
+~~ #L%
+~~~
+                       ------------------------------
+                       Third Increment (Requirements)
+                       ------------------------------
+                               Michael Thomas
+                       ------------------------------
+                                 20/10/2013
+
+About
+
+  This is the section that the requirements will be collected for the third
+  increment of the proposed system, the requirements will be collected, however,
+  as this increment will not be implemented yet they will only serve as a basis
+  for future work on the FAHView project.
+
+Scope
+
+  The third increment will expand upon the functionality of the first iteration;
+  it will use the existing model but will require a new class to connect to the
+  new clients API.
+
+Functional Requirements
+
+  * The system MUST be available for the Windows operation system
+
+  * The system MUST be available for the Linux operation system
+
+  * The system MUST be available for the Macintosh operation system
+
+  * The system MUST be implemented in the Java programming language
+
+  * The system MUST NOT store any personally identifiable information about the
+    user
+
+  * The system MUST communicate with local clients within one second
+
+  * The system MUST communicate with network clients within five seconds
+
+Non Functional Requirements
+
+  * The system MUST provide means of easy navigation for at least 99% of it's
+    users
+
+  * The system MUST be implemented in a modular, object orientated way to enable
+    easy expansion
+
+Use Case Diagram
+
+[images/third-increment/use-case-diagram.png]
+
+Use Case Stories
+
+* Use Case 1: Add Client
+
+** Scenario
+
+  The user wants to extract data from a version of the Folding@home client.
+
+** Background
+
+  To view the data from the Folding@home client from within the FAHView program
+  the application will need to know the IP address and port the client interface
+  is running on of the required client, therefore the client will need to be
+  added into the program.
+
+** Actors
+
+  * User
+
+  * Folding@home Client
+
+** Interactions
+
+  [User]   Opens the application preferences pane by selecting "Preferences".
+
+  [System] Displays application preferences pane.
+
+  [User]   Selects "Add Client".
+
+  [System] Displays the add client pane.
+
+  [User]   Selects the type of client that is to be added and provides the
+           required information including IP address & port number of the client
+           and a short description to identify it.
+
+  [System] Saves the information in the configuration file.
+
+* Use Case 2: Remove Client
+
+** Scenario
+
+  The user has finished monitoring the Folding@home client and would like to
+  remove it from the application.
+
+** Background
+
+  The FAHView program saves the IP address and port number of user added
+  Folding@home clients within the configuration file, when the client is no
+  longer needed it will need to be removed from the application.
+
+** Actors
+
+  * User
+
+  * Folding@home Client
+
+** Interactions
+
+  [User]   Opens the application preferences pane by selecting "Preferences".
+
+  [System] Displays application preferences pane.
+
+  [User]   Selects "Remove Client".
+
+  [System] Displays the remove client pane.
+
+  [User]   Selects the client they would like to remove from the program.
+
+  [System] Removes the information related to the specified client from the
+           configuration file.
+
+* Use Case 3: Hide Slot
+
+** Scenario
+
+  The user does not want to monitor a specific slot within the Folding@home
+  client but would not like to remove the entire client from the application.
+
+** Background
+
+  The Folding@home client has previously been added to the application.
+
+** Actors
+
+  * User
+
+  * Folding@home Client
+
+** Interactions
+
+  [User]   Opens the application preferences pane by selecting "Preferences".
+
+  [System] Displays application preferences pane.
+
+  [User]   Selects "Hide Slot".
+
+  [System] Displays the hide slot pane.
+
+  [User]   Selects the client they would like, and unchecked boxes next to the
+           visibility column of the required slot.
+
+  [System] Hides the slot related to the specified client from the configuration
+           file.

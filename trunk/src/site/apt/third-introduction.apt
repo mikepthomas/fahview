@@ -1,0 +1,58 @@
+~~~
+~~ #%L
+~~ FAHView
+~~ %%
+~~ Copyright (C) 2011 - 2013 Michael Thomas <mikepthomas@outlook.com>
+~~ %%
+~~ This program is free software: you can redistribute it and/or modify
+~~ it under the terms of the GNU General Public License as
+~~ published by the Free Software Foundation, either version 3 of the 
+~~ License, or (at your option) any later version.
+~~ 
+~~ This program is distributed in the hope that it will be useful,
+~~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+~~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+~~ GNU General Public License for more details.
+~~ 
+~~ You should have received a copy of the GNU General Public 
+~~ License along with this program.  If not, see
+~~ <http://www.gnu.org/licenses/gpl-3.0.html>.
+~~ #L%
+~~~
+                                ---------------
+                                Third Increment
+                                ---------------
+                                Michael Thomas
+                                ---------------
+                                  20/10/2013
+
+About
+
+  For the third and final iteration for the project (dependant on time, could
+  end up as future work) we will look at adding support for the version 7 F@H
+  clients. The version 7 clients add an API to extract some information directly
+  from the client via an API called the Client Remote Interface. The Stanford
+  University wiki on the Client Remote Interface contains extremely useful
+  information about how to use the new API in version 7 of the client. The API
+  allows communication with the client using PYON (Python Object Notation) that
+  is a subset of JSON (JavaScript Object Notation) the wiki explains the
+  differences between PYON and JSON in detail. "PyON differs from JSON two ways.
+  None is used instead of null and Boolean values start with an upper case
+  letter as in Python. E.g. True and False." (Folding@home Client Wiki, 2011)
+
+  Another useful book, which explains the use of JSON within a java context, is
+  called "Ajax on Java". (Olson, 2007) It is aimed at J2EE developers, however
+  the core information that is required to use JSON within Java SE is still
+  relevant.
+
+  The Folding@home client v7 adds a new concept to Folding@home; this new
+  concept is that the individual clients that existed for each platform have
+  been merged into a single client. This required the client to become "slotted"
+  meaning that only one client needs to be run but multiple work units can be
+  worked on within work unit "slots". For example slot 1 could be working on a
+  work unit running on the CPU, and slot 2 could be working on a work unit
+  running on the GPU from within the same Folding@home client.
+
+  New client is going to include a user interface, it is quite clunky and fairly
+  difficult to use, however it is still in beta phase at the moment it is
+  designed to offload work to clients run on an average persons computer.
