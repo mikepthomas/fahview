@@ -1,0 +1,56 @@
+~~~
+~~ #%L
+~~ FAHView
+~~ %%
+~~ Copyright (C) 2011 - 2013 Michael Thomas <mikepthomas@outlook.com>
+~~ %%
+~~ This program is free software: you can redistribute it and/or modify
+~~ it under the terms of the GNU General Public License as
+~~ published by the Free Software Foundation, either version 3 of the 
+~~ License, or (at your option) any later version.
+~~ 
+~~ This program is distributed in the hope that it will be useful,
+~~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+~~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+~~ GNU General Public License for more details.
+~~ 
+~~ You should have received a copy of the GNU General Public 
+~~ License along with this program.  If not, see
+~~ <http://www.gnu.org/licenses/gpl-3.0.html>.
+~~ #L%
+~~~
+                           ------------------------
+                           Third Increment (Design)
+                           ------------------------
+                                Michael Thomas
+                           ------------------------
+                                  20/10/2013
+
+Introduction
+
+  This section will include detail for the design of the third iteration of the
+  project; it is based upon the requirements from the previous section.
+
+Class Diagram
+
+[images/third-increment/class-diagram.png]
+
+  The structure of this increment is based upon the composition of JSON
+  structures that are accessed through the V7 client API. JSON structures are
+  accessed through web sockets at a specified port set during the initial setup
+  of the Folding@home client, when a connection is made, the Client listens for
+  specific commands and returns the result as a section of JSON.
+
+Deployment
+
+  The FAHView program is highly dependant on the Folding@home Client the
+  following diagram shows the final deployment of the program along side the
+  Folding@home client.
+
+[images/third-increment/component-diagram.png]
+
+Architecture
+
+  This increment will also extend the initial increment expanding on the
+  functionality of the old pre version 7 clients; therefore it will also use the
+  model, view controller software architecture.

@@ -15,11 +15,11 @@
   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   GNU General Public License for more details.
   
-  You should have received a copy of the GNU General Public 
-  License along with this program.  If not, see
-  <http://www.gnu.org/licenses/gpl-3.0.html>.
-  #L%
-  -->
+You should have received a copy of the GNU General Public 
+License along with this program.  If not, see
+<http://www.gnu.org/licenses/gpl-3.0.html>.
+#L%
+-->
 <project xmlns="http://maven.apache.org/DECORATION/1.3.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/DECORATION/1.3.0 http://maven.apache.org/xsd/decoration-1.3.0.xsd">
@@ -35,7 +35,7 @@
 
         <menu ref="parent" />
 
-        <menu title="Project Report">
+        <menu name="Project Report">
             <item name="Abstract" href="abstract.html"/>
             <item name="List of Figures" href="figures.html"/>
             <item name="Report" href="report.html"/>
@@ -54,6 +54,20 @@
                 <item name="Implementation" href="first-implementation.html"/>
                 <item name="Testing" href="first-testing.html"/>
                 <item name="Conclusion" href="first-conclusion.html"/>
+            </item>
+
+            <item name="Second Increment" href="second-introduction.html">
+                <item name="Requirements" href="second-requirements.html"/>
+                <item name="Design" href="second-design.html"/>
+                <item name="Implementation" href="second-implementation.html"/>
+                <item name="Testing" href="second-testing.html"/>
+                <item name="Conclusion" href="second-conclusion.html"/>
+            </item>
+
+            <item name="Third Increment" href="third-introduction.html">
+                <item name="Requirements" href="third-requirements.html"/>
+                <item name="Design" href="third-design.html"/>
+                <item name="Conclusion" href="third-conclusion.html"/>
             </item>
         </menu>
 

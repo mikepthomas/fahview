@@ -67,6 +67,20 @@
             <item name="Testing" ref="first-testing.apt"/>
             <item name="Conclusion" ref="first-conclusion.apt"/>
         </item>
+
+        <item name="Second Increment" ref="second-introduction.apt">
+            <item name="Requirements" ref="second-requirements.apt"/>
+            <item name="Design" ref="second-design.apt"/>
+            <item name="Implementation" ref="second-implementation.apt"/>
+            <item name="Testing" ref="second-testing.apt"/>
+            <item name="Conclusion" ref="second-conclusion.apt"/>
+        </item>
+
+        <item name="Third Increment" ref="third-introduction.apt">
+            <item name="Requirements" ref="third-requirements.apt"/>
+            <item name="Design" ref="third-design.apt"/>
+            <item name="Conclusion" ref="third-conclusion.apt"/>
+        </item>
     </toc>
 
     <cover>

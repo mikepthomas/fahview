@@ -1,0 +1,54 @@
+~~~
+~~ #%L
+~~ FAHView
+~~ %%
+~~ Copyright (C) 2011 - 2013 Michael Thomas <mikepthomas@outlook.com>
+~~ %%
+~~ This program is free software: you can redistribute it and/or modify
+~~ it under the terms of the GNU General Public License as
+~~ published by the Free Software Foundation, either version 3 of the 
+~~ License, or (at your option) any later version.
+~~ 
+~~ This program is distributed in the hope that it will be useful,
+~~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+~~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+~~ GNU General Public License for more details.
+~~ 
+~~ You should have received a copy of the GNU General Public 
+~~ License along with this program.  If not, see
+~~ <http://www.gnu.org/licenses/gpl-3.0.html>.
+~~ #L%
+~~~
+                           -------------------------
+                           Second Increment (Design)
+                           -------------------------
+                                Michael Thomas
+                           -------------------------
+                                  20/10/2013
+
+Introduction
+
+  This section will include detail for the design of the second iteration of the
+  project; it is based upon the requirements from the previous section.
+
+Class Diagram
+
+  The Jmol API defines the structure of this increment. The Jmol API requires
+  only one class therefore a class diagram is not needed. The Jmol Wiki states,
+  “A very good start is the Integration.java out of Jmol SVN” about embedding
+  the Jmol Application into your own applications. This java file can be
+  accessed from
+  {{{http://jmol.svn.sourceforge.net/viewvc/jmol/trunk/Jmol/examples/basic/org/jmol/Integration.java?revision=14289&view=markup}Here}}.
+
+Architecture
+
+  The integration of the 3D viewer will need to fit in with the current
+  architecture of the first increment, the other consideration to take into
+  account is deployment, there are two options to consider, whether the Jmol jar
+  file is distributed within the FAHView Application making a larger file size
+  or implemented as a modular plug-in that is downloaded separately. Embedding
+  the Jmol viewer within the application has its advantages, it ensures
+  compatibility between the versions however the final file size of the
+  application will be larger. Having the Jmol viewer as a plug in has the
+  advantages of a smaller file size but the possibility of compatibility issues
+  between versions of Jmol.
