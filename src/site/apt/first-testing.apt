@@ -1,0 +1,51 @@
+~~~
+~~ #%L
+~~ FAHView
+~~ %%
+~~ Copyright (C) 2011 - 2013 Michael Thomas <mikepthomas@outlook.com>
+~~ %%
+~~ This program is free software: you can redistribute it and/or modify
+~~ it under the terms of the GNU General Public License as
+~~ published by the Free Software Foundation, either version 3 of the 
+~~ License, or (at your option) any later version.
+~~ 
+~~ This program is distributed in the hope that it will be useful,
+~~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+~~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+~~ GNU General Public License for more details.
+~~ 
+~~ You should have received a copy of the GNU General Public 
+~~ License along with this program.  If not, see
+~~ <http://www.gnu.org/licenses/gpl-3.0.html>.
+~~ #L%
+~~~
+                           -------------------------
+                           First Increment (Testing)
+                           -------------------------
+                                Michael Thomas
+                           -------------------------
+                                  20/10/2013
+
+About
+
+  To ensure the completed system will meet the requirements set out in the
+  requirements section of this document, the system will need to be tested using
+  a number of different techniques. There are many ways to test systems such as
+  mine, however I am going to concentrate on two methods. Black box testing and
+  white box testing.
+
+Test Data
+
+  The test data that will be used during this iteration has been generated from
+  an actual Folding@home client that has been run on my local machine for over a
+  year to ensure I have a good base of data to test against, I have also
+  acquired test data from other people running various different clients using
+  different operating systems.
+
+Test Plans
+
+  Test plans will need to be created to test the implemented system against
+  known good values, theses values need to be ensured to be true, this will be
+  attained using a hex editor on the queue.dat file to extract known good values
+  from the file to use in the test plan to test against values extracted using
+  my program.

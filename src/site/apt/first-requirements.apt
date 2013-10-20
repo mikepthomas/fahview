@@ -1,0 +1,146 @@
+~~~
+~~ #%L
+~~ FAHView
+~~ %%
+~~ Copyright (C) 2011 - 2013 Michael Thomas <mikepthomas@outlook.com>
+~~ %%
+~~ This program is free software: you can redistribute it and/or modify
+~~ it under the terms of the GNU General Public License as
+~~ published by the Free Software Foundation, either version 3 of the 
+~~ License, or (at your option) any later version.
+~~ 
+~~ This program is distributed in the hope that it will be useful,
+~~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+~~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+~~ GNU General Public License for more details.
+~~ 
+~~ You should have received a copy of the GNU General Public 
+~~ License along with this program.  If not, see
+~~ <http://www.gnu.org/licenses/gpl-3.0.html>.
+~~ #L%
+~~~
+                       ------------------------------
+                       First Increment (Requirements)
+                       ------------------------------
+                               Michael Thomas
+                       ------------------------------
+                                 20/10/2013
+
+About
+
+  This is the section that the requirements will be collected for the first
+  increment of the proposed system, the requirements will be used as a basis to
+  test the system when it has been implemented to ensure that the implemented
+  features fulfil the criteria of what is expected of the finished system.
+
+Scope
+
+  The first increment will only concentrate on the old Folding@home clients, the
+  old clients are defined as clients prior to version 7, the reason for this is
+  that the client has been overhauled to add new functionality for version 7. In
+  order for this increment to be successful, it is essential that the structure
+  of the client's key files are understood in great detail.
+
+Stakeholders
+
+  The stakeholders of the system are people who have a say on any aspect of the
+  system, the main stakeholder for the FAHView project will be myself, however
+  anyone who contributes to the Folding@home project could be seen to be a
+  stakeholder for the project.
+
+Functional Requirements
+
+  * The system MUST be available for the Windows operation system
+
+  * The system MUST be available for the Linux operation system
+
+  * The system MUST be available for the Macintosh operation system
+
+  * The system MUST be implemented in the Java programming language
+
+  * The system MUST NOT store any personally identifiable information about the
+    user
+
+  * The system MUST extract the core information from the client within one
+    second
+
+Non Functional Requirements
+
+  * The system MUST provide means of easy navigation for at least 99% of it's
+    users
+
+  * The system MUST be implemented in a modular, object orientated way to enable
+    easy expansion
+
+Use Case Diagram
+
+[images/first-increment/use-case-diagram.png]
+
+Use Case Stories
+
+* Use Case 1: Add Client
+
+** Scenario
+
+  The user wants to extract data from a version of the Folding@home client.
+
+** Background
+
+  To view the data from the Folding@home client from within the FAHView program
+  the application will need to know the location of the client, therefore the
+  client will need to be added into the program.
+
+** Actors
+
+  * User
+
+  * Folding@home Client
+
+** Interactions
+
+  [User]   Opens the application preferences pane by selecting "Preferences".
+
+  [System] Displays application preferences pane.
+
+  [User]   Selects "Add Client".
+
+  [System] Displays the add client pane.
+
+  [User]   Provides the required information including location of the client
+           and a short description to identify it.
+
+  [System] Saves the information in the configuration file.
+
+* Use Case 2: Remove Client
+
+** Scenario
+
+  The user has finished monitoring the Folding@home client and would like to
+  remove it from the application.
+
+** Background
+
+  The FAHView program saves the locations of user added Folding@home clients
+  within the configuration file, when the client is no longer needed it will
+  need to be removed from the application.
+
+** Actors
+
+  * User
+
+  * Folding@home Client
+
+** Interactions
+
+  [User]   Opens the application preferences pane by selecting "Preferences".
+
+  [System] Displays application preferences pane.
+
+  [User]   Selects "Remove Client".
+
+  [System] Displays the remove client pane.
+
+  [User]   Selects the client they would like to remove from the program.
+
+  [System] Removes the information related to the specified client from the
+           configuration file.

@@ -19,6 +19,12 @@
 ~~ <http://www.gnu.org/licenses/gpl-3.0.html>.
 ~~ #L%
 ~~~
+                                 --------------
+                                    Research
+                                 --------------
+                                 Michael Thomas
+                                 --------------
+                                   19/10/2013
 
 About
 
@@ -246,7 +252,7 @@ Software Licensing
 
 Summary
 
-  The Folding@Home client is a complex piece of software; if the project is to
+  The Folding@home client is a complex piece of software; if the project is to
   be completed successfully it must be understood thoroughly. This can be
   achieved by effective research of the problem domain and will be soon starting
   work of collecting requirements and creating preliminary designs for the
@@ -255,4 +261,4 @@ Summary
   The next chapter will focus on the requirements collection, design,
   implementation and testing of the first iteration of the project which will
   look at the extraction of data from the current and past stable releases of
-  the Folding@Home client.
+  the Folding@home client.

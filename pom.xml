@@ -213,6 +213,27 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
                 <version>2.6</version>
+                <executions>
+                    <execution>
+                        <inherited>false</inherited>
+                        <id>copy-pdf</id>
+                        <phase>site</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}/site</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>${project.build.directory}/pdf</directory>
+                                    <includes>
+                                        <include>*.pdf</include>
+                                    </includes>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -489,7 +510,7 @@
                         <executions>
                             <execution>
                                 <id>pdf</id>
-                                <phase>site</phase>
+                                <phase>pre-site</phase>
                                 <goals>
                                     <goal>pdf</goal>
                                 </goals>

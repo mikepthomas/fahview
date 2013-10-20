@@ -47,6 +47,14 @@
             <item name="Development Method" href="development.html"/>
             <item name="Project Planning" href="planning.html"/>
             <item name="Research" href="research.html"/>
+
+            <item name="First Increment" href="first-introduction.html">
+                <item name="Requirements" href="first-requirements.html"/>
+                <item name="Design" href="first-design.html"/>
+                <item name="Implementation" href="first-implementation.html"/>
+                <item name="Testing" href="first-testing.html"/>
+                <item name="Conclusion" href="first-conclusion.html"/>
+            </item>
         </menu>
 
         <menu ref="reports" />
