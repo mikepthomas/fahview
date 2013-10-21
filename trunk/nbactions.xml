@@ -22,6 +22,9 @@
         <goals>
             <goal>pdf:pdf</goal>
         </goals>
+        <activatedProfiles>
+            <activatedProfile>release-profile</activatedProfile>
+        </activatedProfiles>
     </action>
     <action>
         <actionName>CUSTOM-Update File Licenses</actionName>

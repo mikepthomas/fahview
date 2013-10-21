@@ -1,0 +1,77 @@
+~~~
+~~ #%L
+~~ FAHView
+~~ %%
+~~ Copyright (C) 2011 - 2013 Michael Thomas <mikepthomas@outlook.com>
+~~ %%
+~~ This program is free software: you can redistribute it and/or modify
+~~ it under the terms of the GNU General Public License as
+~~ published by the Free Software Foundation, either version 3 of the 
+~~ License, or (at your option) any later version.
+~~ 
+~~ This program is distributed in the hope that it will be useful,
+~~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+~~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+~~ GNU General Public License for more details.
+~~ 
+~~ You should have received a copy of the GNU General Public 
+~~ License along with this program.  If not, see
+~~ <http://www.gnu.org/licenses/gpl-3.0.html>.
+~~ #L%
+~~~
+                                 --------------
+                                   Conclusion
+                                 --------------
+                                 Michael Thomas
+                                 --------------
+                                   21/10/2013
+
+About
+
+  This section concludes the project paper by reviewing the main project
+  findings against what was set during the early stages of inception. It will
+  also be used to find out recommendations future work that may have been
+  identified over the course of the project.
+
+Overview
+
+  The FAHView project expanded the functionality of the Folding@home client
+  making the project easier to use and therefore more accessible to the masses.
+
+Aim and Objectives
+
+  The project set out to overcome the aim specified at the beginning of this
+  report, I believe that the project has surpassed its objectives as it has
+  achieved what it was set out to do, there are however tasks that still need to
+  be completed; these will be talked about in the Future work section below.
+
+Significance
+
+  The work produced as part of this project is significant as it has addressed
+  the problems with the past and current Folding@home clients and expanded on
+  it's functionality to provide the user of the client more information to what
+  they are contributing to.
+
+Future Work
+
+  As the third iteration of the project could not be completed within the time
+  frame of the project, it will be assigned to the future work section (Adding
+  support for the new V7 F@H clients) the V7 Client API is still in the Beta
+  phases at the writing of the report therefore any work derived from using the
+  API is likely to change.
+
+  The new API has the potential to control clients such as change options, add
+  and remove slots etc.; therefore it has the ability to administer Folding@home
+  clients from over networks. This produces the potential to include the ability
+  to control these clients from within the FAHView client monitoring
+  application.
+
+Summary
+
+  Overall I believe the project has that was tackled has been an overall
+  success. The program produced however is still to be completed and will more
+  than likely be continued to be worked upon for a number of years to come to
+  encompass all the functionality to become a complete replacement for the main
+  Folding@home user interface. The projects source code as it stands can be
+  checked out from the Subversion server available from
+  {{{http://fahview.googlecode.com}Google Code}}.
