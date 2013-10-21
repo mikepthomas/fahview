@@ -1,0 +1,82 @@
+~~~
+~~ #%L
+~~ FAHView
+~~ %%
+~~ Copyright (C) 2011 - 2013 Michael Thomas <mikepthomas@outlook.com>
+~~ %%
+~~ This program is free software: you can redistribute it and/or modify
+~~ it under the terms of the GNU General Public License as
+~~ published by the Free Software Foundation, either version 3 of the 
+~~ License, or (at your option) any later version.
+~~ 
+~~ This program is distributed in the hope that it will be useful,
+~~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+~~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+~~ GNU General Public License for more details.
+~~ 
+~~ You should have received a copy of the GNU General Public 
+~~ License along with this program.  If not, see
+~~ <http://www.gnu.org/licenses/gpl-3.0.html>.
+~~ #L%
+~~~
+                               -------------------
+                               Evaluation of Tools
+                               -------------------
+                                 Michael Thomas
+                               -------------------
+                                   21/10/2013
+
+Software
+
+  [Astah Community] This cross platform UML CASE Tool was extremely useful
+                    during the initial designs of each iteration of the project
+                    to create Use Case diagrams and Class Diagrams. There are a
+                    few UML CASE tools that could have been used such as Argo
+                    UML or Star UML, however due to its ease of use I settled
+                    upon Astah.
+
+  [Netbeans IDE]    This integrated development environment used to write the
+                    java code for the project includes add-ins such as JavaDoc
+                    comment generation, the Maven build suite and JUnit for unit
+                    testing the software.
+
+  [Synalyse It!]    This Hex editor was used to decrypt the queue.dat file; it
+                    was extremely useful due to the ability to create "Grammars"
+                    which enables you to define the structure of the file that
+                    can then be used to view its contents.
+
+  [Scrivener]       This application is what was used to write the main report.
+                    It allows for the attachment of Meta data to different
+                    sections of the report to enable me to organise the project
+                    effectively.
+
+  [Microsoft Word]  This was used to generate the final draft of the project as
+                    scrivener is not the best for presentation, it also aids in
+                    the creation of the table of contents.
+
+  [BibDesk]         This tool referencing tool helped to organise references for
+                    the project, it is able to integrate with scrivener making
+                    it all the more useful.
+
+  [OpenProj]        Project management tool to plan the different stages of the
+                    project, it is similar to Microsoft project but is also
+                    cross platform and open source.
+
+Hardware
+
+  [Apple MacBook Pro] The main development machine used to write code and
+                      documentation for the project.
+
+  [Dell XPS m1730]    Test machine, to get test data for windows GPU and CPU
+                      clients. This machine will also be used to get test data
+                      for Linux CPU clients.
+
+Summary
+
+  The project is relevant to Software engineering as it requires reverse
+  engineering an existing system and studying it in depth, expanding on it in a
+  modular and object orientated way. I have focused upon Java programming during
+  all years at university and will find the knowledge learned in the Software
+  Design module last year invaluable to design the program in such a way to make
+  it easily maintainable. The project will also follow conventional Software
+  Engineering practices from conception to completion.

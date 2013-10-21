@@ -1,0 +1,142 @@
+~~~
+~~ #%L
+~~ FAHView
+~~ %%
+~~ Copyright (C) 2011 - 2013 Michael Thomas <mikepthomas@outlook.com>
+~~ %%
+~~ This program is free software: you can redistribute it and/or modify
+~~ it under the terms of the GNU General Public License as
+~~ published by the Free Software Foundation, either version 3 of the 
+~~ License, or (at your option) any later version.
+~~ 
+~~ This program is distributed in the hope that it will be useful,
+~~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+~~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+~~ GNU General Public License for more details.
+~~ 
+~~ You should have received a copy of the GNU General Public 
+~~ License along with this program.  If not, see
+~~ <http://www.gnu.org/licenses/gpl-3.0.html>.
+~~ #L%
+~~~
+                                 --------------
+                                  Bibliography
+                                 --------------
+                                 Michael Thomas
+                                 --------------
+                                   21/10/2013
+
+Books
+
+  Fowler, M. (2004) UML Distilled 3rd ed. Boston:
+  Pearson Education Inc.
+
+  Lewis, J. and Loftus, W. (2009) Java Software Solutions 6th ed. Boston:
+  Pearson Education Inc.
+
+  Kotonya, G. and Sommerville, I. (1998) Requirements Engineering. Chichester:
+  John Wiley & Sons Ltd.
+
+  Maylor, H. (2005) Project Management 3rd ed. Harlow:
+  Pearson Education Limited.
+
+  Olson, S. D. (2007) Ajax on Java. Sebastopol:
+  O'Reilly Media Inc.
+
+  Raskin, J. (2000) The Humane Interface. United States of America:
+  ACM Press.
+
+  Sommerville, I. (2007) Software Engineering 8th ed. Harlow:
+  Pearson Education Limited.
+
+Journals
+
+  Karamanolis, C and Magee, J (1994)
+  Distributed Systems Engineering Available from:
+  {{http://iopscience.iop.org/0967-1846}}
+  [Accessed 12 February 2012]
+
+  Yu-Cheng, L (2010)
+  Structural approach to design user interface Computers in Industry Avalable from:
+  {{http://www.sciencedirect.com/science/article/pii/S0166361510000047}}
+  [Accessed 10 January 2012]
+
+  Conti, G Et al. (2008)
+  Visual Reverse Engineering of Binary and Data Files Available from:
+  {{http://www.rumint.org/gregconti/publications/2008_VizSEC_FileVisualization_v53_final.pdf}}
+  [Accessed 20 March 2012]
+
+Conference Papers
+
+  Hao, H. M. and Jaafar, A. (2009)
+  Tracing user interface design pre-requirement to generate interface design
+  specification. International Conference on Electrical Engineering and
+  Informatics, Selangor, 5-7 August 2009. IEEE Explore [online] Available from:
+  {{http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5254774}}
+  [Accessed 05 December 2011]
+
+  Beberg, A. L. Et al. (2009)
+  Folding@home: Lessons from eight years of volunteer distributed computing.
+  IEEE International Symposium on Parallel Distributed Processing, Rome,
+  23-29 May 2009. IEEE Explore [online] Available from:
+  {{http://dx.doi.org/10.1109/IPDPS.2009.5160922}}
+  [Accessed 05 December 2011]
+
+Websites
+
+  Couwenberg, B. (2011)
+  Linux Minded. Available from:
+  {{http://linuxminded.xs4all.nl/?target=software-qd-tools.plc}}
+  [Accessed 05 December 2011]
+
+  Gezelter, D. (2000)
+  Jmol: an open-source Java viewer for chemical structures in 3D Available from:
+  {{http://www.jmol.org/}}
+  [Accessed 05 December 2011]
+
+  Owens, S. (2009)
+  Java And Unsigned Types. Available from:
+  {{http://darksleep.com/player/JavaAndUnsignedTypes.html}}
+  [Accessed 05 December 2011]
+
+  Pande, V. (2000-2010)
+  Folding@home - Main. Available from:
+  {{http://folding.stanford.edu/}}
+  [Accessed 21 October 2011]
+
+  Pande, V. (2000-2010)
+  Folding@home - Download the Folding@home software application. Available from:
+  {{http://folding.stanford.edu/English/Download}}
+  [Accessed 12 March 2012]
+
+  Roulo, M. (1997)
+  JavaWorld - Java's three types of portability. Available from:
+  {{http://www.javaworld.com/javaworld/jw-05-1997/jw-05-portability.html}}
+  [Accessed 8 March 2012]
+
+  Swarthmore College Computer Society (2010)
+  Jef Raskin. Available from:
+  {{http://www.sccs.swarthmore.edu/users/08/ajb/tmve/wiki100k/docs/Jef_Raskin.html}}
+  [Accessed 18 January 2012]
+
+  University of the West of England (2007)
+  UWEHarvard. Available from:
+  {{http://www.uwe.ac.uk/library/resources/general/iskillzone/referencing/uweharvard/about.html}}
+  [Accessed 05 December 2011].
+
+Wikis
+
+  Client Remote Interface (2011)
+  Folding@home Client Wiki [online]. 03 March. Available from:
+  {{https://fah-web.stanford.edu/projects/FAHClient/wiki/ClientRemoteInterface}}
+  [Accessed 05 December 2011]
+
+  Queue.dat (2007)
+  Folding@home Wiki [online]. 17 September. Available from:
+  {{http://fahwiki.net/index.php/Queue.dat}}
+  [Accessed 06 December 2011]
+
+  Applications Embedding (2012)
+  Jmol Wiki [Online] 29 March. Available from:
+  {{http://wiki.jmol.org/index.php/Applications_Embedding_Jmol}}
+  [Accessed 01 April 2012]

@@ -1,0 +1,68 @@
+~~~
+~~ #%L
+~~ FAHView
+~~ %%
+~~ Copyright (C) 2011 - 2013 Michael Thomas <mikepthomas@outlook.com>
+~~ %%
+~~ This program is free software: you can redistribute it and/or modify
+~~ it under the terms of the GNU General Public License as
+~~ published by the Free Software Foundation, either version 3 of the 
+~~ License, or (at your option) any later version.
+~~ 
+~~ This program is distributed in the hope that it will be useful,
+~~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+~~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+~~ GNU General Public License for more details.
+~~ 
+~~ You should have received a copy of the GNU General Public 
+~~ License along with this program.  If not, see
+~~ <http://www.gnu.org/licenses/gpl-3.0.html>.
+~~ #L%
+~~~
+                                 --------------
+                                    Glossary
+                                 --------------
+                                 Michael Thomas
+                                 --------------
+                                   21/10/2013
+
+A
+
+  [Assignment Server] The server that allocates work to individual members.
+
+C
+
+  [Collection Server] The server that accepts finished work units from the
+                      client.
+
+  [Cores]             The core is the program that performs the calculations on
+                      each work unit. There are different cores that are
+                      required for different calculations dependant on the
+                      requirements of each individual work unit. The same core
+                      can be used on different clients and can be updated
+                      whenever necessary to add extra functionality to new
+                      projects without the need to update to a new client.
+
+P
+
+  [Projects]          There are quite literally thousands of different projects
+                      within Folding@home; projects are the different simulation
+                      groups that are run to get results for distinct pieces of
+                      research. A current list of running projects can be found
+                      on the {{{http://fah-web.stanford.edu/psummary.html}
+                      Stanford university Folding@home website}}.
+
+W
+
+  [Work Server]       The server that makes work units available to download to
+                      the member it has been allocated to by the assignment
+                      server.
+
+  [Work Unit]         A distinct component of work that requires calculations to
+                      be performed against it by the Core.
+
+Summary
+
+  A full list of glossary terms can be found on the
+  {{{http://www.stanford.edu/group/pandegroup/folding/education/glossary.html}
+  Stanford University website}}.

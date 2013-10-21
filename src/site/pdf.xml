@@ -81,6 +81,12 @@
             <item name="Design" ref="third-design.apt"/>
             <item name="Conclusion" ref="third-conclusion.apt"/>
         </item>
+
+        <item name="Personal Learning Experience" ref="learning.apt"/>
+        <item name="Evaluation of Tools" ref="evaluation.apt"/>
+        <item name="Conclusion" ref="conclusion.apt"/>
+        <item name="Bibliography" ref="bibliography.apt"/>
+        <item name="Glossary" ref="glossary.apt"/>
     </toc>
 
     <cover>
