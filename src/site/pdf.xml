@@ -87,6 +87,15 @@
         <item name="Conclusion" ref="conclusion.apt"/>
         <item name="Bibliography" ref="bibliography.apt"/>
         <item name="Glossary" ref="glossary.apt"/>
+        
+        <item name="Appendices" ref="appendices.apt">
+            <item name="Project Proposal" ref="project-proposal.apt"/>
+            <item name="Project Initiation Document" ref="project-initiation-document.apt"/>
+            <item name="List of Cores" ref="core-list.apt"/>
+            <item name="Project Object Model" ref="pom.apt"/>
+            <item name="Queue Structure" ref="queue-structure.apt"/>
+            <item name="V7 Client API" ref="client-api.apt"/>
+        </item>
     </toc>
 
     <cover>

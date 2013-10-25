@@ -1,0 +1,186 @@
+~~~
+~~ #%L
+~~ FAHView
+~~ %%
+~~ Copyright (C) 2011 - 2013 Michael Thomas <mikepthomas@outlook.com>
+~~ %%
+~~ This program is free software: you can redistribute it and/or modify
+~~ it under the terms of the GNU General Public License as
+~~ published by the Free Software Foundation, either version 3 of the 
+~~ License, or (at your option) any later version.
+~~ 
+~~ This program is distributed in the hope that it will be useful,
+~~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+~~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+~~ GNU General Public License for more details.
+~~ 
+~~ You should have received a copy of the GNU General Public 
+~~ License along with this program.  If not, see
+~~ <http://www.gnu.org/licenses/gpl-3.0.html>.
+~~ #L%
+~~~
+                          ---------------------------
+                          Project Initiation Document
+                          ---------------------------
+                                 Michael Thomas
+                          ---------------------------
+                                   24/10/2013
+
+About
+
+  The PID provides detailed information about the project including time
+  planning in the form of a Work Breakdown Structure and time estimates in the
+  form of a Gantt chart.
+
+Title
+
+  F@H View - Investigating Distributed Systems and User Interface Design for the
+  Folding@home Project
+
+Deadline
+
+  4th April 2012
+
+Milestones
+
+  * PID complete
+
+  * Literature review complete
+
+  * Requirements collected
+
+  * Increment 1
+
+  * Increment 2
+
+  * Increment 3
+
+  * Report structured and revised
+
+  * Hand In
+
+Deliverables
+
+  For the Computing project I will produce a program written in Java that will
+  display all the information contained within and used by the Folding@home
+  client. I intend to write the program in such a way that it will run on
+  Windows, Mac and Linux against all the clients that are available within the
+  Folding@home project.
+
+  I will also produce a Report explaining a brief history of the project as a
+  whole, what it is trying to achieve and how my program will fit into it. The
+  report will explain the Software Engineering processes used to create my
+  program and research of Distributed Computing and User Interface Design.
+
+Project type
+
+  Research and Development
+
+Methods
+
+  * Black box testing
+
+  * White box testing
+
+  * Unit Testing (JUnit)
+
+  * Throwaway prototyping
+
+  * Evolutionary prototyping
+
+  * UML (Unified Modelling Language)
+
+  * WBS (Work breakdown structure)
+
+  * Gantt Charts
+
+  * Code Documentation (JavaDoc)
+
+Resources
+
+* Software
+
+  [Astah Community]      UML CASE Tool.
+
+  [Folding@home Clients] Various Folding@home clients that will be used to run
+                         my project against.
+
+  [Netbeans IDE]         Integrated development environment used to write the
+                         java code for the project.
+
+  [Synalyse It!]         Hex editor used to decrypt the queue.dat file.
+
+  [Scrivener]            The application I am using to write the main report.
+
+  [Microsoft Word]       Final draft of the project will be formatted using MS
+                         Word.
+
+  [BibDesk]              Referencing tool to organise references, able to
+                         integrate with scrivener.
+
+  [OpenProj]             Project management tool to plan the different stages of
+                         the project.
+
+* Hardware
+
+  [Apple MacBook Pro] The main development machine used to write code and
+                      documentation for the project.
+
+  [Dell XPS m1730]    Test machine, to get test data for windows GPU and CPU
+                      clients. This machine will also be used to get test data
+                      for Linux CPU clients.
+
+* Related Research
+
+  * {{{http://www.json.org/}JSON}}
+
+  * {{{http://www.oracle.com/technetwork/java/javase/documentation/index.html}JavaDoc}}
+
+  * {{{http://junit.org/}JUnit}}
+
+  * {{{http://www.uml.org/}UML}}
+
+  * {{{http://maven.apache.org/}Maven}}
+
+Risk Analysis
+
+* Technical Risks
+
+  * Hardware failure
+
+  * Software Failure
+
+  * Increment 1 beyond technical ability
+
+  * Increment 2 beyond technical ability
+
+  * Increment 3 beyond technical ability
+
+* Non-technical Risks
+
+  * Illness
+
+  * Other coursework
+
+  * Procrastination
+
+  * Work
+
+Risk Avoidance
+
+* Loss of work
+
+  To avoid this risk frequent backups will be made.
+
+* Increments beyond technical abilities
+
+  A fair bit of research into each of the different technologies that will be
+  used will be the best way to combat this risk.
+
+* Illness
+
+  This risk is harder to avoid, however the risk of this is small.
+
+* Work overload
+
+  The best way to avoid this risk is effective time and project management.

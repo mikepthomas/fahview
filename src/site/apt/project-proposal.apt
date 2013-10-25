@@ -1,0 +1,78 @@
+~~~
+~~ #%L
+~~ FAHView
+~~ %%
+~~ Copyright (C) 2011 - 2013 Michael Thomas <mikepthomas@outlook.com>
+~~ %%
+~~ This program is free software: you can redistribute it and/or modify
+~~ it under the terms of the GNU General Public License as
+~~ published by the Free Software Foundation, either version 3 of the 
+~~ License, or (at your option) any later version.
+~~ 
+~~ This program is distributed in the hope that it will be useful,
+~~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+~~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+~~ GNU General Public License for more details.
+~~ 
+~~ You should have received a copy of the GNU General Public 
+~~ License along with this program.  If not, see
+~~ <http://www.gnu.org/licenses/gpl-3.0.html>.
+~~ #L%
+~~~
+                                ----------------
+                                Project Proposal
+                                ----------------
+                                 Michael Thomas
+                                ----------------
+                                   24/10/2013
+
+Aims
+
+  I want to write a program that will serve as a front end to the Folding@home
+  client. The client is a command line program that runs without any user input,
+  it uses idle CPU cycles on the machine on which it runs on to contribute to
+  Work Units that are sent to the client from one of Stanford University's
+  servers. These work units contain processing instructions to allow your
+  machine to do the work required by the project. I want to collect the
+  information produced by these work units and from within the client and
+  display it in a way that is easy to view by the user. I also want to look into
+  Software Licensing, as I would eventually wish to release the program open
+  source.
+
+Deliverables
+
+  For the Computing project I will produce a program written in Java that will
+  display all the information contained within and used by the Folding@home
+  client. I intend to write the program in such a way that it will run on
+  Windows, Mac and Linux against all the clients that are available within the
+  Folding@home project.
+
+  I will also produce a Report explaining a brief history of the project as a
+  whole, what it is trying to achieve and how my program will fit into it. The
+  report will explain the Software Engineering processes used to create my
+  program and research of Distributed Computing and User Interface Design.
+
+Schedule
+
+  I will soon be coming to an end of researching all aspects of how the
+  Folding@home client works in depth, I need to still find some journal articles
+  but have contacted Vijay Pande, the chemistry professor at Stanford University
+  who leads the Folding@home project for more Information. I have also been
+  added to the beta testers list for new yet to be released client.
+
+  I am currently in the process of generating a work breakdown structure and
+  Gantt charts to help plan the lifespan of the project and will be soon
+  starting work of collecting requirements and creating preliminary designs for
+  the system. Once this has been completed I will start work on coding the
+  program and will have a working prototype ready for demonstration by around
+  Christmas time.
+
+Relevance
+
+  My project is relevant to Software engineering, as it requires studying an
+  existing system in depth and expanding on it in a modular, object orientated
+  way. I have done a fair bit of Java programming during my years at university
+  and will find the knowledge learned in the Software Design module last year
+  invaluable to design the program in such a way to make it easily maintainable.
+  The project will also follow conventional Software Engineering practices from
+  conception to completion.

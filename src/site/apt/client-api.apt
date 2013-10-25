@@ -1,0 +1,519 @@
+~~~
+~~ #%L
+~~ FAHView
+~~ %%
+~~ Copyright (C) 2011 - 2013 Michael Thomas <mikepthomas@outlook.com>
+~~ %%
+~~ This program is free software: you can redistribute it and/or modify
+~~ it under the terms of the GNU General Public License as
+~~ published by the Free Software Foundation, either version 3 of the 
+~~ License, or (at your option) any later version.
+~~ 
+~~ This program is distributed in the hope that it will be useful,
+~~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+~~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+~~ GNU General Public License for more details.
+~~ 
+~~ You should have received a copy of the GNU General Public 
+~~ License along with this program.  If not, see
+~~ <http://www.gnu.org/licenses/gpl-3.0.html>.
+~~ #L%
+~~~
+                                 --------------
+                                 V7 Client API
+                                 --------------
+                                 Michael Thomas
+                                 --------------
+                                   24/10/2013
+
+info
+
+* Folding@home Client
+  ~~~~~~~~~~~~~~~~~~~
+*-----------------------*------------------------------------------------------+
+ <<Attribute>>          | <<Description>>
+*-----------------------*------------------------------------------------------+
+ Website                | Homepage of the creator of the client
+*-----------------------*------------------------------------------------------+
+ Copyright              | Copyright notice for the client
+*-----------------------*------------------------------------------------------+
+ Author                 | Name of the author of the client
+*-----------------------*------------------------------------------------------+
+ Args                   | Any command line arguments passed to the client
+*-----------------------*------------------------------------------------------+
+ Config                 | Location of the configuration file
+*-----------------------*------------------------------------------------------+
+
+* Build
+  ~~~~~
+*-----------------------*------------------------------------------------------+
+ <<Attribute>>          | <<Description>>
+*-----------------------*------------------------------------------------------+
+ Version                | Version number of the client
+*-----------------------*------------------------------------------------------+
+ Date                   | Date of client compilation
+*-----------------------*------------------------------------------------------+
+ Time                   | Time of client compilation
+*-----------------------*------------------------------------------------------+
+ SVN Rev                | Subversion revision number
+*-----------------------*------------------------------------------------------+
+ Branch                 | Branch from the main subversion trunk
+*-----------------------*------------------------------------------------------+
+ Compiler               | Compiler used to build the client
+*-----------------------*------------------------------------------------------+
+ Options                | Any compiler options used to build the client
+*-----------------------*------------------------------------------------------+
+ Platform               | The platform that the client was built for
+*-----------------------*------------------------------------------------------+
+ Bits                   | CPU architecture (32 or 64 bit)
+*-----------------------*------------------------------------------------------+
+ Mode                   | Release or beta
+*-----------------------*------------------------------------------------------+
+
+* System
+  ~~~~~~
+*-----------------------*------------------------------------------------------+
+ <<Attribute>>          | <<Description>>
+*-----------------------*------------------------------------------------------+
+ OS                     | Operating system the client is currently running on
+*-----------------------*------------------------------------------------------+
+ CPU                    | The CPU description that the client is running on
+*-----------------------*------------------------------------------------------+
+ CPU ID                 | Internal Identifier for the Systems CPU
+*-----------------------*------------------------------------------------------+
+ CPUs                   | The number of CPUs in the current system
+*-----------------------*------------------------------------------------------+
+ Memory                 | The amount of memory installed in the system
+*-----------------------*------------------------------------------------------+
+ Free Memory            | The amount of free memory available for the client
+*-----------------------*------------------------------------------------------+
+ Threads                | The type of threading system used
+*-----------------------*------------------------------------------------------+
+ GPUs                   | The number of Graphics Processors installed
+*-----------------------*------------------------------------------------------+
+ GPU 0                  | The Description of the GPU installed
+*-----------------------*------------------------------------------------------+
+ CUDA                   | Specifies whether nVidia CUDA is supported by the
+                        | graphics processor
+*-----------------------*------------------------------------------------------+
+ On Battery             | Boolean flag to specify whether a laptop running the
+                        | client is currently running on battery
+*-----------------------*------------------------------------------------------+
+ UTC offset             | The time offset from GMT
+*-----------------------*------------------------------------------------------+
+ PID                    | The process Identifier for the running client
+*-----------------------*------------------------------------------------------+
+ CWD                    | The client working directory location
+*-----------------------*------------------------------------------------------+
+ Win32 Service          | Boolean flag to specify whether the client is set up
+                        | as a Windows service
+*-----------------------*------------------------------------------------------+
+
+options
+~~~~~~~
+*-----------------------*------------------------------------------------------+
+ <<Attribute>>          | <<Description>>
+*-----------------------*------------------------------------------------------+
+ assignment-servers     | The URLs of work assignment servers
+*-----------------------*------------------------------------------------------+
+ capture-directory      | Not known
+*-----------------------*------------------------------------------------------+
+ capture-sockets        | Not known
+*-----------------------*------------------------------------------------------+
+ checkpoint             | The time between work checkpoints (times when the
+                        | current calculations are saved to disk)
+*-----------------------*------------------------------------------------------+
+ child                  | Boolean flag to specify if this client is a child of
+                        | another process
+*-----------------------*------------------------------------------------------+
+ client-subtype         | The sub-type of client running
+*-----------------------*------------------------------------------------------+
+ client-type            | The type of client running
+*-----------------------*------------------------------------------------------+
+ command-address        | IP address of the API
+*-----------------------*------------------------------------------------------+
+ command-allow          | IP addresses to allow connection of the API to using a
+                        | password
+*-----------------------*------------------------------------------------------+
+ command-allow-no-pass  | IP addresses to allow connection to the API without
+                        | using a password
+*-----------------------*------------------------------------------------------+
+ command-deny           | IP addresses to deny connection of the API to using a
+                        | password
+*-----------------------*------------------------------------------------------+
+ command-deny-no-pass   | IP addresses to deny connection to the API without
+                        | using a password
+*-----------------------*------------------------------------------------------+
+ command-port           | The port number used to communicate with the client
+                        | API
+*-----------------------*------------------------------------------------------+
+ config-rotate          | Not known
+*-----------------------*------------------------------------------------------+
+ config-rotate-dir      | Not known
+*-----------------------*------------------------------------------------------+
+ config-rotate-max      | Not known
+*-----------------------*------------------------------------------------------+
+ core-dir               | The directory that the core files are stored
+*-----------------------*------------------------------------------------------+
+ core-key               | Not known
+*-----------------------*------------------------------------------------------+
+ core-prep              | Not known
+*-----------------------*------------------------------------------------------+
+ core-priority          | The cpu “niceness” that the core runs under
+*-----------------------*------------------------------------------------------+
+ core-server            | Server IP address to download core files
+*-----------------------*------------------------------------------------------+
+ cpu-affinity           | Boolean flag to specify whether to raise the client
+                        | process CPU affinity
+*-----------------------*------------------------------------------------------+
+ cpu-species            | The CPU species basic type defined by Cosm project
+*-----------------------*------------------------------------------------------+
+ cpu-type               | The CPU basic type defined by Cosm project
+*-----------------------*------------------------------------------------------+
+ cpu-usage              | The percentage of idle CPU cycles to use
+*-----------------------*------------------------------------------------------+
+ cpus                   | The number of CPU cores available for the client to
+                        | use
+*-----------------------*------------------------------------------------------+
+ cycle-rate             | Not known
+*-----------------------*------------------------------------------------------+
+ cycles                 | Not known
+*-----------------------*------------------------------------------------------+
+ daemon                 | Boolean flag to specify whether the client is running
+                        | as a daemon
+*-----------------------*------------------------------------------------------+
+ data-directory         | The location of the directory to store work unit data
+                        | files
+*-----------------------*------------------------------------------------------+
+ debug-sockets          | Not known
+*-----------------------*------------------------------------------------------+
+ dump-after-deadline    | Delete data after the work unit expires
+*-----------------------*------------------------------------------------------+
+ eval                   | Not known
+*-----------------------*------------------------------------------------------+
+ exception-locations    | Not known
+*-----------------------*------------------------------------------------------+
+ exec-directory         | The working directory of the main client executable
+*-----------------------*------------------------------------------------------+
+ exit-when-done         | Boolean flag to specify whether the client should quit
+                        | when all work units have been completed
+*-----------------------*------------------------------------------------------+
+ extra-core-args        | Extra command line arguments to pass to the core
+*-----------------------*------------------------------------------------------+
+ force-ws               | Not known
+*-----------------------*------------------------------------------------------+
+ gpu                    | Boolean flag to specify whether to use GPU for
+                        | calculations
+*-----------------------*------------------------------------------------------+
+ gpu-assignment-servers | Work assignment server IP addresses for GPU work units
+*-----------------------*------------------------------------------------------+
+ gpu-device-id          | Not known
+*-----------------------*------------------------------------------------------+
+ gpu-id                 | The Graphics processor identifier to use for
+                        | calculations
+*-----------------------*------------------------------------------------------+
+ gpu-index              | Not known
+*-----------------------*------------------------------------------------------+
+ gpu-vendor-id          | Not known
+*-----------------------*------------------------------------------------------+
+ log                    | Filename of the log file to use
+*-----------------------*------------------------------------------------------+
+ log-color              | Boolean flag to specify whether colour is to be used
+                        | to highlight important information in the log file
+*-----------------------*------------------------------------------------------+
+ log-crlf               | Boolean flag to use both carriage return and line feed
+                        | characters in the log file
+*-----------------------*------------------------------------------------------+
+ log-date               | Boolean flag to specify whether to append the date to
+                        | every log entry
+*-----------------------*------------------------------------------------------+
+ log-debug              | Boolean flag to specify whether debugging messages
+                        | should be output to log files
+*-----------------------*------------------------------------------------------+
+ log-domain             | Not known
+*-----------------------*------------------------------------------------------+
+ log-domain-levels      | Not known
+*-----------------------*------------------------------------------------------+
+ log-header             | Boolean flag to specify whether headers should be
+                        | appended to log files
+*-----------------------*------------------------------------------------------+
+ log-level              | Not known
+*-----------------------*------------------------------------------------------+
+ log-no-info-header     | Not known
+*-----------------------*------------------------------------------------------+
+ log-redirect           | Not known
+*-----------------------*------------------------------------------------------+
+ log-rotate             | Boolean flag to specify whether to rotate log files
+*-----------------------*------------------------------------------------------+
+ log-rotate-dir         | Location of the directory to store log rotate files
+*-----------------------*------------------------------------------------------+
+ log-rotate-max         | Maximum number of log rotate files to store
+*-----------------------*------------------------------------------------------+
+ log-short-level        | Not known
+*-----------------------*------------------------------------------------------+
+ log-simple-domains     | Not known
+*-----------------------*------------------------------------------------------+
+ log-thread-id          | Not known
+*-----------------------*------------------------------------------------------+
+ log-time               | Boolean flag to specify whether to append the time to
+                        | every log entry
+*-----------------------*------------------------------------------------------+
+ log-to-screen          | Boolean flag to specify whether the client should
+                        | display log messages on screen
+*-----------------------*------------------------------------------------------+
+ log-truncate           | Boolean flag to specify whether to log files should be
+                        | truncated
+*-----------------------*------------------------------------------------------+
+ machine-id             | The client identifier (needs to be unique to each
+                        | client if more than one client is run on the machine)
+*-----------------------*------------------------------------------------------+
+ max-delay              | Not known
+*-----------------------*------------------------------------------------------+
+ max-packet-size        | Not known
+*-----------------------*------------------------------------------------------+
+ max-queue              | The maximum number of queue entries to store
+*-----------------------*------------------------------------------------------+
+ max-shutdown-wait      | The maximum amount of time to wait for child processes
+                        | to shut down
+*-----------------------*------------------------------------------------------+
+ max-slot-errors        | Maximum number of slot errors to tolerate before
+                        | shutting down
+*-----------------------*------------------------------------------------------+
+ Max-unit-errors        | Maximum number of work unit errors to tolerate before
+                        | shutting down
+*-----------------------*------------------------------------------------------+
+ max-units              | Not known
+*-----------------------*------------------------------------------------------+
+ memory                 | Amount of memory available for the client to use
+*-----------------------*------------------------------------------------------+
+ min-delay              | Not known
+*-----------------------*------------------------------------------------------+
+ next-unit-percentage   | The next work unit’s percentage before complete
+*-----------------------*------------------------------------------------------+
+ priority               | Not known
+*-----------------------*------------------------------------------------------+
+ no-assembly            | Boolean flag to specify whether assembly code should
+                        | be executed
+*-----------------------*------------------------------------------------------+
+ os-species             | The internal identifier of the operating system
+*-----------------------*------------------------------------------------------+
+ os-type                | The type of operating system the client is running on
+*-----------------------*------------------------------------------------------+
+ passkey                | The current users passkey
+*-----------------------*------------------------------------------------------+
+ password               | The current users password
+*-----------------------*------------------------------------------------------+
+ pause-on-batery        | Boolean flag to specify whether to pause the client
+                        | when a laptop is running on battery
+*-----------------------*------------------------------------------------------+
+ pause-on-start         | Not known
+*-----------------------*------------------------------------------------------+
+ pid                    | The process identifier
+*-----------------------*------------------------------------------------------+
+ pid-file               | The file path of the process data files
+*-----------------------*------------------------------------------------------+
+ project-key            | Not known
+*-----------------------*------------------------------------------------------+
+ proxy                  | The IP address and port number of the proxy server
+                        | used to connect to the internet
+*-----------------------*------------------------------------------------------+
+ proxy-enable           | Boolean flag to specify whether the proxy settings are
+                        | to be used
+*-----------------------*------------------------------------------------------+
+ proxy-pass             | The password for the proxy server
+*-----------------------*------------------------------------------------------+
+ proxy-user             | The username for the proxy server
+*-----------------------*------------------------------------------------------+
+ respawn                | Not known
+*-----------------------*------------------------------------------------------+
+ script                 | Not known
+*-----------------------*------------------------------------------------------+
+ service                | Boolean flag to specify whether the client is running
+                        | as a service
+*-----------------------*------------------------------------------------------+
+ service-description    | The description used to identify the service in the
+                        | running services OS menu
+*-----------------------*------------------------------------------------------+
+ service-restart        | Boolean flag to specify whether to restart the service
+                        | automatically if killed
+*-----------------------*------------------------------------------------------+
+ service-restart-delay  | Delay before the service restarts
+*-----------------------*------------------------------------------------------+
+ smp                    | Boolean flag to specify whether Symmetric
+                        | multiprocessing is supported by the CPU
+*-----------------------*------------------------------------------------------+
+ stack-traces           | Not known
+*-----------------------*------------------------------------------------------+
+ team                   | The team number of the user that set up the client
+*-----------------------*------------------------------------------------------+
+ threads                | Number of threads to use
+*-----------------------*------------------------------------------------------+
+ user                   | The username of the user that set up the client
+*-----------------------*------------------------------------------------------+
+ verbosity              | Amount of information log files collect
+*-----------------------*------------------------------------------------------+
+
+simulation-info
+~~~~~~~~~~~~~~~
+*-----------------------*------------------------------------------------------+
+ <<Attribute>>          | <<Description>>
+*-----------------------*------------------------------------------------------+
+ user                   | The username of the user that set up the client
+*-----------------------*------------------------------------------------------+
+ team                   | The team number of the user that set up the client
+*-----------------------*------------------------------------------------------+
+ project                | The project number of the requested simulation
+*-----------------------*------------------------------------------------------+
+ run                    | The run number of the requested simulation
+*-----------------------*------------------------------------------------------+
+ clone                  | The clone number of the requested simulation
+*-----------------------*------------------------------------------------------+
+ gen                    | The generation number of the requested simulation
+*-----------------------*------------------------------------------------------+
+ core_type              | The identifier of the core used within the simulation
+*-----------------------*------------------------------------------------------+
+ core                   | Description of the core used within the simulation
+*-----------------------*------------------------------------------------------+
+ description            | The project description of the requested simulation
+*-----------------------*------------------------------------------------------+
+ total_iterations       | The total number of iterations before the simulation
+                        | is complete
+*-----------------------*------------------------------------------------------+
+ iterations_done        | The number of iterations that have been completed for
+                        | the requested simulation
+*-----------------------*------------------------------------------------------+
+ energy                 | Not known
+*-----------------------*------------------------------------------------------+
+ temperature            | Not known
+*-----------------------*------------------------------------------------------+
+ start_time             | The timestamp of when the requested simulation was
+                        | started
+*-----------------------*------------------------------------------------------+
+ timeout                | Unix timestamp of when the work unit expires
+*-----------------------*------------------------------------------------------+
+ deadline               | Unix timestamp of when the work unit results need to
+                        | be sent to the collection server
+*-----------------------*------------------------------------------------------+
+ run_time               | Number of seconds that the work unit has been running
+                        | for
+*-----------------------*------------------------------------------------------+
+ simulation_time        | The requested simulation’s running time
+*-----------------------*------------------------------------------------------+
+ eta                    | The number of seconds before the work unit is
+                        | estimated to be completed by
+*-----------------------*------------------------------------------------------+
+ news                   | Not yet used
+*-----------------------*------------------------------------------------------+
+
+slot-options
+~~~~~~~~~~~~
+*-----------------------*------------------------------------------------------+
+ <<Attribute>>          | <<Description>>
+*-----------------------*------------------------------------------------------+
+ client-type            | The type of client that this slot is using
+*-----------------------*------------------------------------------------------+
+ client-subtype         | The sub-type of client that this slot is using
+*-----------------------*------------------------------------------------------+
+ machine-id             | The unique identifier of the client in use on this
+                        | slot
+*-----------------------*------------------------------------------------------+
+ max-packet-size        | Not known
+*-----------------------*------------------------------------------------------+
+ core-priority          | The cpu “niceness” that this slot’s core runs under
+*-----------------------*------------------------------------------------------+
+ next-unit-percentage   | The percentage completed of this slot’s work unit
+*-----------------------*------------------------------------------------------+
+ max-units              | Not known
+*-----------------------*------------------------------------------------------+
+ checkpoint             | The time between work checkpoints (times when the
+                        | current calculations are saved to disk)
+*-----------------------*------------------------------------------------------+
+ pause-on-start         | Not known
+*-----------------------*------------------------------------------------------+
+ gpu-vendor-id          | Not known
+*-----------------------*------------------------------------------------------+
+ gpu-device-id          | Not known
+*-----------------------*------------------------------------------------------+
+
+slots
+~~~~~
+*-----------------------*------------------------------------------------------+
+ <<Attribute>>          | <<Description>>
+*-----------------------*------------------------------------------------------+
+ id                     | The requested slot identifier
+*-----------------------*------------------------------------------------------+
+ status                 | The requested slot’s running status
+*-----------------------*------------------------------------------------------+
+ description            | The description of the client running in the requested
+                        | slot
+*-----------------------*------------------------------------------------------+
+
+* options
+  ~~~~~~~
+*-----------------------*------------------------------------------------------+
+ <<Attribute>>          | <<Description>>
+*-----------------------*------------------------------------------------------+
+ Pause-on-start         | Not known
+*-----------------------*------------------------------------------------------+
+
+units
+~~~~~
+*-----------------------*------------------------------------------------------+
+ <<Attribute>>          | <<Description>>
+*-----------------------*------------------------------------------------------+
+ id                     | The requested work unit identifier
+*-----------------------*------------------------------------------------------+
+ state                  | The requested work unit’s running status
+*-----------------------*------------------------------------------------------+
+ project                | The requested work unit’s project number
+*-----------------------*------------------------------------------------------+
+ run                    | The requested work unit’s run number
+*-----------------------*------------------------------------------------------+
+ clone                  | The requested work unit’s clone number
+*-----------------------*------------------------------------------------------+
+ gen                    | The requested work unit’s generation number
+*-----------------------*------------------------------------------------------+
+ core                   | The requested work unit’s core identifier
+*-----------------------*------------------------------------------------------+
+ unit                   | Not known
+*-----------------------*------------------------------------------------------+
+ percentdone            | The requested work unit’s percentage complete
+*-----------------------*------------------------------------------------------+
+ totalframes            | The requested work unit’s total number of iterations
+*-----------------------*------------------------------------------------------+
+ framesdone             | The requested work unit’s number of iterations
+                        | completed
+*-----------------------*------------------------------------------------------+
+ assigned               | The timestamp of when the requested work unit was
+                        | assigned to the user
+*-----------------------*------------------------------------------------------+
+ timeout                | The timestamp of when the requested work unit expires
+*-----------------------*------------------------------------------------------+
+ deadline               | The timestamp of when the requested work unit’s
+                        | results need to be submitted to the collection server
+*-----------------------*------------------------------------------------------+
+ ws                     | The requested work unit’s assignment server IP
+*-----------------------*------------------------------------------------------+
+ cs                     | The requested work unit’s collection server IP
+*-----------------------*------------------------------------------------------+
+ waitingon              | Not known
+*-----------------------*------------------------------------------------------+
+ attempts               | The number of attempts that results have been tried to
+                        | be uploaded to the collection server
+*-----------------------*------------------------------------------------------+
+ nextattempt            | Number of seconds before the next time results are
+                        | attempted to be uploaded to the collection server
+*-----------------------*------------------------------------------------------+
+ slot                   | The slot number running this requested work unit
+*-----------------------*------------------------------------------------------+
+ eta                    | Estimated time of arrival
+*-----------------------*------------------------------------------------------+
+ ppd                    | Number of points per day
+*-----------------------*------------------------------------------------------+
+ tpf                    | Time per frame
+*-----------------------*------------------------------------------------------+
+ basecredit             | Number of points for completing the work unit
+*-----------------------*------------------------------------------------------+
+ creditestimate         | Number of points for completing the work unit + bonus
+                        | for early completion
+*-----------------------*------------------------------------------------------+
