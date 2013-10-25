@@ -19,20 +19,17 @@
 ~~ <http://www.gnu.org/licenses/gpl-3.0.html>.
 ~~ #L%
 ~~~
-                         ----------------------------
-                         First Increment (Conclusion)
-                         ----------------------------
-                                Michael Thomas
-                         ----------------------------
-                                  20/10/2013
+                              --------------------
+                              Project Object Model
+                              --------------------
+                                 Michael Thomas
+                              --------------------
+                                   24/10/2013
 
-Summary
+About
 
-  The user interface has been implemented for the current stable Folding@home
-  client and most of the data can be extracted from the queue.dat binary file.
-  The FAHView program will not support some of the more obscure and deprecated
-  data.
+  "POM stands for "Project Object Model". It is an XML representation of a Maven
+  project held in a file named pom.xml." (Apache Software Foundation, 2002-2013)
 
-  The next chapter will look at the requirements collection, design,
-  implementation and testing of the integration of the 3D molecule viewer to
-  display an interactive representation of the current work unit.
+  The original project pom.xml can be found at the projects website at
+  {{{https://code.google.com/p/fahview/source/browse/trunk/pom.xml?r=2}Google Code}}

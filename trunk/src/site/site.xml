@@ -15,10 +15,10 @@
   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   GNU General Public License for more details.
   
-You should have received a copy of the GNU General Public 
-License along with this program.  If not, see
-<http://www.gnu.org/licenses/gpl-3.0.html>.
-#L%
+  You should have received a copy of the GNU General Public 
+  License along with this program.  If not, see
+  <http://www.gnu.org/licenses/gpl-3.0.html>.
+  #L%
 -->
 <project xmlns="http://maven.apache.org/DECORATION/1.3.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -68,6 +68,21 @@ License along with this program.  If not, see
                 <item name="Requirements" href="third-requirements.html"/>
                 <item name="Design" href="third-design.html"/>
                 <item name="Conclusion" href="third-conclusion.html"/>
+            </item>
+            
+            <item name="Personal Learning Experience" href="learning.html"/>
+            <item name="Evaluation of Tools" href="evaluation.html"/>
+            <item name="Conclusion" href="conclusion.html"/>
+            <item name="Bibliography" href="bibliography.html"/>
+            <item name="Glossary" href="glossary.html"/>
+            
+            <item name="Appendices" href="appendices.html">
+                <item name="Project Proposal" href="project-proposal.html"/>
+                <item name="Project Initiation Document" href="project-initiation-document.html"/>
+                <item name="List of Cores" href="core-list.html"/>
+                <item name="Project Object Model" href="pom.html"/>
+                <item name="Queue Structure" href="queue-structure.html"/>
+                <item name="V7 Client API" href="client-api.html"/>
             </item>
         </menu>
 
