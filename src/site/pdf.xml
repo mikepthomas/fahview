@@ -58,7 +58,15 @@
         <item name="Aim and Objectives" ref="objectives.apt"/>
         <item name="Development Method" ref="development.apt"/>
         <item name="Project Planning" ref="planning.apt"/>
-        <item name="Research" ref="research.apt"/>
+
+        <item name="Research" ref="research.apt">
+            <item name="Critique of Current Client" ref="client-critique.apt"/>
+            <item name="Literature Review" ref="literature-review.apt"/>
+            <item name="Reverse Engineering" ref="reverse-engineering.apt"/>
+            <item name="Testing Strategies" ref="testing-strategies.apt"/>
+            <item name="Software Licensing" ref="software-licensing.apt"/>
+            <item name="Conclusion" ref="research-conclusion.apt"/>
+        </item>
 
         <item name="First Increment" ref="first-introduction.apt">
             <item name="Requirements" ref="first-requirements.apt"/>
@@ -84,10 +92,10 @@
 
         <item name="Personal Learning Experience" ref="learning.apt"/>
         <item name="Evaluation of Tools" ref="evaluation.apt"/>
-        <item name="Conclusion" ref="conclusion.apt"/>
+        <item name="Project Conclusion" ref="conclusion.apt"/>
         <item name="Bibliography" ref="bibliography.apt"/>
         <item name="Glossary" ref="glossary.apt"/>
-        
+
         <item name="Appendices" ref="appendices.apt">
             <item name="Project Proposal" ref="project-proposal.apt"/>
             <item name="Project Initiation Document" ref="project-initiation-document.apt"/>

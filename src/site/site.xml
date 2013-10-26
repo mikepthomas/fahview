@@ -46,9 +46,17 @@
             <item name="Aim and Objectives" href="objectives.html"/>
             <item name="Development Method" href="development.html"/>
             <item name="Project Planning" href="planning.html"/>
-            <item name="Research" href="research.html"/>
 
-            <item name="First Increment" href="first-introduction.html">
+            <item name="Research" href="research.html" collapse="true">
+                <item name="Critique of Current Client" href="client-critique.html"/>
+                <item name="Literature Review" href="literature-review.html"/>
+                <item name="Reverse Engineering" href="reverse-engineering.html"/>
+                <item name="Testing Strategies" href="testing-strategies.html"/>
+                <item name="Software Licensing" href="software-licensing.html"/>
+                <item name="Conclusion" href="research-conclusion.html"/>
+            </item>
+
+            <item name="First Increment" href="first-introduction.html" collapse="true">
                 <item name="Requirements" href="first-requirements.html"/>
                 <item name="Design" href="first-design.html"/>
                 <item name="Implementation" href="first-implementation.html"/>
@@ -56,7 +64,7 @@
                 <item name="Conclusion" href="first-conclusion.html"/>
             </item>
 
-            <item name="Second Increment" href="second-introduction.html">
+            <item name="Second Increment" href="second-introduction.html" collapse="true">
                 <item name="Requirements" href="second-requirements.html"/>
                 <item name="Design" href="second-design.html"/>
                 <item name="Implementation" href="second-implementation.html"/>
@@ -64,19 +72,19 @@
                 <item name="Conclusion" href="second-conclusion.html"/>
             </item>
 
-            <item name="Third Increment" href="third-introduction.html">
+            <item name="Third Increment" href="third-introduction.html" collapse="true">
                 <item name="Requirements" href="third-requirements.html"/>
                 <item name="Design" href="third-design.html"/>
                 <item name="Conclusion" href="third-conclusion.html"/>
             </item>
-            
+
             <item name="Personal Learning Experience" href="learning.html"/>
             <item name="Evaluation of Tools" href="evaluation.html"/>
             <item name="Conclusion" href="conclusion.html"/>
             <item name="Bibliography" href="bibliography.html"/>
             <item name="Glossary" href="glossary.html"/>
-            
-            <item name="Appendices" href="appendices.html">
+
+            <item name="Appendices" href="appendices.html" collapse="true">
                 <item name="Project Proposal" href="project-proposal.html"/>
                 <item name="Project Initiation Document" href="project-initiation-document.html"/>
                 <item name="List of Cores" href="core-list.html"/>

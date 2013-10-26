@@ -159,7 +159,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-install-plugin</artifactId>
-                    <version>2.5</version>
+                    <version>2.5.1</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -213,27 +213,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
                 <version>2.6</version>
-                <executions>
-                    <execution>
-                        <inherited>false</inherited>
-                        <id>copy-pdf</id>
-                        <phase>site</phase>
-                        <goals>
-                            <goal>copy-resources</goal>
-                        </goals>
-                        <configuration>
-                            <outputDirectory>${project.build.directory}/site</outputDirectory>
-                            <resources>
-                                <resource>
-                                    <directory>${project.build.directory}/pdf</directory>
-                                    <includes>
-                                        <include>*.pdf</include>
-                                    </includes>
-                                </resource>
-                            </resources>
-                        </configuration>
-                    </execution>
-                </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -306,7 +285,7 @@
                 <reportSets>
                     <reportSet>
                         <reports>
-                            <report>index</report>
+                            <!--report>index</report-->
                             <report>modules</report>
                             <report>plugin-management</report>
                             <report>distribution-management</report>
@@ -466,7 +445,7 @@
                         <inherited>true</inherited>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-deploy-plugin</artifactId>
-                        <version>2.8</version>
+                        <version>2.8.1</version>
                         <configuration>
                             <updateReleaseInfo>true</updateReleaseInfo>
                         </configuration>

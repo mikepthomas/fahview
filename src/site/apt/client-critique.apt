@@ -1,0 +1,76 @@
+~~~
+~~ #%L
+~~ FAHView
+~~ %%
+~~ Copyright (C) 2011 - 2013 Michael Thomas <mikepthomas@outlook.com>
+~~ %%
+~~ This program is free software: you can redistribute it and/or modify
+~~ it under the terms of the GNU General Public License as
+~~ published by the Free Software Foundation, either version 3 of the 
+~~ License, or (at your option) any later version.
+~~ 
+~~ This program is distributed in the hope that it will be useful,
+~~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+~~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+~~ GNU General Public License for more details.
+~~ 
+~~ You should have received a copy of the GNU General Public 
+~~ License along with this program.  If not, see
+~~ <http://www.gnu.org/licenses/gpl-3.0.html>.
+~~ #L%
+~~~
+                                 ---------------
+                                 Client Critique
+                                 ---------------
+                                 Michael Thomas
+                                 ---------------
+                                   26/10/2013
+
+About
+
+  At the time of writing version 6.2 was the current stable version of the
+  Folding@home client. Just looking at the
+  {{{http://folding.stanford.edu/English/Download}project's download page}}
+  shows multiple clients that are currently in use, this is mainly due to the
+  fact that they support a number of operating systems and different hardware
+  platforms.
+
+  The main types of client are:
+
+* The Console Client
+
+  "The <<Console>> client runs in the background and is launched from a terminal
+  window (command line i.e. DOS window), to which they output text messages
+  about the simulation's progress." (Folding@home, 2000-2010) these clients can
+  be a little difficult to initially get set up, but once running can be easily
+  be forgotten about and left to their own devices.
+
+* The GUI Client
+
+  "The graphical clients (former <<GUI>> or current <<System Tray>>) run in the
+  background and has a graphics window interface that allows you to see the
+  protein being simulated." (Folding@home, 2000-2010) these clients are not used
+  as much as they used to be due to the GUI included uses a lot of the systems
+  resources that could be better used for the work calculations, they are
+  usually bundled in an installer so that they can be easily installed.
+
+* Beta Client
+
+  "Clients \[released\] early for donors to beta test." (Folding@home,
+  2000-2010) these clients can be quite unstable due to the fact that they have
+  not been fully tested yet and therefore may contain bugs.
+
+* High performance client (GPU, SMP/multicore)
+
+  "These clients use more system resources, but are also much more productive."
+  (Folding@home, 2000-2010) these clients usually run against top-end hardware
+  and specialised hardware such as GPUs and the Sony PlayStation 3 games
+  console, I will not be working and testing against these clients yet as I do
+  not believe it will be possible within the time scale of the project. However,
+  they could be supported at a later date to be included in future work.
+
+Outline Of Improvements
+
+  The main improvements that the project will provide is the ability to view
+  past data about each client this will enable the program to derive information
+  from this such as the projected finish date.

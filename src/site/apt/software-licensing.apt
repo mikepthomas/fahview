@@ -1,0 +1,73 @@
+~~~
+~~ #%L
+~~ FAHView
+~~ %%
+~~ Copyright (C) 2011 - 2013 Michael Thomas <mikepthomas@outlook.com>
+~~ %%
+~~ This program is free software: you can redistribute it and/or modify
+~~ it under the terms of the GNU General Public License as
+~~ published by the Free Software Foundation, either version 3 of the 
+~~ License, or (at your option) any later version.
+~~ 
+~~ This program is distributed in the hope that it will be useful,
+~~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+~~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+~~ GNU General Public License for more details.
+~~ 
+~~ You should have received a copy of the GNU General Public 
+~~ License along with this program.  If not, see
+~~ <http://www.gnu.org/licenses/gpl-3.0.html>.
+~~ #L%
+~~~
+                               ------------------
+                               Software Licensing
+                               ------------------
+                                 Michael Thomas
+                               ------------------
+                                   26/10/2013
+
+Introduction
+
+  As the aim to the project is to eventually help the community with the
+  introduction of this application. I will need to look at how the program will
+  be licensed. This section will look at the different types of software
+  licensing and the advantages and disadvantages of each type.
+
+Proprietary Licensing
+
+  An example of a proprietary licensing model would be to hold on to the source
+  code of the software but allow the compiled binary file to be freely
+  distributed or distributed for a fee. The advantage to this would be that you
+  have full control of the source code. However, as the community would have no
+  access to the source, all bugs will have to be fixed by the developer.
+
+Open source Licences
+
+  Open source licenses allow for the distribution of the source code of the
+  program. There are a few different types of open source licence that could be
+  used for the software and documentation of the project.
+
+  * {{{http://www.gnu.org/copyleft/gpl.html}GPL}} -
+    The GNU general-purpose licence, there are currently 3 main versions of GPL.
+
+  * {{{http://www.apache.org/licenses}Apache}} -
+    The apache open source license.
+
+  * {{{http://www.opensource.org/licenses/MIT}MIT}} -
+    The MIT License.
+
+  * {{{http://www.mozilla.org/MPL}Mozilla}} -
+    The Mozilla Public License.
+
+  * {{{http://creativecommons.org/licenses}Creative Commons}} -
+    Creative Commons licenses
+
+Choice of Licence
+
+  Once the project has been completed I want to release it to the community so
+  that it can be used and expanded, in other words I would like to release it
+  under an open source license. This project will eventually be released under
+  the GNU General purpose licence as some of the components that the project is
+  based upon are licensed under the same license. Another reason for this is
+  that I want to release the source to the community to work on after submission
+  of the project; therefore I want to release it under a fairly liberal license.
