@@ -203,10 +203,22 @@ public class Client {
         return version;
     }
 
+    /**
+     * <p>trimAttribute.</p>
+     *
+     * @param line a {@link java.lang.String} object.
+     * @return a {@link java.lang.String} object.
+     */
     private String trimAttribute(String line) {
         return line = line.substring(line.lastIndexOf(":") + 2);
     }
 
+    /**
+     * <p>trimFilePath.</p>
+     *
+     * @param line a {@link java.lang.String} object.
+     * @return a {@link java.lang.String} object.
+     */
     private String trimFilePath(String line) {
         return line = line.substring(line.indexOf(":") + 2);
     }

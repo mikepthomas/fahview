@@ -71,6 +71,7 @@ public class WorkProject implements Project {
     private Lookup lookup;
 
     /**
+     * <p>Constructor for WorkProject.</p>
      *
      * @param projectDirectory FileObject
      * @param projectState ProjectState

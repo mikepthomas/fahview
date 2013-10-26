@@ -37,6 +37,7 @@ import org.openide.util.NbBundle;
 public class GeneralClientProperties
     implements ProjectCustomizer.CompositeCategoryProvider {
 
+    /** Constant <code>GENERAL="General"</code> */
     private static final String GENERAL = "General";
 
     /**

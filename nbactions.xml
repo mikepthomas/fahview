@@ -43,6 +43,9 @@
             <goal>javadoc:fix</goal>
             <goal>javadoc:test-fix</goal>
         </goals>
+        <properties>
+            <force>true</force>
+        </properties>
         <activatedProfiles>
             <activatedProfile>release-profile</activatedProfile>
         </activatedProfiles>

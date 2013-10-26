@@ -83,6 +83,11 @@ public class LogReader {
 
     }
 
+    /**
+     * <p>Setter for the field <code>logPosition</code>.</p>
+     *
+     * @param line a {@link java.lang.String} object.
+     */
     private void setLogPosition(String line) {
         String values[] = line.split(" ");
         this.logPosition = Integer.parseInt(values[5]);
