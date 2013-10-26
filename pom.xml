@@ -47,6 +47,7 @@
     <prerequisites/>
 
     <modules>
+        <module>configuration</module>
         <module>branding</module>
         <module>application</module>
         <module>FAHView-v6project</module>
@@ -263,6 +264,7 @@
                 <version>${version.maven-checkstyle-plugin}</version>
                 <configuration>
                     <configLocation>config/sun_checks.xml</configLocation>
+                    <suppressionsLocation>checkstyle/suppressions.xml</suppressionsLocation>
                 </configuration>
             </plugin>
             <plugin>
@@ -443,6 +445,18 @@
             <build>
                 <plugins>
                     <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-checkstyle-plugin</artifactId>
+                        <version>${version.maven-checkstyle-plugin}</version>
+                        <dependencies>
+                            <dependency>
+                                <groupId>${project.groupId}</groupId>
+                                <artifactId>FAHView-configuration</artifactId>
+                                <version>${project.version}</version>
+                            </dependency>
+                        </dependencies>
+                    </plugin>
+                    <plugin>
                         <inherited>true</inherited>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-deploy-plugin</artifactId>
@@ -525,15 +539,24 @@
                         <configuration>
                             <canUpdateCopyright>true</canUpdateCopyright>
                             <canUpdateDescription>true</canUpdateDescription>
+                            <descriptionTemplate>license/description-template.ftl</descriptionTemplate>
                             <licenseFile>${project.basedir}/src/COPYING</licenseFile>
-                            <licenseName>gpl_v3</licenseName>
+                            <licenseName>gpl_v3_fahview</licenseName>
                             <missingFile>src/main/license/third-party.properties</missingFile>
+                            <licenseResolver>classpath://license</licenseResolver>
                             <organizationName>
                                 ${project.developers[0].name} &lt;${project.developers[0].email}&gt;
                             </organizationName>
                             <thirdPartyFilename>LICENSE</thirdPartyFilename>
                             <useMissingFile>true</useMissingFile>
                         </configuration>
+                        <dependencies>
+                            <dependency>
+                                <groupId>${project.groupId}</groupId>
+                                <artifactId>FAHView-configuration</artifactId>
+                                <version>${project.version}</version>
+                            </dependency>
+                        </dependencies>
                         <executions>
                             <execution>
                                 <phase>prepare-package</phase>
