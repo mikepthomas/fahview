@@ -1,0 +1,46 @@
+~~~
+~~ #%L
+~~ FAHView
+~~ %%
+~~ Copyright (C) 2011 - 2013 Michael Thomas <mikepthomas@outlook.com>
+~~ %%
+~~ This program is free software: you can redistribute it and/or modify
+~~ it under the terms of the GNU General Public License as
+~~ published by the Free Software Foundation, either version 3 of the 
+~~ License, or (at your option) any later version.
+~~ 
+~~ This program is distributed in the hope that it will be useful,
+~~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+~~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+~~ GNU General Public License for more details.
+~~ 
+~~ You should have received a copy of the GNU General Public 
+~~ License along with this program.  If not, see
+~~ <http://www.gnu.org/licenses/gpl-3.0.html>.
+~~ #L%
+~~~
+                              ---------------------
+                              Research (Conclusion)
+                              ---------------------
+                                 Michael Thomas
+                              ---------------------
+                                   26/10/2013
+
+Significance Of My Work
+
+  The project is significant as the it will help make the Folding@home project
+  easier to use, and more accessible to the masses which in turn will enable an
+  increase in client use to increase research for the Stanford Pande Lab.
+
+Summary
+
+  The Folding@home client is a complex piece of software; if the project is to
+  be completed successfully it must be understood thoroughly. This can be
+  achieved by effective research of the problem domain and will be soon starting
+  work of collecting requirements and creating preliminary designs for the
+  system.
+
+  The next chapter will focus on the requirements collection, design,
+  implementation and testing of the first iteration of the project which will
+  look at the extraction of data from the current and past stable releases of
+  the Folding@home client.

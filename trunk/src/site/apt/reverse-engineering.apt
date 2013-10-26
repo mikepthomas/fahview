@@ -1,0 +1,43 @@
+~~~
+~~ #%L
+~~ FAHView
+~~ %%
+~~ Copyright (C) 2011 - 2013 Michael Thomas <mikepthomas@outlook.com>
+~~ %%
+~~ This program is free software: you can redistribute it and/or modify
+~~ it under the terms of the GNU General Public License as
+~~ published by the Free Software Foundation, either version 3 of the 
+~~ License, or (at your option) any later version.
+~~ 
+~~ This program is distributed in the hope that it will be useful,
+~~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+~~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+~~ GNU General Public License for more details.
+~~ 
+~~ You should have received a copy of the GNU General Public 
+~~ License along with this program.  If not, see
+~~ <http://www.gnu.org/licenses/gpl-3.0.html>.
+~~ #L%
+~~~
+                               -------------------
+                               Reverse Engineering
+                               -------------------
+                                 Michael Thomas
+                               -------------------
+                                   19/10/2013
+
+About
+
+  As this project contains a substantial amount of reverse engineering of the
+  binary "queue.dat" file, it would be a good idea to look at reverse
+  engineering techniques.
+
+  "The most commonly employed tool for reverse engineering of files and file
+  formats is a hex editor, which typically displays files in hexadecimal and
+  ASCII formats and assumes no knowledge of the underlying file structure." (G
+  Conti et al., 2008)
+
+  A Hex editor will be used to decipher the contents of the queue.dat file using
+  the information provided about where each piece of data is stored within the
+  file. This will be identified using the table shown in the appendix about
+  Queue.dat Structure.

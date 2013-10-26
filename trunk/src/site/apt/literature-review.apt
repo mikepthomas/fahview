@@ -1,0 +1,99 @@
+~~~
+~~ #%L
+~~ FAHView
+~~ %%
+~~ Copyright (C) 2011 - 2013 Michael Thomas <mikepthomas@outlook.com>
+~~ %%
+~~ This program is free software: you can redistribute it and/or modify
+~~ it under the terms of the GNU General Public License as
+~~ published by the Free Software Foundation, either version 3 of the 
+~~ License, or (at your option) any later version.
+~~ 
+~~ This program is distributed in the hope that it will be useful,
+~~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+~~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+~~ GNU General Public License for more details.
+~~ 
+~~ You should have received a copy of the GNU General Public 
+~~ License along with this program.  If not, see
+~~ <http://www.gnu.org/licenses/gpl-3.0.html>.
+~~ #L%
+~~~
+                                -----------------
+                                Literature Review
+                                -----------------
+                                 Michael Thomas
+                                -----------------
+                                   26/10/2013
+
+About
+
+  As the project's subject is original and as such has not been covered in great
+  depth before, a literature review in the traditional sense cannot be done
+  successfully. To overcome this problem, various works that are linked to the
+  different aspects of the subject have been collated together so that a
+  sufficient pool of knowledge can be built upon in order to enable the project
+  to be completed successfully.
+
+Methodology
+
+  The main book that will be referred to, in order to adopt an appropriate
+  design methodology for use within the project is Sommerville's "Software
+  Engineering" book. This contains almost everything that will be needed to know
+  about picking a suitable software design approach and also contains
+  information about the field of Software Engineering in general. It will serve
+  as a base to structure this report in a logical way and also contains a lot of
+  information about all major phases of the software development lifecycle and
+  the different software development models that can be used. (Sommerville,
+  2007)
+
+Planning
+
+  To enable the project to be completed on time good project management is
+  essential, Maylor's Project Management book is an excellent resource of formal
+  project management techniques that can be adopted during the course of the
+  project. Software tools such as Microsoft Project and the open-source OpenProj
+  will be useful tools to assist in creating "Work Breakdown Structures and
+  Gantt charts" (Maylor, 2005) which are essential project management methods to
+  aid in keeping on track of time within the project lifecycle. These resources
+  were used in the "Planning" section of this report.
+
+Requirements
+
+  This project will have a substantial section on requirements collection and
+  analysis. The requirements for the software will need to be collected in a
+  controlled and measurable way. Kotonya's "Requirements Engineering" book will
+  assist in choosing the right requirements elicitation technique for use within
+  the project. (Kotonya and Sommerville, 1998) The Requirements Engineering book
+  also had good examples of how to use the techniques described and case studies
+  that may come in useful for referencing within this work.
+
+Software Design
+
+  The design phase of the project will be broken down into two sections, the
+  first section will involve the design of the components that have been
+  diagnosed as required in the requirements section of this report, and the
+  second section will be all about the Design of the User Interface. The Unified
+  Modelling Language (UML) will be used to notate the design of the project via
+  methods such as "Class diagrams", "Use cases", "Component diagrams" and
+  "Sequence diagrams" (Fowler, 2004). The Fowler book, UML Distilled will be
+  useful at this stage as it explains how to use the notation correctly in a way
+  that is easy to understand.
+
+* User Interface Design
+
+  The second part of the Design section will be all about the design of the User
+  interface, "Jef Raskin (March 9, 1943 — February 26, 2005) was an American
+  human-computer interface expert best known for starting the Macintosh project
+  for Apple in the late 1970s." (Swarthmore College Computer Society, 2010). As
+  Macintosh computers are (arguably) known for their good user interfaces, his
+  book, The Humane Interface (Raskin, 2000) will be a useful starting point for
+  user interface research.
+
+* Implementation
+
+  As the main program will be written in the Java programming language, this
+  will enable to keep the program portable between Linux, Macintosh and Windows.
+  Java Software Solutions (Lewis and Loftus, 2009) has many examples of good
+  programming practices in Java, it will also serve as a go to book to look up
+  classes in the standard Java libraries and give examples of how to use them.
