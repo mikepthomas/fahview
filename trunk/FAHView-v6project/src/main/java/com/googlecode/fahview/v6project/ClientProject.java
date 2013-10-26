@@ -71,6 +71,7 @@ public class ClientProject implements Project {
     private Lookup lookup;
 
     /**
+     * <p>Constructor for ClientProject.</p>
      *
      * @param projectDirectory projectDirectory
      * @param projectState ProjectState

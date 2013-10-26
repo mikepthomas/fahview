@@ -220,6 +220,12 @@ public class Core {
         return fileName;
     }
 
+    /**
+     * <p>trimAttribute.</p>
+     *
+     * @param line a {@link java.lang.String} object.
+     * @return a {@link java.lang.String} object.
+     */
     private String trimAttribute(String line) {
         return line = line.substring(line.lastIndexOf(":") + 2);
     }

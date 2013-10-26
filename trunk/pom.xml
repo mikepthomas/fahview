@@ -166,6 +166,7 @@
                     <artifactId>maven-javadoc-plugin</artifactId>
                     <version>${version.maven-javadoc-plugin}</version>
                     <configuration>
+                        <level>private</level>
                         <quiet>true</quiet>
                         <show>public</show>
                     </configuration>
