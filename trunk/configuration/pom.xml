@@ -3,10 +3,26 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.googlecode.fahview</groupId>
+    <parent>
+        <groupId>com.googlecode.fahview</groupId>
+        <artifactId>FAHView</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
     <artifactId>FAHView-configuration</artifactId>
-    <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>FAHView-configuration</name>
+    <description>Plugin Configuration for FAHView</description>
+
+    <scm>
+        <connection>scm:svn:http://fahview.googlecode.com/svn/trunk/configuration</connection>
+        <developerConnection>scm:svn:https://fahview.googlecode.com/svn/trunk/configuration</developerConnection>
+        <tag>HEAD</tag>
+        <url>${project.domain.source}/source/browse</url>
+    </scm>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 </project>

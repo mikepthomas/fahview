@@ -96,8 +96,13 @@
         <menu ref="reports" />
     </body>
 
-    <publishDate position="right"/>
+    <publishDate position="right" format="dd/MM/yyyy"/>
     <version position="right"/>
+
+    <poweredBy>
+        <logo name="Maven" alt="Built by Maven" href="http://maven.apache.org/"
+          img="images/logos/build-by-maven-black.png"/>
+    </poweredBy>
 
     <skin>
         <groupId>org.apache.maven.skins</groupId>
