@@ -68,7 +68,7 @@ public class ClientSubprojectProvider implements SubprojectProvider {
                 } catch (IOException ex) {
                     Exceptions.printStackTrace(ex);
                 } catch (IllegalArgumentException ex) {
-                    Exceptions.printStackTrace(ex);
+                    // Do nothing
                 }
             }
         }
