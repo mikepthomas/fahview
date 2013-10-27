@@ -85,7 +85,7 @@
 
     <properties>
         <brandingToken>fahview</brandingToken>
-        <netbeans.version>RELEASE74</netbeans.version>
+        <netbeans.version>RELEASE731</netbeans.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.targetJdk>1.6</project.build.targetJdk>
         <project.domain.reports>http://www.mikethomas.info</project.domain.reports>
