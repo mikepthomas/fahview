@@ -92,18 +92,18 @@
         <project.domain.source>http://code.google.com/p/fahview</project.domain.source>
         <sonar.language>java</sonar.language>
 
-        <version.maven-changelog-plugin>2.2</version.maven-changelog-plugin>
+        <version.maven-changelog-plugin>2.3</version.maven-changelog-plugin>
         <version.maven-checkstyle-plugin>2.11</version.maven-checkstyle-plugin>
         <version.maven-javadoc-plugin>2.9.1</version.maven-javadoc-plugin>
-        <version.maven-jxr-plugin>2.3</version.maven-jxr-plugin>
+        <version.maven-jxr-plugin>2.4</version.maven-jxr-plugin>
         <version.maven-pmd-plugin>3.1</version.maven-pmd-plugin>
         <version.maven-project-info-reports-plugin>2.7</version.maven-project-info-reports-plugin>
         <version.maven-surefire-plugin>2.17</version.maven-surefire-plugin>
-        <version.clirr-maven-plugin>2.6</version.clirr-maven-plugin>
+        <version.clirr-maven-plugin>2.6.1</version.clirr-maven-plugin>
         <version.cobertura-maven-plugin>2.6</version.cobertura-maven-plugin>
-        <version.findbugs-maven-plugin>2.5.2</version.findbugs-maven-plugin>
+        <version.findbugs-maven-plugin>2.5.4</version.findbugs-maven-plugin>
         <version.javancss-maven-plugin>2.0</version.javancss-maven-plugin>
-        <version.jdepend-maven-plugin>2.0-beta-2</version.jdepend-maven-plugin>
+        <version.jdepend-maven-plugin>2.0</version.jdepend-maven-plugin>
         <version.license-maven-plugin>1.7</version.license-maven-plugin>
         <version.taglist-maven-plugin>2.4</version.taglist-maven-plugin>
         <version.versions-maven-plugin>2.1</version.versions-maven-plugin>
@@ -470,7 +470,7 @@
                             <updateReleaseInfo>true</updateReleaseInfo>
                         </configuration>
                     </plugin>
-                    <plugin>
+                    <!--plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
                         <version>1.5</version>
@@ -483,7 +483,7 @@
                                 </goals>
                             </execution>
                         </executions>
-                    </plugin>
+                    </plugin-->
                     <plugin>
                         <inherited>true</inherited>
                         <groupId>org.apache.maven.plugins</groupId>
