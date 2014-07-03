@@ -93,7 +93,7 @@
         <sonar.language>java</sonar.language>
 
         <version.maven-changelog-plugin>2.2</version.maven-changelog-plugin>
-        <version.maven-checkstyle-plugin>2.12</version.maven-checkstyle-plugin>
+        <version.maven-checkstyle-plugin>2.11</version.maven-checkstyle-plugin>
         <version.maven-javadoc-plugin>2.9.1</version.maven-javadoc-plugin>
         <version.maven-jxr-plugin>2.3</version.maven-jxr-plugin>
         <version.maven-pmd-plugin>3.1</version.maven-pmd-plugin>
