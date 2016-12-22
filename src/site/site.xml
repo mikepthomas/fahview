@@ -3,7 +3,7 @@
   #%L
   This file is part of FAHView.
   %%
-  Copyright (C) 2011 - 2014 Michael Thomas <mikepthomas@outlook.com>
+  Copyright (C) 2011 - 2016 Mike Thomas <mikepthomas@outlook.com>
   %%
   FAHView is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -27,10 +27,6 @@
         <breadcrumbs>
             <item name="${project.name}" href="${project.url}"/>
         </breadcrumbs>
-
-        <links>
-            <item name="Google Code" href="http://fahview.googlecode.com/"/>
-        </links>
 
         <menu ref="parent" />
 
@@ -107,7 +103,7 @@
     <skin>
         <groupId>org.apache.maven.skins</groupId>
         <artifactId>maven-fluido-skin</artifactId>
-        <version>1.3.0</version>
+        <version>1.6</version>
     </skin>
 
     <custom>
@@ -125,6 +121,11 @@
                 <name>${project.name}</name>
                 <href>${project.url}</href>
             </topBarIcon>
+            <gitHub>
+                <projectId>mikepthomas/${project.name}</projectId>
+                <ribbonOrientation>right</ribbonOrientation>
+                <ribbonColor>orange</ribbonColor>
+            </gitHub>
         </fluidoSkin>
     </custom>
 

@@ -5,12 +5,21 @@
         <displayName>Generate Site</displayName>
         <goals>
             <goal>clean</goal>
-            <goal>install</goal>
             <goal>site</goal>
         </goals>
         <properties>
-            <Env.MAVEN_OPTS>-Xmx512m -XX:MaxPermSize=256m</Env.MAVEN_OPTS>
+            <Env.MAVEN_OPTS>-Xmx512m</Env.MAVEN_OPTS>
         </properties>
+        <activatedProfiles>
+            <activatedProfile>release-profile</activatedProfile>
+        </activatedProfiles>
+    </action>
+    <action>
+        <actionName>CUSTOM-Deploy Site</actionName>
+        <displayName>Deploy Site</displayName>
+        <goals>
+            <goal>site-deploy</goal>
+        </goals>
         <activatedProfiles>
             <activatedProfile>release-profile</activatedProfile>
         </activatedProfiles>

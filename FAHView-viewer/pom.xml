@@ -4,26 +4,20 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <artifactId>FAHView</artifactId>
-        <groupId>com.googlecode.fahview</groupId>
+        <groupId>info.mikethomas.fahview</groupId>
+        <artifactId>fahview</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>FAHView-viewer</artifactId>
+    <artifactId>fahview-viewer</artifactId>
     <packaging>nbm</packaging>
 
     <name>FAHView-viewer</name>
     <description>3D molecule viewer based on Jmol for FAHView</description>
 
-    <scm>
-        <connection>scm:svn:http://fahview.googlecode.com/svn/trunk/FAHView-viewer</connection>
-        <developerConnection>scm:svn:https://fahview.googlecode.com/svn/trunk/FAHView-viewer</developerConnection>
-        <tag>HEAD</tag>
-        <url>${project.domain.source}/source/browse</url>
-    </scm>
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <github.site.path>${project.artifactId}</github.site.path>
     </properties>
 
     <dependencies>

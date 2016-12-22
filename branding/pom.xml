@@ -4,26 +4,20 @@
     <modelVersion>4.0.0</modelVersion>
     
     <parent>
-        <groupId>com.googlecode.fahview</groupId>
-        <artifactId>FAHView</artifactId>
+        <groupId>info.mikethomas.fahview</groupId>
+        <artifactId>fahview</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>FAHView-branding</artifactId>
+    <artifactId>fahview-branding</artifactId>
     <packaging>nbm</packaging>
 
     <name>FAHView-branding</name>
     <description>NetBeans Platform Branding for FAHView</description>
 
-    <scm>
-        <connection>scm:svn:http://fahview.googlecode.com/svn/trunk/branding</connection>
-        <developerConnection>scm:svn:https://fahview.googlecode.com/svn/trunk/branding</developerConnection>
-        <tag>HEAD</tag>
-        <url>${project.domain.source}/source/browse</url>
-    </scm>
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <github.site.path>${project.artifactId}</github.site.path>
     </properties>
 
     <dependencies>

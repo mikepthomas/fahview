@@ -3,8 +3,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.googlecode.fahview</groupId>
-    <artifactId>FAHView</artifactId>
+    <groupId>info.mikethomas.fahview</groupId>
+    <artifactId>fahview</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
@@ -13,7 +13,7 @@
         Project to create a viewer application in Java to display
         information from a Folding@home client.
     </description>
-    <url>${project.domain.reports}/FAHView/</url>
+    <url>${project.domain.reports}/fahview</url>
     <inceptionYear>2011</inceptionYear>
     <organization/>
     <licenses>
@@ -30,8 +30,8 @@
 
     <developers>
         <developer>
-            <id>montycrabapple1@gmail.com</id>
-            <name>Michael Thomas</name>
+            <id>mikepthomas</id>
+            <name>Mike Thomas</name>
             <email>mikepthomas@outlook.com</email>
             <url>${project.domain.reports}</url>
             <timezone>0</timezone>
@@ -55,14 +55,14 @@
     </modules>
 
     <scm>
-        <connection>scm:svn:http://fahview.googlecode.com/svn/trunk</connection>
-        <developerConnection>scm:svn:https://fahview.googlecode.com/svn/trunk</developerConnection>
-        <tag>HEAD</tag>
-        <url>${project.domain.source}/source/browse</url>
+        <connection>scm:git:git://github.com/mikepthomas/fahview.git</connection>
+        <developerConnection>scm:git:git@github.com:mikepthomas/fahview.git</developerConnection>
+        <tag>master</tag>
+        <url>${project.domain.source}/fahview</url>
     </scm>
     <issueManagement>
-        <system>Google Code</system>
-        <url>${project.domain.source}/issues</url>
+        <system>GitHub Issues</system>
+        <url>${project.domain.source}/fahview/issues</url>
     </issueManagement>
     <ciManagement>
         <system>Jenkins</system>
@@ -86,22 +86,25 @@
     <properties>
         <brandingToken>fahview</brandingToken>
         <netbeans.version>RELEASE731</netbeans.version>
+
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.build.targetJdk>1.6</project.build.targetJdk>
+
         <project.domain.reports>http://www.mikethomas.info</project.domain.reports>
-        <project.domain.source>http://code.google.com/p/fahview</project.domain.source>
-        <sonar.language>java</sonar.language>
+        <project.domain.source>https://github.com/mikepthomas</project.domain.source>
+        <github.site.path></github.site.path>
 
         <version.maven-changelog-plugin>2.3</version.maven-changelog-plugin>
         <version.maven-checkstyle-plugin>2.11</version.maven-checkstyle-plugin>
         <version.maven-javadoc-plugin>2.9.1</version.maven-javadoc-plugin>
-        <version.maven-jxr-plugin>2.4</version.maven-jxr-plugin>
+        <version.maven-jxr-plugin>2.5</version.maven-jxr-plugin>
         <version.maven-pmd-plugin>3.1</version.maven-pmd-plugin>
-        <version.maven-project-info-reports-plugin>2.7</version.maven-project-info-reports-plugin>
+        <version.maven-project-info-reports-plugin>2.9</version.maven-project-info-reports-plugin>
         <version.maven-surefire-plugin>2.17</version.maven-surefire-plugin>
         <version.clirr-maven-plugin>2.6.1</version.clirr-maven-plugin>
-        <version.cobertura-maven-plugin>2.6</version.cobertura-maven-plugin>
-        <version.findbugs-maven-plugin>2.5.4</version.findbugs-maven-plugin>
+        <version.cobertura-maven-plugin>2.7</version.cobertura-maven-plugin>
+        <version.findbugs-maven-plugin>3.0.4</version.findbugs-maven-plugin>
         <version.javancss-maven-plugin>2.0</version.javancss-maven-plugin>
         <version.jdepend-maven-plugin>2.0</version.jdepend-maven-plugin>
         <version.license-maven-plugin>1.7</version.license-maven-plugin>
@@ -197,11 +200,6 @@
                         <cluster>${brandingToken}</cluster>
                     </configuration>
                 </plugin>
-                <plugin>
-                    <groupId>org.codehaus.mojo</groupId>
-                    <artifactId>sonar-maven-plugin</artifactId>
-                    <version>2.1</version>
-                </plugin>
             </plugins>
         </pluginManagement>
         <plugins>
@@ -212,8 +210,6 @@
                 <inherited>true</inherited>
                 <configuration>
                     <showDeprecation>true</showDeprecation>
-                    <source>${project.build.targetJdk}</source>
-                    <target>${project.build.targetJdk}</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -224,10 +220,11 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-site-plugin</artifactId>
-                <version>3.3</version>
+                <version>3.6</version>
                 <configuration>
                     <generateSitemap>true</generateSitemap>
                     <locales>en</locales>
+                    <skipDeploy>true</skipDeploy>
                 </configuration>
                 <executions>
                     <execution>
@@ -283,7 +280,6 @@
                 <version>${version.maven-pmd-plugin}</version>
                 <configuration>
                     <minimumTokens>100</minimumTokens>
-                    <targetJdk>${project.build.targetJdk}</targetJdk>
                 </configuration>
             </plugin>
             <plugin>
@@ -449,6 +445,25 @@
             <id>release-profile</id>
             <build>
                 <plugins>
+                    <plugin>
+                        <groupId>com.github.github</groupId>
+                        <artifactId>site-maven-plugin</artifactId>
+                        <version>0.12</version>
+                        <configuration>
+                            <merge>true</merge>
+                            <message>Creating site for ${project.version}</message>
+                            <path>${github.site.path}</path>
+                            <server>github</server>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>site</goal>
+                                </goals>
+                                <phase>site-deploy</phase>
+                            </execution>
+                        </executions>
+                    </plugin>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-checkstyle-plugin</artifactId>
