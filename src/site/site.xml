@@ -122,7 +122,7 @@
                 <href>${project.url}</href>
             </topBarIcon>
             <gitHub>
-                <projectId>mikepthomas/${project.name}</projectId>
+                <projectId>mikepthomas/fahview</projectId>
                 <ribbonOrientation>right</ribbonOrientation>
                 <ribbonColor>orange</ribbonColor>
             </gitHub>
