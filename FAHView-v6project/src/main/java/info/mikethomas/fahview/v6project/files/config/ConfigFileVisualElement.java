@@ -4,7 +4,7 @@ package info.mikethomas.fahview.v6project.files.config;
  * #%L
  * This file is part of FAHView-v6project.
  * %%
- * Copyright (C) 2011 - 2016 Mike Thomas <mikepthomas@outlook.com>
+ * Copyright (C) 2011 - 2017 Mike Thomas <mikepthomas@outlook.com>
  * %%
  * FAHView is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
