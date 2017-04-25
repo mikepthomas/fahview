@@ -1,15 +1,16 @@
 <?xml version="1.0"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
 
-<coverage line-rate="0.0" branch-rate="0.0" lines-covered="0" lines-valid="1158" branches-covered="0" branches-valid="172" complexity="1.4735449735449735" version="2.1.1" timestamp="1482447441195">
+<coverage line-rate="0.0" branch-rate="0.0" lines-covered="0" lines-valid="1158" branches-covered="0" branches-valid="172" complexity="1.4543147208121827" version="2.1.1" timestamp="1493160691017">
 	<sources>
+		<source>/Volumes/Documents/Repos/fahview/FAHView-v6project/target/generated-sources/annotations</source>
 		<source>--source</source>
 		<source>/Volumes/Documents/Repos/fahview/FAHView-v6project/src/main/java</source>
 	</sources>
 	<packages>
-		<package name="info.mikethomas.fahview.v6project" line-rate="0.0" branch-rate="0.0" complexity="1.4130434782608696">
+		<package name="info.mikethomas.fahview.v6project" line-rate="0.0" branch-rate="0.0" complexity="1.3958333333333333">
 			<classes>
-				<class name="info.mikethomas.fahview.v6project.Bundle" filename="info/mikethomas/fahview/v6project/Bundle.java" line-rate="0.0" branch-rate="1.0" complexity="0.0">
+				<class name="info.mikethomas.fahview.v6project.Bundle" filename="info/mikethomas/fahview/v6project/Bundle.java" line-rate="0.0" branch-rate="1.0" complexity="1.0">
 					<methods>
 						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
 							<lines>
@@ -641,7 +642,7 @@
 		</package>
 		<package name="info.mikethomas.fahview.v6project.files.config" line-rate="0.0" branch-rate="0.0" complexity="1.0">
 			<classes>
-				<class name="info.mikethomas.fahview.v6project.files.config.Bundle" filename="info/mikethomas/fahview/v6project/files/config/Bundle.java" line-rate="0.0" branch-rate="1.0" complexity="0.0">
+				<class name="info.mikethomas.fahview.v6project.files.config.Bundle" filename="info/mikethomas/fahview/v6project/files/config/Bundle.java" line-rate="0.0" branch-rate="1.0" complexity="1.0">
 					<methods>
 						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
 							<lines>
@@ -861,7 +862,7 @@
 		</package>
 		<package name="info.mikethomas.fahview.v6project.files.queue" line-rate="0.0" branch-rate="0.0" complexity="1.0">
 			<classes>
-				<class name="info.mikethomas.fahview.v6project.files.queue.Bundle" filename="info/mikethomas/fahview/v6project/files/queue/Bundle.java" line-rate="0.0" branch-rate="1.0" complexity="0.0">
+				<class name="info.mikethomas.fahview.v6project.files.queue.Bundle" filename="info/mikethomas/fahview/v6project/files/queue/Bundle.java" line-rate="0.0" branch-rate="1.0" complexity="1.0">
 					<methods>
 						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
 							<lines>
@@ -3367,9 +3368,9 @@
 				</class>
 			</classes>
 		</package>
-		<package name="info.mikethomas.fahview.v6project.panels" line-rate="0.0" branch-rate="0.0" complexity="1.0384615384615385">
+		<package name="info.mikethomas.fahview.v6project.panels" line-rate="0.0" branch-rate="0.0" complexity="1.0333333333333334">
 			<classes>
-				<class name="info.mikethomas.fahview.v6project.panels.Bundle" filename="info/mikethomas/fahview/v6project/panels/Bundle.java" line-rate="0.0" branch-rate="1.0" complexity="0.0">
+				<class name="info.mikethomas.fahview.v6project.panels.Bundle" filename="info/mikethomas/fahview/v6project/panels/Bundle.java" line-rate="0.0" branch-rate="1.0" complexity="1.0">
 					<methods>
 						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
 							<lines>
@@ -3931,7 +3932,7 @@
 		</package>
 		<package name="info.mikethomas.fahview.v6project.properties" line-rate="0.0" branch-rate="1.0" complexity="1.0">
 			<classes>
-				<class name="info.mikethomas.fahview.v6project.properties.Bundle" filename="info/mikethomas/fahview/v6project/properties/Bundle.java" line-rate="0.0" branch-rate="1.0" complexity="0.0">
+				<class name="info.mikethomas.fahview.v6project.properties.Bundle" filename="info/mikethomas/fahview/v6project/properties/Bundle.java" line-rate="0.0" branch-rate="1.0" complexity="1.0">
 					<methods>
 						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
 							<lines>
