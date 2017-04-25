@@ -1,9 +1,10 @@
 <?xml version="1.0"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
 
-<coverage line-rate="0.0" branch-rate="0.0" lines-covered="0" lines-valid="54" branches-covered="0" branches-valid="4" complexity="1.0" version="2.1.1" timestamp="1482448556553">
+<coverage line-rate="0.0" branch-rate="0.0" lines-covered="0" lines-valid="54" branches-covered="0" branches-valid="4" complexity="1.0" version="2.1.1" timestamp="1493161763879">
 	<sources>
 		<source>/Volumes/Documents/Repos/fahview/FAHView-viewer/src/main/java</source>
+		<source>/Volumes/Documents/Repos/fahview/FAHView-viewer/target/generated-sources/annotations</source>
 		<source>--source</source>
 	</sources>
 	<packages>
@@ -59,7 +60,7 @@
 		</package>
 		<package name="info.mikethomas.fahview.viewer.files.xyz" line-rate="0.0" branch-rate="0.0" complexity="1.0">
 			<classes>
-				<class name="info.mikethomas.fahview.viewer.files.xyz.Bundle" filename="info/mikethomas/fahview/viewer/files/xyz/Bundle.java" line-rate="0.0" branch-rate="1.0" complexity="0.0">
+				<class name="info.mikethomas.fahview.viewer.files.xyz.Bundle" filename="info/mikethomas/fahview/viewer/files/xyz/Bundle.java" line-rate="0.0" branch-rate="1.0" complexity="1.0">
 					<methods>
 						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
 							<lines>

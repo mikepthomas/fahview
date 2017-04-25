@@ -20,19 +20,19 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>FAHView-viewer - Checkstyle report</title>
-    <link>http://www.mikethomas.info/fahview/fahview-viewer</link>
+    <link>http://www.mikethomas.info/fahview-viewer/fahview-viewer</link>
     <description>FAHView-viewer - Checkstyle report</description>
     <language>en-us</language>
-    <copyright>&#169;2011 - 2016</copyright>
+    <copyright>&#169;2011 - 2017 Mike Thomas</copyright>
     <item>
       <title>File: 5,
-             Errors: 61,
+             Errors: 59,
              Warnings: 0,
              Infos: 0
       </title>
-            <link>http://www.mikethomas.info/fahview/fahview-viewer/checkstyle.html</link>
+            <link>http://www.mikethomas.info/fahview-viewer/fahview-viewer/checkstyle.html</link>
       <description>
-        <p>Click <a href="http://www.mikethomas.info/fahview/fahview-viewer/checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="http://www.mikethomas.info/fahview-viewer/fahview-viewer/checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="http://www.mikethomas.info/fahview/fahview-viewer/checkstyle.html#info.mikethomas.fahview.viewer.Bundle.properties">info/mikethomas/fahview/viewer/Bundle.properties</a>
+                  <a href="http://www.mikethomas.info/fahview-viewer/fahview-viewer/checkstyle.html#info.mikethomas.fahview.viewer.Bundle.properties">info/mikethomas/fahview/viewer/Bundle.properties</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://www.mikethomas.info/fahview/fahview-viewer/checkstyle.html#info.mikethomas.fahview.viewer.files.xyz.XyzFileVisualElement.java">info/mikethomas/fahview/viewer/files/xyz/XyzFileVisualElement.java</a>
+                  <a href="http://www.mikethomas.info/fahview-viewer/fahview-viewer/checkstyle.html#info.mikethomas.fahview.viewer.files.xyz.XyzFileVisualElement.java">info/mikethomas/fahview/viewer/files/xyz/XyzFileVisualElement.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://www.mikethomas.info/fahview/fahview-viewer/checkstyle.html#info.mikethomas.fahview.viewer.JmolPanel.java">info/mikethomas/fahview/viewer/JmolPanel.java</a>
+                  <a href="http://www.mikethomas.info/fahview-viewer/fahview-viewer/checkstyle.html#info.mikethomas.fahview.viewer.JmolPanel.java">info/mikethomas/fahview/viewer/JmolPanel.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://www.mikethomas.info/fahview/fahview-viewer/checkstyle.html#info.mikethomas.fahview.viewer.files.xyz.package-info.java">info/mikethomas/fahview/viewer/files/xyz/package-info.java</a>
+                  <a href="http://www.mikethomas.info/fahview-viewer/fahview-viewer/checkstyle.html#info.mikethomas.fahview.viewer.files.xyz.package-info.java">info/mikethomas/fahview/viewer/files/xyz/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -102,7 +102,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://www.mikethomas.info/fahview/fahview-viewer/checkstyle.html#info.mikethomas.fahview.viewer.files.xyz.XyzFileDataObject.java">info/mikethomas/fahview/viewer/files/xyz/XyzFileDataObject.java</a>
+                  <a href="http://www.mikethomas.info/fahview-viewer/fahview-viewer/checkstyle.html#info.mikethomas.fahview.viewer.files.xyz.XyzFileDataObject.java">info/mikethomas/fahview/viewer/files/xyz/XyzFileDataObject.java</a>
                 </td>
                 <td>
                   0
@@ -111,7 +111,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  32
+                  30
                 </td>
               </tr>
                       </tbody>
